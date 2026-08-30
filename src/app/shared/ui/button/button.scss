@@ -1,0 +1,5 @@
+:host { display: inline-block; }
+.button { display: inline-flex; width: 100%; min-height: 3rem; align-items: center; justify-content: center; padding: .75rem 1.35rem; border: 1px solid transparent; border-radius: var(--radius-sm); background: var(--gradient-primary); box-shadow: var(--shadow-button); color: var(--color-white); font-size: .9rem; font-weight: 750; text-decoration: none; transition: transform var(--transition-fast), box-shadow var(--transition-fast); }
+.button:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgb(20 107 255 / 30%); }
+.button:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+.button--secondary { border-color: var(--color-border); background: var(--color-white); box-shadow: none; color: var(--color-text); }

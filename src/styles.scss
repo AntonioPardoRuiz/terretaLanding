@@ -1,0 +1,22 @@
+:root {
+  --color-primary: #146bff; --color-primary-light: #65b8ff; --color-primary-soft: #eef5ff;
+  --color-heading: #101828; --color-text: #344054; --color-text-muted: #667085; --color-text-on-dark: #bac6d8;
+  --color-border: #e5eaf1; --color-surface-soft: #f8fafd; --color-dark: #07152d; --color-white: #fff; --color-focus: #8bc5ff;
+  --gradient-primary: linear-gradient(135deg, #1359f4, #2088ff);
+  --gradient-dark: radial-gradient(circle at 5% 10%, rgb(24 112 255 / 28%), transparent 33%), linear-gradient(115deg, #081933, #06142a 65%, #071a35);
+  --gradient-page: radial-gradient(circle at 82% 28%, rgb(20 107 255 / 8%), transparent 25%), radial-gradient(circle at 95% 15%, rgb(0 184 240 / 8%), transparent 22%), #fff;
+  --shadow-button: 0 9px 25px rgb(20 107 255 / 22%); --shadow-card: 0 20px 45px rgb(31 61 110 / 10%); --shadow-large: 0 28px 65px rgb(20 50 100 / 18%);
+  --radius-sm: .5rem; --radius-md: 1rem; --radius-xl: 1.625rem; --container-max: 73.75rem; --page-gutter: clamp(1.125rem, 4vw, 1.75rem);
+  --space-lg: 1.5rem; --space-xl: clamp(2rem, 5vw, 3.5rem); --space-2xl: clamp(3rem, 7vw, 5rem); --space-3xl: clamp(4rem, 9vw, 6rem);
+  --transition-fast: 180ms ease; color-scheme: light; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-synthesis: none;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { min-width: 20rem; margin: 0; background: var(--color-white); color: var(--color-text); -webkit-font-smoothing: antialiased; }
+button, input, textarea, select { font: inherit; }
+img, svg { display: block; max-width: 100%; }
+h1, h2, h3 { color: var(--color-heading); font-weight: 800; letter-spacing: -.035em; }
+a { text-underline-offset: .2em; }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+.eyebrow { display: inline-flex; padding: .45rem .7rem; border-radius: .45rem; background: var(--color-primary-soft); color: var(--color-primary); font-size: .7rem; font-weight: 800; letter-spacing: .075em; text-transform: uppercase; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }

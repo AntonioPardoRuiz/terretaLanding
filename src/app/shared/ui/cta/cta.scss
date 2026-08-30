@@ -1,0 +1,6 @@
+.cta { padding-block: var(--space-2xl); }
+.cta__card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-xl); align-items: center; overflow: hidden; padding: clamp(2rem, 5vw, 3.5rem); border-radius: var(--radius-xl); background: var(--gradient-dark); box-shadow: var(--shadow-card); color: var(--color-white); }
+h2 { max-width: 48rem; margin: .75rem 0; color: inherit; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.08; }
+p { max-width: 43rem; margin: 0; color: var(--color-text-on-dark); line-height: 1.7; }
+.eyebrow { color: var(--color-primary-light); }
+@media (max-width: 48rem) { .cta__card { grid-template-columns: 1fr; } }
