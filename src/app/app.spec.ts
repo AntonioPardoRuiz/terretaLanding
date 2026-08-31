@@ -23,4 +23,19 @@ describe('App', () => {
     expect(compiled.querySelector<HTMLImageElement>('header .brand img')?.alt).toBe('Terreta');
     expect(compiled.querySelector('footer')?.textContent).toContain('Alicante, España');
   });
+
+  it('links every main corporate page and removes outsourcing from navigation', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const compiled = fixture.nativeElement as HTMLElement;
+    const links = Array.from(compiled.querySelectorAll<HTMLAnchorElement>('header a, footer a')).map((link) => link.getAttribute('href'));
+
+    expect(links).toContain('/servicios');
+    expect(links).toContain('/aplicaciones/fitness-app');
+    expect(links).toContain('/como-trabajamos');
+    expect(links).toContain('/nosotros');
+    expect(links).toContain('/contacto');
+    expect(links).toContain('/privacy-policy');
+    expect(links).not.toContain('/outsourcing');
+  });
 });

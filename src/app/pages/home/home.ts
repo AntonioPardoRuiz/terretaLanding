@@ -28,7 +28,7 @@ export class HomeComponent {
     { title: 'Apps Móviles', description: 'Aplicaciones para iOS y Android orientadas a clientes, equipos internos, comunidades o nuevos modelos de negocio.', icon: 'mobile' },
     { title: 'Automatizaciones', description: 'Flujos conectados entre formularios, CRM, email, WhatsApp, hojas de cálculo, bases de datos y herramientas empresariales.', icon: 'automation' },
     { title: 'Inteligencia Artificial', description: 'Chatbots, asistentes internos, análisis de datos, generación de contenido y procesos inteligentes personalizados.', icon: 'ai' },
-    { title: 'Diseño UX/UI', description: 'Interfaces modernas, claras y fáciles de usar para mejorar la experiencia del usuario y la conversión.', icon: 'design' },
+    { title: 'Soporte y evolución', description: 'Mantenimiento, mejoras y acompañamiento para que cada solución siga respondiendo a las necesidades del negocio.', icon: 'support' },
   ];
 
   readonly solutions: readonly Solution[] = [
