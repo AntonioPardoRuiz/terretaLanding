@@ -10,5 +10,6 @@ describe('PrivacyComponent', () => {
     expect(element.querySelectorAll('h1')).toHaveLength(1);
     expect(element.querySelectorAll('.legal-layout article > section')).toHaveLength(8);
     expect(element.querySelector('a[href="/contacto"]')).toBeTruthy();
+    expect(element.querySelector('a[href="mailto:terretasoftware@gmail.com"]')).toBeTruthy();
   });
 });

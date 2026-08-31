@@ -12,6 +12,7 @@ describe('ContactComponent', () => {
     expect(element.querySelectorAll('form input')).toHaveLength(5);
     expect(element.querySelector('textarea[formControlName="needs"]')).toBeTruthy();
     expect(element.querySelector('a[href="/privacy-policy"]')).toBeTruthy();
+    expect(element.querySelector('a[href="mailto:terretasoftware@gmail.com"]')?.textContent).toContain('terretasoftware@gmail.com');
   });
 
   it('validates required fields without simulating a successful send', () => {
