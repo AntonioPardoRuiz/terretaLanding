@@ -8,8 +8,12 @@
 
 # Node
 /node_modules
+**/node_modules/
 npm-debug.log
 yarn-error.log
+.env
+.env.*
+functions/.secret.local
 
 # IDEs and editors
 .idea/

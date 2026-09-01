@@ -1,0 +1,14 @@
+{
+  "name": "terreta-contact-functions",
+  "private": true,
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "firebase-functions": "^7.0.0"
+  }
+}

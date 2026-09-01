@@ -5,8 +5,19 @@ import { ContainerComponent } from '../../shared/ui/container/container';
 import { CtaComponent } from '../../shared/ui/cta/cta';
 
 type IconName = 'browser' | 'mobile' | 'automation' | 'ai' | 'design' | 'support';
-interface Card { title: string; description: string; icon: IconName; }
-interface Solution { title: string; description: string; visual: 'elite' | 'automation' | 'dashboard'; }
+interface Card {
+  title: string;
+  description: string;
+  icon: IconName;
+}
+interface Solution {
+  title: string;
+  sector: string;
+  description: string;
+  visual: 'elite' | 'psychology' | 'agro';
+  link?: string;
+  fragment?: string;
+}
 
 @Component({
   selector: 'app-home',
@@ -17,24 +28,90 @@ interface Solution { title: string; description: string; visual: 'elite' | 'auto
 })
 export class HomeComponent {
   readonly benefits: readonly Card[] = [
-    { title: 'Software a medida', description: 'Creamos soluciones adaptadas a tu negocio, sin plantillas genéricas ni sistemas innecesariamente complejos.', icon: 'browser' },
-    { title: 'Automatización inteligente', description: 'Reducimos tareas manuales, conectamos herramientas y mejoramos procesos para ahorrar tiempo y costes.', icon: 'automation' },
-    { title: 'IA aplicada al negocio', description: 'Integramos inteligencia artificial de forma práctica para atención al cliente, análisis, contenido, ventas y operaciones.', icon: 'ai' },
-    { title: 'Acompañamiento real', description: 'Trabajamos contigo por hitos, con comunicación directa, seguimiento continuo y entregables claros.', icon: 'support' },
+    {
+      title: 'Software a medida',
+      description:
+        'Creamos soluciones adaptadas a tu negocio, sin plantillas genéricas ni sistemas innecesariamente complejos.',
+      icon: 'browser',
+    },
+    {
+      title: 'Automatización inteligente',
+      description:
+        'Reducimos tareas manuales, conectamos herramientas y mejoramos procesos para ahorrar tiempo y costes.',
+      icon: 'automation',
+    },
+    {
+      title: 'IA aplicada al negocio',
+      description:
+        'Integramos inteligencia artificial de forma práctica para atención al cliente, análisis, contenido, ventas y operaciones.',
+      icon: 'ai',
+    },
+    {
+      title: 'Acompañamiento real',
+      description:
+        'Trabajamos contigo por hitos, con comunicación directa, seguimiento continuo y entregables claros.',
+      icon: 'support',
+    },
   ];
 
   readonly services: readonly Card[] = [
-    { title: 'Aplicaciones Web', description: 'Plataformas internas, portales de clientes, sistemas de reservas, dashboards y herramientas de gestión.', icon: 'browser' },
-    { title: 'Apps Móviles', description: 'Aplicaciones para iOS y Android orientadas a clientes, equipos internos, comunidades o nuevos modelos de negocio.', icon: 'mobile' },
-    { title: 'Automatizaciones', description: 'Flujos conectados entre formularios, CRM, email, WhatsApp, hojas de cálculo, bases de datos y herramientas empresariales.', icon: 'automation' },
-    { title: 'Inteligencia Artificial', description: 'Chatbots, asistentes internos, análisis de datos, generación de contenido y procesos inteligentes personalizados.', icon: 'ai' },
-    { title: 'Soporte y evolución', description: 'Mantenimiento, mejoras y acompañamiento para que cada solución siga respondiendo a las necesidades del negocio.', icon: 'support' },
+    {
+      title: 'Aplicaciones Web',
+      description:
+        'Plataformas internas, portales de clientes, sistemas de reservas, dashboards y herramientas de gestión.',
+      icon: 'browser',
+    },
+    {
+      title: 'Apps Móviles',
+      description:
+        'Aplicaciones para iOS y Android orientadas a clientes, equipos internos, comunidades o nuevos modelos de negocio.',
+      icon: 'mobile',
+    },
+    {
+      title: 'Automatizaciones',
+      description:
+        'Flujos conectados entre formularios, CRM, email, WhatsApp, hojas de cálculo, bases de datos y herramientas empresariales.',
+      icon: 'automation',
+    },
+    {
+      title: 'Inteligencia Artificial',
+      description:
+        'Chatbots, asistentes internos, análisis de datos, generación de contenido y procesos inteligentes personalizados.',
+      icon: 'ai',
+    },
+    {
+      title: 'Soporte y evolución',
+      description:
+        'Mantenimiento, mejoras y acompañamiento para que cada solución siga respondiendo a las necesidades del negocio.',
+      icon: 'support',
+    },
   ];
 
   readonly solutions: readonly Solution[] = [
-    { title: 'Elite Coach App', description: 'App fitness para entrenadores, clientes y centros deportivos.', visual: 'elite' },
-    { title: 'Automatizaciones empresariales', description: 'Procesos conectados para reducir tareas manuales y mejorar la eficiencia.', visual: 'automation' },
-    { title: 'Dashboards de gestión', description: 'Paneles visuales para controlar datos, operaciones y rendimiento.', visual: 'dashboard' },
+    {
+      title: 'Elite Coach',
+      sector: 'Fitness',
+      description:
+        'Plataforma para organizar la relación entre entrenadores, clientes y centros deportivos.',
+      visual: 'elite',
+      link: '/aplicaciones/fitness-app',
+    },
+    {
+      title: 'J. Castejón Psicología',
+      sector: 'Psicología',
+      description:
+        'Solución digital que estructura la presencia profesional y facilita el acceso a información y contacto.',
+      visual: 'psychology',
+    },
+    {
+      title: 'TerretaAgro',
+      sector: 'Sector agrario · Logística',
+      description:
+        'Software para centralizar la gestión de operaciones agrícolas, almacenes, camiones y transporte.',
+      visual: 'agro',
+      link: '/productos',
+      fragment: 'terreta-agro',
+    },
   ];
 
   readonly attributes = [

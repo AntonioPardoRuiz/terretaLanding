@@ -1,6 +1,36 @@
 <footer class="footer">
   <app-container>
-    <div class="footer__main"><div><a class="footer__brand" routerLink="/">TERRETA</a><p>Software, automatización e inteligencia artificial aplicada al negocio.</p></div><nav aria-label="Navegación secundaria"><a routerLink="/">Inicio</a><a routerLink="/servicios">Servicios</a><a routerLink="/aplicaciones/fitness-app">Elite Coach</a><a routerLink="/como-trabajamos">Cómo trabajamos</a><a routerLink="/nosotros">Nosotros</a><a routerLink="/contacto">Contacto</a><a routerLink="/privacy-policy">Privacidad</a></nav></div>
-    <div class="footer__bottom"><span>© {{ year }} Terreta</span><span>Alicante, España</span></div>
+    <div class="footer__main">
+      <div>
+        <a class="footer__brand" routerLink="/">TERRETA</a>
+        <p>Software, automatización e inteligencia artificial aplicada al negocio.</p>
+      </div>
+      <nav aria-label="Navegación secundaria">
+        <a routerLink="/">Inicio</a><a routerLink="/servicios">Servicios</a
+        ><a routerLink="/productos">Productos</a
+        ><a routerLink="/aplicaciones/fitness-app">Elite Coach</a
+        ><a routerLink="/como-trabajamos">Cómo trabajamos</a><a routerLink="/nosotros">Nosotros</a
+        ><a routerLink="/contacto">Contacto</a><a routerLink="/privacy-policy">Privacidad</a>
+      </nav>
+      <div class="footer__team">
+        <strong>Equipo</strong>
+        @if (crmUrl(); as url) {
+          <a
+            [href]="url"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Acceso equipo, abre el CRM en una pestaña nueva"
+            >Acceso equipo <span aria-hidden="true">↗</span></a
+          >
+        } @else {
+          <span aria-disabled="true" title="URL del CRM pendiente de configuración"
+            >Acceso equipo</span
+          >
+        }
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© {{ year }} Terreta</span><span>Alicante, España</span>
+    </div>
   </app-container>
 </footer>
