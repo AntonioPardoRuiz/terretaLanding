@@ -24,4 +24,9 @@ describe('public routes', () => {
     expect(outsourcing?.redirectTo).toBe('servicios');
     expect(outsourcing?.pathMatch).toBe('full');
   });
+
+  it('does not add corporate login or CRM redirect routes', () => {
+    expect(routes.some((route) => route.path === 'login')).toBe(false);
+    expect(routes.some((route) => route.path === 'crm')).toBe(false);
+  });
 });

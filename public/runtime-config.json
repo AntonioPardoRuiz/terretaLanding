@@ -1,4 +1,3 @@
 {
-  "contactEndpoint": "/api/contact",
-  "crmUrl": null
+  "contactEndpoint": "/api/contact"
 }

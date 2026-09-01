@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { App } from './app';
-import { RuntimeConfigService } from './core/config/runtime-config.service';
+import { CRM_URL, RuntimeConfigService } from './core/config/runtime-config.service';
 
 describe('App', () => {
   beforeEach(async () => {
@@ -45,32 +45,21 @@ describe('App', () => {
     expect(links).not.toContain('/outsourcing');
   });
 
-  it('shows team access without publishing a fake link while CRM_URL is pending', async () => {
+  it('shows team access in the header and footer using the official CRM URL', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelectorAll('.team-access, .footer__team > span')).toHaveLength(2);
-    expect(compiled.querySelector('a[href="#"], a[href="/login"], a[href="/crm"]')).toBeNull();
-  });
-
-  it('uses the configured external CRM URL safely', async () => {
-    TestBed.overrideProvider(RuntimeConfigService, {
-      useValue: {
-        crmUrl: () => 'https://crm.example.test/',
-        contactEndpoint: () => '/api/contact',
-        load: () => Promise.resolve(),
-      },
-    });
-    const fixture = TestBed.createComponent(App);
-    await fixture.whenStable();
-    const links = fixture.nativeElement.querySelectorAll(
-      'a[href="https://crm.example.test/"]',
-    ) as NodeListOf<HTMLAnchorElement>;
+    const links = compiled.querySelectorAll<HTMLAnchorElement>(`a[href="${CRM_URL}"]`);
     expect(links).toHaveLength(2);
+    expect(compiled.querySelector('.navigation .team-access')?.textContent).toContain(
+      'Acceso equipo',
+    );
+    expect(compiled.querySelector('.footer__team a')?.textContent).toContain('Acceso equipo');
+    expect(compiled.querySelector('a[href="#"], a[href="/login"], a[href="/crm"]')).toBeNull();
     for (const link of links) {
       expect(link.target).toBe('_blank');
-      expect(link.rel).toContain('noopener');
-      expect(link.rel).toContain('noreferrer');
+      expect(link.rel).toBe('noopener noreferrer');
+      expect(link.getAttribute('aria-label')).toContain('pestaña nueva');
     }
   });
 });
