@@ -2,7 +2,16 @@ import { routes } from './app.routes';
 
 describe('public routes', () => {
   it('provides real lazy pages for every primary corporate route', () => {
-    const primaryPaths = ['', 'servicios', 'aplicaciones/fitness-app', 'como-trabajamos', 'nosotros', 'contacto', 'privacy-policy'];
+    const primaryPaths = [
+      '',
+      'servicios',
+      'productos',
+      'aplicaciones/fitness-app',
+      'como-trabajamos',
+      'nosotros',
+      'contacto',
+      'privacy-policy',
+    ];
     for (const path of primaryPaths) {
       const route = routes.find((candidate) => candidate.path === path);
       expect(route?.loadComponent).toBeTypeOf('function');

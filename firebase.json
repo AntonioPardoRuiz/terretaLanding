@@ -1,7 +1,14 @@
 {
+  "functions": { "source": "functions" },
   "hosting": {
     "public": "dist/terreta-web/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [{ "source": "**", "destination": "/index.html" }]
+    "rewrites": [
+      {
+        "source": "/api/contact",
+        "function": { "functionId": "contact", "region": "europe-west1" }
+      },
+      { "source": "**", "destination": "/index.html" }
+    ]
   }
 }

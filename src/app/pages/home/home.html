@@ -4,25 +4,62 @@
       <div class="hero__copy">
         <span class="eyebrow">Software · Automatización · IA</span>
         <h1>Software, automatización e IA para <span>hacer crecer empresas.</span></h1>
-        <p>En Terreta diseñamos y desarrollamos aplicaciones web, apps móviles, plataformas digitales y soluciones con IA para empresas que necesitan tecnología clara, útil y bien ejecutada.</p>
+        <p>
+          En Terreta diseñamos y desarrollamos aplicaciones web, apps móviles, plataformas digitales
+          y soluciones con IA para empresas que necesitan tecnología clara, útil y bien ejecutada.
+        </p>
         <div class="hero__actions">
           <app-button label="Solicitar propuesta" link="/contacto" />
           <app-button label="Ver cómo trabajamos →" link="/como-trabajamos" variant="secondary" />
         </div>
       </div>
 
-      <div class="showcase" aria-label="Software a medida, Elite Coach, automatización e inteligencia artificial">
+      <div
+        class="showcase"
+        aria-label="Software a medida, Elite Coach, automatización e inteligencia artificial"
+      >
         <div class="showcase__dashboard" aria-hidden="true">
           <div class="dashboard__top"><i></i><i></i><i></i><span>Panel de gestión</span></div>
-          <div class="dashboard__body"><div class="dashboard__nav"><b></b><b></b><b></b><b></b></div><div class="dashboard__content"><div class="dashboard__metrics"><i></i><i></i><i></i></div><div class="dashboard__chart"><span></span></div></div></div>
+          <div class="dashboard__body">
+            <div class="dashboard__nav"><b></b><b></b><b></b><b></b></div>
+            <div class="dashboard__content">
+              <div class="dashboard__metrics"><i></i><i></i><i></i></div>
+              <div class="dashboard__chart"><span></span></div>
+            </div>
+          </div>
           <small>Software a medida</small>
         </div>
         <div class="showcase__bottom">
           <a class="product-card" routerLink="/aplicaciones/fitness-app">
-            <img src="assets/images/elite-coach.webp" width="900" height="900" alt="Pantalla de acceso de Elite Coach" fetchpriority="high">
-            <span><small>Producto desarrollado</small><strong>Elite Coach</strong><em>Plataforma para entrenadores, clientes y centros deportivos.</em></span>
+            <img
+              src="assets/images/elite-coach.webp"
+              width="900"
+              height="900"
+              alt="Pantalla de acceso de Elite Coach"
+              fetchpriority="high"
+            />
+            <span
+              ><small>Producto desarrollado</small><strong>Elite Coach</strong
+              ><em>Plataforma para entrenadores, clientes y centros deportivos.</em></span
+            >
           </a>
-          <div class="capabilities" aria-hidden="true"><div><i>↻</i><span><strong>Automatización</strong><small>Procesos conectados y eficientes.</small></span></div><hr><div><i>✦</i><span><strong>Inteligencia Artificial</strong><small>IA aplicada al negocio.</small></span></div></div>
+          <div class="capabilities" aria-hidden="true">
+            <div>
+              <i>↻</i
+              ><span
+                ><strong>Automatización</strong
+                ><small>Procesos conectados y eficientes.</small></span
+              >
+            </div>
+            <hr />
+            <div>
+              <i>✦</i
+              ><span
+                ><strong>Inteligencia Artificial</strong
+                ><small>IA aplicada al negocio.</small></span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -31,10 +68,17 @@
 
 <section class="section section--soft" aria-labelledby="benefits-title">
   <app-container>
-    <header class="section-heading"><span class="section-label">Por qué Terreta</span><h2 id="benefits-title">Tecnología clara, útil y diseñada para vender más</h2></header>
+    <header class="section-heading">
+      <span class="section-label">Por qué Terreta</span>
+      <h2 id="benefits-title">Tecnología clara, útil y diseñada para vender más</h2>
+    </header>
     <div class="card-grid card-grid--four">
       @for (benefit of benefits; track benefit.title) {
-        <article class="info-card"><div class="icon" [attr.data-icon]="benefit.icon" aria-hidden="true"></div><h3>{{ benefit.title }}</h3><p>{{ benefit.description }}</p></article>
+        <article class="info-card">
+          <div class="icon" [attr.data-icon]="benefit.icon" aria-hidden="true"></div>
+          <h3>{{ benefit.title }}</h3>
+          <p>{{ benefit.description }}</p>
+        </article>
       }
     </div>
   </app-container>
@@ -42,39 +86,95 @@
 
 <section class="section" id="servicios" aria-labelledby="services-title">
   <app-container>
-    <header class="section-heading"><span class="section-label">Servicios</span><h2 id="services-title">Soluciones digitales para empresas que quieren avanzar</h2></header>
+    <header class="section-heading">
+      <span class="section-label">Servicios</span>
+      <h2 id="services-title">Soluciones digitales para empresas que quieren avanzar</h2>
+    </header>
     <div class="card-grid card-grid--five">
       @for (service of services; track service.title) {
-        <a class="info-card info-card--link" routerLink="/servicios"><div class="icon" [attr.data-icon]="service.icon" aria-hidden="true"></div><h3>{{ service.title }}</h3><p>{{ service.description }}</p><span class="card-link">Ver servicios <span aria-hidden="true">→</span></span></a>
+        <a class="info-card info-card--link" routerLink="/servicios"
+          ><div class="icon" [attr.data-icon]="service.icon" aria-hidden="true"></div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <span class="card-link">Ver servicios <span aria-hidden="true">→</span></span></a
+        >
       }
     </div>
   </app-container>
 </section>
 
-<section class="section section--soft" aria-labelledby="elite-title">
+<section class="section section--soft" aria-labelledby="solutions-title">
   <app-container>
-    <article class="feature">
-      <div class="feature__image"><img src="assets/images/elite-coach.webp" width="900" height="900" loading="lazy" alt="Pantalla de acceso de la aplicación Elite Coach"></div>
-      <div class="feature__copy"><span class="section-label">Producto desarrollado por Terreta</span><h2 id="elite-title">Elite Coach App</h2><p>Elite Coach es un ejemplo de cómo convertimos una idea en una plataforma digital real: una app pensada para entrenadores, clientes y centros deportivos, con gestión, seguimiento, comunicación y experiencia de usuario moderna.</p><app-button label="Ver Elite Coach →" link="/aplicaciones/fitness-app" /></div>
-    </article>
-  </app-container>
-</section>
-
-<section class="section" aria-labelledby="solutions-title">
-  <app-container>
-    <header class="section-heading"><span class="section-label">Soluciones reales</span><h2 id="solutions-title">Ideas convertidas en soluciones digitales reales</h2></header>
+    <header class="section-heading">
+      <span class="section-label">Productos Terreta</span>
+      <h2 id="solutions-title">Software para negocios y sectores diferentes</h2>
+      <p>
+        Soluciones digitales que parten de problemas reales y se adaptan a cada modelo de negocio.
+      </p>
+    </header>
     <div class="solutions-grid">
       @for (solution of solutions; track solution.title) {
-        <article class="solution-card"><div class="solution-card__visual" [class]="'solution-card__visual solution-card__visual--' + solution.visual">
-          @if (solution.visual === 'elite') { <img src="assets/images/elite-coach.webp" width="900" height="900" loading="lazy" alt="Elite Coach App en un teléfono móvil"> }
-          @if (solution.visual === 'automation') { <div class="flow" aria-hidden="true"><i>CRM</i><span></span><i>IA</i><span></span><i>ERP</i></div> }
-          @if (solution.visual === 'dashboard') { <div class="mini-chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div> }
-        </div><div class="solution-card__body"><h3>{{ solution.title }}</h3><p>{{ solution.description }}</p></div></article>
+        <article class="solution-card">
+          <div
+            class="solution-card__visual"
+            [class]="'solution-card__visual solution-card__visual--' + solution.visual"
+          >
+            @if (solution.visual === 'elite') {
+              <img
+                src="assets/images/elite-coach.webp"
+                width="900"
+                height="900"
+                loading="lazy"
+                alt="Elite Coach App en un teléfono móvil"
+              />
+            }
+            @if (solution.visual === 'psychology') {
+              <div class="product-symbol" aria-hidden="true">Ψ</div>
+            }
+            @if (solution.visual === 'agro') {
+              <div class="agro-lines" aria-hidden="true">
+                <i></i><i></i><i></i><span>AGRO</span>
+              </div>
+            }
+          </div>
+          <div class="solution-card__body">
+            <small>{{ solution.sector }}</small>
+            <h3>{{ solution.title }}</h3>
+            <p>{{ solution.description }}</p>
+            @if (solution.link) {
+              <a [routerLink]="solution.link" [fragment]="solution.fragment"
+                >{{ solution.visual === 'agro' ? 'Conocer TerretaAgro' : 'Conocer producto' }} →</a
+              >
+            }
+          </div>
+        </article>
       }
+    </div>
+    <div class="catalog-tags" aria-label="Catálogo de productos">
+      <span>Elite Coach</span><span>Jessica Castejón Psicología</span><span>TerretaAgro</span
+      ><span>ContaTerra</span><span>TerretaRail</span>
+    </div>
+    <div class="products-action">
+      <app-button label="Ver todos los productos →" link="/productos" />
     </div>
   </app-container>
 </section>
 
-<section class="attribute-strip" aria-label="Atributos de Terreta"><app-container><div class="attribute-grid">@for (attribute of attributes; track attribute.title) { <div><strong>{{ attribute.title }}</strong><span>{{ attribute.description }}</span></div> }</div></app-container></section>
+<section class="attribute-strip" aria-label="Atributos de Terreta">
+  <app-container
+    ><div class="attribute-grid">
+      @for (attribute of attributes; track attribute.title) {
+        <div>
+          <strong>{{ attribute.title }}</strong
+          ><span>{{ attribute.description }}</span>
+        </div>
+      }
+    </div></app-container
+  >
+</section>
 
-<app-cta heading="¿Tienes una idea o proceso que quieres convertir en software?" description="Cuéntanos qué necesitas y te ayudamos a transformarlo en una solución digital clara, escalable y preparada para crecer." buttonLabel="Agendar diagnóstico gratuito →" />
+<app-cta
+  heading="¿Tienes una idea o proceso que quieres convertir en software?"
+  description="Cuéntanos qué necesitas y te ayudamos a transformarlo en una solución digital clara, escalable y preparada para crecer."
+  buttonLabel="Agendar diagnóstico gratuito →"
+/>

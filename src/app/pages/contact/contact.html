@@ -1,5 +1,174 @@
 <main>
-  <section class="contact-hero" aria-labelledby="contact-title"><app-container><div class="contact-hero__grid"><div><span class="eyebrow">Contacto · Alicante</span><h1 id="contact-title">Hablemos de tu proyecto</h1><p>Cuéntanos si necesitas desarrollar una aplicación, automatizar un proceso o aplicar inteligencia artificial en tu empresa. Te ayudaremos a ordenar la necesidad y valorar el enfoque adecuado.</p><div class="contact-points"><span><i aria-hidden="true">01</i>Contexto y objetivos</span><span><i aria-hidden="true">02</i>Necesidades y prioridades</span><span><i aria-hidden="true">03</i>Siguiente paso claro</span></div></div><div class="contact-location"><span class="section-label">Dónde trabajamos</span><strong>Alicante, España</strong><p>Desarrollamos soluciones tecnológicas para empresas y pymes desde Alicante.</p><div class="contact-location__links"><a href="mailto:terretasoftware@gmail.com">terretasoftware@gmail.com</a><a routerLink="/servicios">Ver servicios <span aria-hidden="true">→</span></a></div></div></div></app-container></section>
-
-  <section class="contact-content" aria-labelledby="form-title"><app-container><div class="contact-content__grid"><div><span class="section-label">Cuéntanos qué necesitas</span><h2 id="form-title">Información inicial del proyecto</h2><p>Estos datos nos permitirán entender mejor el punto de partida. El formulario incluye validación de frontend, pero el envío se conectará al backend en una fase posterior.</p><div class="privacy-note"><strong>Privacidad</strong><span>Solo solicitamos la información necesaria para valorar tu consulta.</span><a routerLink="/privacy-policy">Consultar la política de privacidad</a></div></div><form [formGroup]="contactForm" (ngSubmit)="submit()" novalidate><div class="field-row"><div class="field"><label for="name">Nombre <span aria-hidden="true">*</span></label><input id="name" type="text" formControlName="name" autocomplete="name" [attr.aria-invalid]="hasError('name')" aria-describedby="name-error">@if (hasError('name')) { <small id="name-error">Indica tu nombre.</small> }</div><div class="field"><label for="company">Empresa</label><input id="company" type="text" formControlName="company" autocomplete="organization"></div></div><div class="field-row"><div class="field"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" type="email" formControlName="email" autocomplete="email" [attr.aria-invalid]="hasError('email')" aria-describedby="email-error">@if (hasError('email')) { <small id="email-error">Introduce un email válido.</small> }</div><div class="field"><label for="phone">Teléfono</label><input id="phone" type="tel" formControlName="phone" autocomplete="tel" [attr.aria-invalid]="hasError('phone')" aria-describedby="phone-error">@if (hasError('phone')) { <small id="phone-error">Revisa el formato del teléfono.</small> }</div></div><div class="field"><label for="needs">Qué necesitas <span aria-hidden="true">*</span></label><textarea id="needs" rows="6" formControlName="needs" [attr.aria-invalid]="hasError('needs')" aria-describedby="needs-error" placeholder="Describe brevemente la idea, proceso o problema que quieres resolver."></textarea>@if (hasError('needs')) { <small id="needs-error">Cuéntanos algo más sobre tu necesidad.</small> }</div><div class="consent"><input id="privacy" type="checkbox" formControlName="privacy" [attr.aria-invalid]="hasError('privacy')" aria-describedby="privacy-error"><label for="privacy">He leído y acepto la <a routerLink="/privacy-policy">política de privacidad</a>. <span aria-hidden="true">*</span></label></div>@if (hasError('privacy')) { <small id="privacy-error" class="consent-error">Debes aceptar la política de privacidad.</small> }<button type="submit">Revisar solicitud <span aria-hidden="true">→</span></button>@if (readyNotice()) { <p class="form-notice" role="status"><strong>Los datos son válidos, pero no se han enviado.</strong> El envío online estará disponible cuando se conecte el backend del formulario.</p> }</form></div></app-container></section>
+  <section class="contact-hero" aria-labelledby="contact-title">
+    <app-container
+      ><div class="contact-hero__grid">
+        <div>
+          <span class="eyebrow">Contacto · Alicante</span>
+          <h1 id="contact-title">Hablemos de tu proyecto</h1>
+          <p>
+            Cuéntanos si necesitas desarrollar una aplicación, automatizar un proceso o aplicar
+            inteligencia artificial en tu empresa.
+          </p>
+        </div>
+        <div class="contact-location">
+          <span class="section-label">Dónde trabajamos</span><strong>Alicante, España</strong>
+          <p>Desarrollamos soluciones tecnológicas para empresas y pymes desde Alicante.</p>
+          <div class="contact-location__links">
+            <a href="mailto:terretasoftware@gmail.com">terretasoftware@gmail.com</a
+            ><a routerLink="/servicios">Ver servicios →</a>
+          </div>
+        </div>
+      </div></app-container
+    >
+  </section>
+  <section class="contact-content" aria-labelledby="form-title">
+    <app-container
+      ><div class="contact-content__grid">
+        <div>
+          <span class="section-label">Cuéntanos qué necesitas</span>
+          <h2 id="form-title">Información inicial del proyecto</h2>
+          <p>
+            Comparte el contexto básico de tu necesidad. Los datos se enviarán de forma segura para
+            valorar tu consulta.
+          </p>
+          <div class="privacy-note">
+            <strong>Privacidad</strong
+            ><span>Solo solicitamos la información necesaria para gestionar tu consulta.</span
+            ><a routerLink="/privacy-policy">Consultar la política de privacidad</a>
+          </div>
+        </div>
+        <form
+          [formGroup]="contactForm"
+          (ngSubmit)="submit()"
+          novalidate
+          aria-labelledby="form-title"
+        >
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Nombre *</label
+              ><input
+                id="name"
+                type="text"
+                formControlName="name"
+                autocomplete="name"
+                maxlength="100"
+                [attr.aria-invalid]="hasError('name')"
+                [attr.aria-describedby]="hasError('name') ? 'name-error' : null"
+              />
+              @if (hasError('name')) {
+                <small id="name-error">Indica tu nombre.</small>
+              }
+            </div>
+            <div class="field">
+              <label for="company">Empresa</label
+              ><input
+                id="company"
+                type="text"
+                formControlName="company"
+                autocomplete="organization"
+                maxlength="120"
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email *</label
+              ><input
+                id="email"
+                type="email"
+                formControlName="email"
+                autocomplete="email"
+                maxlength="254"
+                [attr.aria-invalid]="hasError('email')"
+                [attr.aria-describedby]="hasError('email') ? 'email-error' : null"
+              />
+              @if (hasError('email')) {
+                <small id="email-error">Introduce un email válido.</small>
+              }
+            </div>
+            <div class="field">
+              <label for="phone">Teléfono</label
+              ><input
+                id="phone"
+                type="tel"
+                formControlName="phone"
+                autocomplete="tel"
+                maxlength="20"
+                [attr.aria-invalid]="hasError('phone')"
+                [attr.aria-describedby]="hasError('phone') ? 'phone-error' : null"
+              />
+              @if (hasError('phone')) {
+                <small id="phone-error">Revisa el formato del teléfono.</small>
+              }
+            </div>
+          </div>
+          <div class="field">
+            <label for="needs">Qué necesitas *</label
+            ><textarea
+              id="needs"
+              rows="6"
+              formControlName="needs"
+              maxlength="3000"
+              [attr.aria-invalid]="hasError('needs')"
+              [attr.aria-describedby]="hasError('needs') ? 'needs-error' : null"
+              placeholder="Describe brevemente la idea, proceso o problema que quieres resolver."
+            ></textarea>
+            @if (hasError('needs')) {
+              <small id="needs-error">Cuéntanos algo más sobre tu necesidad.</small>
+            }
+          </div>
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Sitio web</label
+            ><input
+              id="website"
+              type="text"
+              formControlName="website"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
+          <div class="consent">
+            <input
+              id="privacy"
+              type="checkbox"
+              formControlName="privacy"
+              [attr.aria-invalid]="hasError('privacy')"
+              [attr.aria-describedby]="hasError('privacy') ? 'privacy-error' : null"
+            /><label for="privacy"
+              >He leído y acepto la <a routerLink="/privacy-policy">política de privacidad</a>.
+              *</label
+            >
+          </div>
+          @if (hasError('privacy')) {
+            <small id="privacy-error" class="consent-error"
+              >Debes aceptar la política de privacidad.</small
+            >
+          }
+          <button
+            type="submit"
+            [disabled]="contactForm.invalid || status() === 'loading'"
+            [attr.aria-busy]="status() === 'loading'"
+          >
+            @if (status() === 'loading') {
+              Enviando…
+            } @else {
+              Enviar solicitud →
+            }
+          </button>
+          <div class="form-feedback" aria-live="polite" aria-atomic="true">
+            @if (status() === 'success') {
+              <p class="form-notice form-notice--success" role="status">
+                Gracias. Hemos recibido tu mensaje y nos pondremos en contacto contigo.
+              </p>
+            }
+            @if (status() === 'error') {
+              <p class="form-notice form-notice--error" role="alert">
+                No hemos podido enviar el mensaje. Inténtalo de nuevo.
+              </p>
+            }
+          </div>
+        </form>
+      </div></app-container
+    >
+  </section>
 </main>

@@ -1,0 +1,255 @@
+<main>
+  <section class="products-hero" aria-labelledby="products-title">
+    <app-container
+      ><div class="products-hero__copy">
+        <span class="eyebrow">Productos Terreta</span>
+        <h1 id="products-title">Software creado para problemas reales.</h1>
+        <p>
+          Terreta no desarrolla software genérico. Analizamos procesos y construimos soluciones
+          digitales adaptadas a problemas reales de negocio, desde el fitness hasta la agricultura,
+          la contabilidad, el ferrocarril y los servicios profesionales.
+        </p>
+        <nav class="sector-nav" aria-label="Sectores del catálogo">
+          <a href="#elite-coach">Fitness</a><a href="#software-sectorial">Software sectorial</a
+          ><a href="#psicologia">Digitalización</a>
+        </nav>
+      </div>
+      <div class="catalog-map" aria-label="Cinco verticales de producto">
+        <span>FITNESS</span><span>AGRICULTURA</span><span>CONTABILIDAD</span><span>FERROVIARIO</span
+        ><span>PSICOLOGÍA</span>
+      </div></app-container
+    >
+  </section>
+
+  <section class="catalog-section featured" id="elite-coach" aria-labelledby="elite-heading">
+    <app-container
+      ><header class="catalog-heading">
+        <span>Producto destacado</span>
+        <p>Una plataforma con página de producto propia.</p>
+      </header>
+      <article class="featured-product">
+        <div class="featured-product__visual">
+          <img
+            src="assets/images/elite-coach.webp"
+            width="900"
+            height="900"
+            alt="Pantalla de acceso de Elite Coach"
+          />
+        </div>
+        <div class="product__content">
+          <span class="product__sector">Fitness · Entrenamiento</span>
+          <h2 id="elite-heading">Elite Coach</h2>
+          <p class="product__lead">
+            Plataforma desarrollada por Terreta para conectar entrenador y usuario y organizar la
+            prestación del servicio de entrenamiento.
+          </p>
+          <h3>El problema que resuelve</h3>
+          <p>
+            Centraliza un servicio que puede quedar disperso entre mensajes, hojas de cálculo y
+            notas cuando crece el número de clientes.
+          </p>
+          <h3>Capacidades verificadas</h3>
+          <ul>
+            <li>Gestión de clientes, rutinas y calendario.</li>
+            <li>Seguimiento de progreso y objetivos.</li>
+            <li>Planes de nutrición, recordatorios y comunicación.</li>
+          </ul>
+          <a class="product__cta" routerLink="/aplicaciones/fitness-app"
+            >Descubrir Elite Coach <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </article></app-container
+    >
+  </section>
+
+  <section
+    class="catalog-section sectorial"
+    id="software-sectorial"
+    aria-labelledby="sectorial-heading"
+  >
+    <app-container
+      ><header class="section-intro">
+        <span class="product__sector">Software sectorial</span>
+        <h2 id="sectorial-heading">Una lógica de producto para cada operativa</h2>
+        <p>
+          Soluciones concebidas alrededor del contexto y los procesos propios de sectores
+          diferentes.
+        </p>
+      </header>
+      <article class="agro-product" id="terreta-agro" aria-labelledby="agro-heading">
+        <div class="product__visual product__visual--agro">
+          <div class="agro-board" aria-label="Representación conceptual del software TerretaAgro">
+            <header>
+              <span>TERRETA<strong>AGRO</strong></span
+              ><small>Interfaz conceptual</small>
+            </header>
+            <div class="agro-board__summary">
+              <span><small>Áreas conectadas</small><strong>03</strong></span
+              ><span><small>Entorno</small><strong>Centralizado</strong></span>
+            </div>
+            <div class="agro-board__flow" aria-label="Campo, almacén y transporte">
+              <div>
+                <i aria-hidden="true">⌁</i><span><b>Campo</b><small>Actividad agraria</small></span>
+              </div>
+              <em aria-hidden="true">↓</em>
+              <div>
+                <i aria-hidden="true">□</i
+                ><span><b>Almacén</b><small>Operaciones organizadas</small></span>
+              </div>
+              <em aria-hidden="true">↓</em>
+              <div>
+                <i aria-hidden="true">→</i
+                ><span><b>Transporte</b><small>Camiones y operaciones</small></span>
+              </div>
+            </div>
+            <footer>
+              <small>Vista demostrativa · Sin datos de clientes</small
+              ><span><i></i><i></i><i></i></span>
+            </footer>
+          </div>
+        </div>
+        <div class="product__content">
+          <span class="product__sector">Agricultura · Almacenes · Logística</span>
+          <h3 id="agro-heading" class="product-title">TerretaAgro</h3>
+          <p class="product__lead">
+            Software de gestión para el sector agrario, desarrollado para centralizar operaciones
+            agrícolas, almacenes y transporte en un mismo entorno digital.
+          </p>
+          <p>
+            Reúne una operativa que puede quedar dispersa entre papel, hojas de cálculo y gestión
+            manual.
+          </p>
+          <div class="agro-areas" aria-label="Áreas confirmadas de TerretaAgro">
+            <section>
+              <span>01</span>
+              <h4>Campo</h4>
+              <p>Control y gestión de la actividad agraria.</p>
+            </section>
+            <section>
+              <span>02</span>
+              <h4>Almacén</h4>
+              <p>Gestión de operaciones relacionadas con almacenes.</p>
+            </section>
+            <section>
+              <span>03</span>
+              <h4>Transporte</h4>
+              <p>Gestión relacionada con camiones y transporte.</p>
+            </section>
+          </div>
+          <a class="product__cta" routerLink="/contacto"
+            >Hablar sobre TerretaAgro <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </article>
+      <div class="emerging-products">
+        <article
+          class="emerging-product emerging-product--conta"
+          id="conta-terra"
+          aria-labelledby="conta-heading"
+        >
+          <div class="emerging-product__visual" aria-hidden="true">
+            <div class="ledger"><span></span><span></span><span></span><i></i></div>
+          </div>
+          <div>
+            <span class="product__sector">Contabilidad · Gestión empresarial</span>
+            <h3 id="conta-heading">ContaTerra</h3>
+            <p class="product__lead">
+              Solución digital orientada a simplificar y centralizar procesos de contabilidad y
+              gestión empresarial.
+            </p>
+            <p>
+              Un producto de Terreta concebido para abordar la organización de procesos
+              empresariales desde un entorno digital propio.
+            </p>
+            <a class="product__cta" routerLink="/contacto"
+              >Consultar ContaTerra <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </article>
+        <article
+          class="emerging-product emerging-product--rail"
+          id="terreta-rail"
+          aria-labelledby="rail-heading"
+        >
+          <div>
+            <span class="product__sector">Ferroviario · Operaciones · Mantenimiento</span>
+            <h3 id="rail-heading">TerretaRail</h3>
+            <p class="product__lead">
+              Solución digital desarrollada por Terreta para la gestión y digitalización de procesos
+              relacionados con operaciones y mantenimiento en el sector ferroviario.
+            </p>
+            <p>
+              Su presentación pública se limita a este propósito general hasta disponer de
+              capacidades verificadas adicionales.
+            </p>
+            <a class="product__cta" routerLink="/contacto"
+              >Consultar TerretaRail <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="emerging-product__visual" aria-hidden="true">
+            <div class="rail-line">
+              <span></span><span></span><i>OPERACIONES</i><b>MANTENIMIENTO</b>
+            </div>
+          </div>
+        </article>
+      </div>
+    </app-container>
+  </section>
+
+  <section
+    class="catalog-section professional"
+    id="psicologia"
+    aria-labelledby="psychology-heading"
+  >
+    <app-container
+      ><header class="catalog-heading">
+        <span>Proyectos · Digitalización</span>
+        <p>Tecnología aplicada a un negocio profesional.</p>
+      </header>
+      <article class="professional-product">
+        <div class="product__visual product__visual--psychology">
+          <div class="calm-card"><i>Ψ</i><span>J. CASTEJÓN</span><small>PSICOLOGÍA</small></div>
+        </div>
+        <div class="product__content">
+          <span class="product__sector">Psicología · Servicios profesionales</span>
+          <h2 id="psychology-heading">Jessica Castejón Psicología</h2>
+          <p class="product__lead">
+            Una solución digital desarrollada por Terreta para trasladar un servicio profesional de
+            psicología a un entorno web claro y accesible.
+          </p>
+          <h3>El problema que resuelve</h3>
+          <p>
+            Ordena la presencia digital del negocio, comunica su propuesta profesional y ofrece un
+            punto público de información y contacto.
+          </p>
+          <h3>Capacidades verificadas</h3>
+          <ul>
+            <li>Presentación estructurada del servicio profesional.</li>
+            <li>Acceso público desde diferentes dispositivos.</li>
+            <li>Canal digital de información y contacto.</li>
+          </ul>
+          <a
+            class="product__cta"
+            href="https://jcastejonpsicologia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visitar web pública <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </article></app-container
+    >
+  </section>
+  <section class="catalog-close">
+    <app-container
+      ><span>Software adaptado al negocio</span>
+      <h2>¿Necesitas software para tu empresa?</h2>
+      <p>
+        Cuéntanos qué proceso necesitas digitalizar y estudiaremos cómo convertirlo en una solución
+        clara y útil.
+      </p>
+      <a routerLink="/contacto"
+        >Hablar con Terreta <span aria-hidden="true">→</span></a
+      ></app-container
+    >
+  </section>
+</main>
