@@ -3,12 +3,13 @@
   "hosting": {
     "public": "dist/terreta-web/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true,
+    "trailingSlash": false,
     "rewrites": [
       {
         "source": "/api/contact",
         "function": { "functionId": "contact", "region": "europe-west1" }
-      },
-      { "source": "**", "destination": "/index.html" }
+      }
     ]
   }
 }

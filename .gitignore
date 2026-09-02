@@ -42,6 +42,8 @@ functions/.secret.local
 testem.log
 /typings
 __screenshots__/
+/.firebase/
+/firebase-debug.log
 
 # System files
 .DS_Store

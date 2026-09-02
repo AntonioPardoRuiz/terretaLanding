@@ -5,7 +5,7 @@
 `public/runtime-config.json` se carga en tiempo de ejecución y no debe contener secretos.
 
 - `contactEndpoint`: configurado como `/api/contact` para usar la reescritura de Firebase Hosting.
-- `crmUrl`: pendiente. Debe ser la URL HTTPS real del CRM independiente de Terreta.
+- `crmUrl`: usa como valor seguro por defecto `https://terretacrm.web.app`, el CRM independiente de Terreta. Puede sobrescribirse con otra URL HTTPS pública si fuera necesario.
 
 ## Secretos del backend
 
@@ -19,4 +19,4 @@ Ninguno de estos valores debe guardarse en el repositorio ni en la configuració
 
 ## Activación
 
-Antes de desplegar, configurar los tres secretos, confirmar `crmUrl` y verificar el dominio remitente en Resend. Esta misión no realiza ningún despliegue.
+Antes de desplegar, configurar los tres secretos y verificar el dominio remitente en Resend. Esta misión no realiza ningún despliegue.

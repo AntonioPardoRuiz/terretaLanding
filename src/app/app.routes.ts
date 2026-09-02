@@ -11,7 +11,7 @@ export const routes: Routes = [
         description:
           'Desarrollamos software a medida, aplicaciones web, apps móviles, automatizaciones e inteligencia artificial para empresas que quieren crecer con tecnología clara, moderna y útil.',
         canonicalPath: '/',
-        image: 'https://realterretaia.com/assets/brand/terreta-logo.png',
+        image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
   },
@@ -36,7 +36,7 @@ export const routes: Routes = [
         description:
           'Descubre el catálogo de software de Terreta: soluciones para fitness, agricultura, contabilidad, sector ferroviario y servicios profesionales.',
         canonicalPath: '/productos',
-        image: 'https://realterretaia.com/assets/brand/terreta-logo.png',
+        image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
   },
@@ -50,7 +50,7 @@ export const routes: Routes = [
         description:
           'Elite Coach organiza rutinas, seguimiento, nutrición y clientes en una plataforma para entrenadores y gimnasios desarrollada por Terreta.',
         canonicalPath: '/aplicaciones/fitness-app',
-        image: 'https://realterretaia.com/assets/images/elite-coach.webp',
+        image: 'https://www.realterretaia.com/assets/images/elite-coach.webp',
       },
     },
   },
@@ -65,7 +65,7 @@ export const routes: Routes = [
         description:
           'Conoce cómo organizamos proyectos de software en Terreta: planificación, hitos, desarrollo iterativo, validación y seguimiento continuo.',
         canonicalPath: '/como-trabajamos',
-        image: 'https://realterretaia.com/assets/brand/terreta-logo.png',
+        image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
   },
@@ -78,7 +78,7 @@ export const routes: Routes = [
         description:
           'Conoce Terreta, empresa de Alicante especializada en software a medida, aplicaciones, automatización e inteligencia artificial para empresas.',
         canonicalPath: '/nosotros',
-        image: 'https://realterretaia.com/assets/brand/terreta-logo.png',
+        image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
   },
@@ -91,7 +91,7 @@ export const routes: Routes = [
         description:
           'Contacta con Terreta para hablar sobre software a medida, aplicaciones, automatización o inteligencia artificial para tu empresa.',
         canonicalPath: '/contacto',
-        image: 'https://realterretaia.com/assets/brand/terreta-logo.png',
+        image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
   },

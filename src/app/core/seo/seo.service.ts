@@ -13,7 +13,7 @@ export class SeoService {
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
   private readonly title = inject(Title);
-  private readonly siteUrl = 'https://realterretaia.com';
+  private readonly siteUrl = 'https://www.realterretaia.com';
   private listening = false;
 
   listenToRouteChanges(): void {
