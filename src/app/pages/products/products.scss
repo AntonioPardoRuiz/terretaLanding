@@ -464,6 +464,31 @@
   color: #806c91;
   letter-spacing: 0.25em;
 }
+.crm-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1.25rem;
+}
+.crm-product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid var(--color-border);
+  border-radius: 1.2rem;
+  background: var(--color-surface-soft);
+}
+.crm-product h2 {
+  margin: 0.65rem 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.crm-product p {
+  color: var(--color-text-muted);
+  line-height: 1.67;
+}
+.crm-product .product__cta {
+  margin-top: auto;
+}
 .catalog-close {
   padding: clamp(4rem, 8vw, 6rem) 0;
   background: linear-gradient(110deg, #1455e9, #1674ff 65%, #08a9ee);

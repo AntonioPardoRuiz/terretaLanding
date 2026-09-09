@@ -7,16 +7,16 @@
         <p>
           Terreta no desarrolla software genérico. Analizamos procesos y construimos soluciones
           digitales adaptadas a problemas reales de negocio, desde el fitness hasta la agricultura,
-          la contabilidad, el ferrocarril y los servicios profesionales.
+          la contabilidad, el ferrocarril, la gestión de clientes y los servicios profesionales.
         </p>
         <nav class="sector-nav" aria-label="Sectores del catálogo">
           <a href="#elite-coach">Fitness</a><a href="#software-sectorial">Software sectorial</a
-          ><a href="#psicologia">Digitalización</a>
+          ><a href="#psicologia">Digitalización</a><a href="#crm">CRM</a>
         </nav>
       </div>
-      <div class="catalog-map" aria-label="Cinco verticales de producto">
+      <div class="catalog-map" aria-label="Sectores de producto">
         <span>FITNESS</span><span>AGRICULTURA</span><span>CONTABILIDAD</span><span>FERROVIARIO</span
-        ><span>PSICOLOGÍA</span>
+        ><span>PSICOLOGÍA</span><span>CRM</span><span>CRMHEALTH</span>
       </div></app-container
     >
   </section>
@@ -238,6 +238,38 @@
         </div>
       </article></app-container
     >
+  </section>
+  <section class="catalog-section" id="crm" aria-labelledby="crm-heading">
+    <app-container>
+      <header class="catalog-heading">
+        <span>CRM · Gestión de clientes</span>
+        <p>Productos Terreta para tu negocio.</p>
+      </header>
+      <div class="crm-products">
+        <article class="crm-product" aria-labelledby="crm-heading">
+          <span class="product__sector">Gestión empresarial</span>
+          <h2 id="crm-heading">Terreta CRM</h2>
+          <p>Una solución de Terreta para la gestión de la relación con los clientes.</p>
+          <a class="product__cta" routerLink="/contacto">
+            Consultar Terreta CRM <span aria-hidden="true">→</span>
+          </a>
+        </article>
+        <article class="crm-product" id="crmhealth" aria-labelledby="crmhealth-heading">
+          <span class="product__sector">CRMHealth · Demo disponible</span>
+          <h2 id="crmhealth-heading">CRMHealth</h2>
+          <p>Conoce CRMHealth y explora la aplicación en su versión de demostración.</p>
+          <a
+            class="product__cta"
+            href="https://crmhealth-demo-20260908.web.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Probar la aplicación CRMHealth (abre en una pestaña nueva)"
+          >
+            Probar la aplicación <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </app-container>
   </section>
   <section class="catalog-close">
     <app-container
