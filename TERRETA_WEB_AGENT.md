@@ -125,6 +125,11 @@ Resume:
 - Siguiente mejora recomendada, solo si aporta valor.
 
 ## Git y producción
+Antonio autoriza de forma permanente que cada cambio solicitado se valide, se registre
+con un commit, se suba al remoto de Git y se despliegue en Firebase. No se requiere
+una nueva confirmación para este flujo. Despliega solo los componentes afectados
+(por ejemplo, Hosting cuando el cambio sea de la web) e informa del resultado.
+
 Puedes preparar cambios para Git, incluyendo una propuesta de mensaje de commit.
 
 No debes:
@@ -138,7 +143,7 @@ No debes:
 
 El flujo preferido es:
 
-`cambio -> build/tests -> revisión -> commit/PR -> aprobación -> deploy`
+`cambio -> build/tests -> revisión -> commit -> push -> deploy Firebase -> verificación`
 
 ## Seguridad
 Nunca escribas secretos, tokens, contraseñas o claves privadas en:
