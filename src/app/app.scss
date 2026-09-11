@@ -2,3 +2,28 @@
 main { flex: 1; }
 .skip-link { position: fixed; top: .75rem; left: .75rem; z-index: 2000; padding: .75rem 1rem; border-radius: var(--radius-sm); background: var(--color-primary); color: var(--color-white); font-weight: 700; transform: translateY(-150%); transition: transform var(--transition-fast); }
 .skip-link:focus { transform: translateY(0); }
+
+.whatsapp-link {
+  position: fixed;
+  right: calc(1rem + env(safe-area-inset-right, 0px));
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 900;
+  display: inline-flex;
+  min-height: 3.5rem;
+  align-items: center;
+  gap: .65rem;
+  padding: .85rem 1.15rem;
+  border-radius: 999px;
+  background: #087f45;
+  color: #fff;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 20%);
+  font-weight: 700;
+  text-decoration: none;
+}
+.whatsapp-link svg { width: 1.6rem; height: 1.6rem; flex-shrink: 0; }
+.whatsapp-link:hover { background: #066637; }
+.whatsapp-link:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 4px; }
+@media (max-width: 40rem) {
+  .whatsapp-link { width: 3.5rem; justify-content: center; padding: .85rem; }
+  .whatsapp-link span { display: none; }
+}
