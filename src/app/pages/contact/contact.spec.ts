@@ -101,4 +101,22 @@ describe('ContactComponent', () => {
       )?.disabled,
     ).toBe(false);
   });
+  it('preserves the form when the server does not confirm delivery', () => {
+    const fixture = TestBed.createComponent(ContactComponent);
+    fixture.componentInstance.contactForm.setValue(validValue);
+    fixture.componentInstance.submit();
+    TestBed.inject(HttpTestingController).expectOne('/api/contact').flush({ ok: false });
+    expect(fixture.componentInstance.status()).toBe('error');
+    expect(fixture.componentInstance.contactForm.getRawValue()).toEqual(validValue);
+  });
+
+  it('trims fields before validating and submitting', () => {
+    const fixture = TestBed.createComponent(ContactComponent);
+    fixture.componentInstance.contactForm.setValue({ ...validValue, email: ' test@example.com ' });
+    fixture.componentInstance.submit();
+    const request = TestBed.inject(HttpTestingController).expectOne('/api/contact');
+    expect(request.request.body.email).toBe('test@example.com');
+    request.flush({ ok: true });
+  });
+
 });

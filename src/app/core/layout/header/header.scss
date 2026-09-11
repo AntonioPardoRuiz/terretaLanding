@@ -1,3 +1,6 @@
+.header > app-container {
+  width: min(100% - (2 * var(--page-gutter)), 90rem);
+}
 .header {
   position: sticky;
   top: 0;
@@ -15,6 +18,7 @@
 .brand {
   display: inline-flex;
   width: 11rem;
+  flex-shrink: 0;
   align-items: center;
   text-decoration: none;
 }
@@ -73,7 +77,7 @@
   margin: 0.3rem auto;
   background: var(--color-heading);
 }
-@media (max-width: 68rem) {
+@media (max-width: 82rem) {
   .menu-button {
     display: block;
   }
@@ -113,7 +117,7 @@
   opacity: 0.55;
   white-space: nowrap;
 }
-@media (min-width: 68.01rem) {
+@media (min-width: 82.01rem) {
   .navigation .team-access {
     order: 2;
     margin-left: -0.5rem;

@@ -33,6 +33,9 @@
           >Cómo trabajamos</a
         >
         <a routerLink="/nosotros" routerLinkActive="active" (click)="closeMenu()">Nosotros</a>
+        <a routerLink="/trabajar-con-nosotros" routerLinkActive="active" (click)="closeMenu()"
+          >Trabajar con nosotros</a
+        >
         <span class="navigation__cta"><app-button label="Contáctanos" link="/contacto" /></span>
         @if (crmUrl(); as url) {
           <a

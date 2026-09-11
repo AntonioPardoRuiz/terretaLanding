@@ -1,6 +1,8 @@
 const ALLOWED_ORIGINS = new Set([
   'https://realterretaia.com',
   'https://www.realterretaia.com',
+  'https://terreta-web-prod.web.app',
+  'https://terreta-web-prod.firebaseapp.com',
   'http://localhost:4200',
 ]);
 const limits = { name: 100, company: 120, email: 254, phone: 20, needs: 3000, website: 0 };

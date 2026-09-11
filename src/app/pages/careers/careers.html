@@ -1,0 +1,189 @@
+<main>
+  <section class="contact-hero" aria-labelledby="careers-title">
+    <app-container>
+      <div class="contact-hero__grid">
+        <div>
+          <span class="eyebrow">Talento · Terreta</span>
+          <h1 id="careers-title">Trabajar con nosotros</h1>
+          <p>
+            Nos interesa conocer a personas con ganas de crear software útil. Cuéntanos qué sabes
+            hacer, qué te gustaría aprender y cómo te gustaría aportar.
+          </p>
+          <div class="contact-points">
+            <span>Desarrollo de software</span><span>Automatización e IA</span
+            ><span>Diseño y producto</span>
+          </div>
+        </div>
+        <div class="contact-location">
+          <span class="section-label">Tu próximo paso</span>
+          <strong>Queremos conocerte</strong>
+          <p>
+            Envíanos tu candidatura y la valoraremos para oportunidades que encajen con tu perfil.
+          </p>
+          <div class="contact-location__links"><a routerLink="/nosotros">Conoce Terreta →</a></div>
+        </div>
+      </div>
+    </app-container>
+  </section>
+  <section class="contact-content" aria-labelledby="application-title">
+    <app-container>
+      <div class="contact-content__grid">
+        <div>
+          <span class="section-label">Candidatura espontánea</span>
+          <h2 id="application-title">Cuéntanos sobre ti</h2>
+          <p>
+            Adjunta tu CV en PDF y, si quieres, añade unas líneas sobre tu experiencia e intereses.
+            Los campos con * son obligatorios.
+          </p>
+          <div class="privacy-note">
+            <strong>Tus datos, para tu candidatura</strong
+            ><span
+              >Usaremos tu información y tu CV para valorar tu candidatura y contactar
+              contigo.</span
+            ><a routerLink="/privacy-policy" fragment="candidaturas"
+              >Información sobre privacidad</a
+            >
+          </div>
+        </div>
+        <form
+          [formGroup]="form"
+          (ngSubmit)="submit()"
+          novalidate
+          aria-labelledby="application-title"
+        >
+          <fieldset [disabled]="status() === 'loading'">
+            <legend class="visually-hidden">Datos de tu candidatura</legend>
+            <div class="field">
+              <label for="candidate-name">Nombre y apellidos *</label
+              ><input
+                id="candidate-name"
+                formControlName="name"
+                autocomplete="name"
+                maxlength="100"
+                [attr.aria-invalid]="hasError('name')"
+                [attr.aria-describedby]="hasError('name') ? 'candidate-name-error' : null"
+              />
+              @if (hasError('name')) {
+                <small id="candidate-name-error"
+                  >Indica tu nombre y apellidos (entre 2 y 100 caracteres).</small
+                >
+              }
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="candidate-email">Email *</label
+                ><input
+                  id="candidate-email"
+                  type="email"
+                  formControlName="email"
+                  autocomplete="email"
+                  maxlength="254"
+                  [attr.aria-invalid]="hasError('email')"
+                  [attr.aria-describedby]="hasError('email') ? 'candidate-email-error' : null"
+                />
+                @if (hasError('email')) {
+                  <small id="candidate-email-error">Introduce un email válido.</small>
+                }
+              </div>
+              <div class="field">
+                <label for="candidate-phone">Teléfono</label
+                ><input
+                  id="candidate-phone"
+                  type="tel"
+                  formControlName="phone"
+                  autocomplete="tel"
+                  maxlength="20"
+                  [attr.aria-invalid]="hasError('phone')"
+                  [attr.aria-describedby]="hasError('phone') ? 'candidate-phone-error' : null"
+                />
+                @if (hasError('phone')) {
+                  <small id="candidate-phone-error">Revisa el formato del teléfono.</small>
+                }
+              </div>
+            </div>
+            <div class="field">
+              <label for="candidate-needs">Presentación (opcional)</label
+              ><textarea
+                id="candidate-needs"
+                formControlName="needs"
+                maxlength="3000"
+                rows="5"
+                placeholder="Tu experiencia, qué te interesa y enlaces a tu portfolio o proyectos."
+                [attr.aria-invalid]="hasError('needs')"
+                [attr.aria-describedby]="hasError('needs') ? 'candidate-needs-error' : null"
+              ></textarea>
+              @if (hasError('needs')) {
+                <small id="candidate-needs-error"
+                  >La presentación puede tener hasta 3.000 caracteres.</small
+                >
+              }
+            </div>
+            <div class="field cv-field">
+              <label for="cv">Currículum *</label>
+              <p id="cv-help" class="field-help">Un archivo PDF de hasta 2 MB.</p>
+              <input
+                id="cv"
+                type="file"
+                accept=".pdf,application/pdf"
+                (change)="selectFile($event)"
+                [attr.aria-invalid]="!!fileError()"
+                [attr.aria-describedby]="fileError() ? 'cv-help cv-error' : 'cv-help'"
+              />
+              @if (file(); as cv) {
+                <p class="file-selected" role="status">Seleccionado: {{ cv.name }}</p>
+              }
+              @if (fileError()) {
+                <small id="cv-error" role="alert">{{ fileError() }}</small>
+              }
+            </div>
+            <div class="honeypot" aria-hidden="true">
+              <label for="candidate-website">Sitio web</label
+              ><input
+                id="candidate-website"
+                formControlName="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+            <div class="consent">
+              <input
+                id="candidate-privacy"
+                type="checkbox"
+                formControlName="privacy"
+                [attr.aria-invalid]="hasError('privacy')"
+                [attr.aria-describedby]="hasError('privacy') ? 'candidate-privacy-error' : null"
+              /><label for="candidate-privacy"
+                >He leído la
+                <a routerLink="/privacy-policy" fragment="candidaturas">política de privacidad</a> y
+                acepto el tratamiento de mis datos y CV para valorar mi candidatura. *</label
+              >
+            </div>
+            @if (hasError('privacy')) {
+              <small id="candidate-privacy-error" class="consent-error"
+                >Debes aceptar el tratamiento de tus datos para enviar la candidatura.</small
+              >
+            }
+            <button
+              type="submit"
+              [disabled]="status() === 'loading'"
+              [attr.aria-busy]="status() === 'loading'"
+            >
+              {{ status() === 'loading' ? 'Enviando candidatura…' : 'Enviar candidatura →' }}
+            </button>
+          </fieldset>
+          <div class="form-feedback" aria-live="polite" aria-atomic="true">
+            @if (status() === 'success') {
+              <p class="form-notice form-notice--success" role="status">
+                Gracias. Tu candidatura y tu CV se han enviado correctamente. Contactaremos contigo
+                si tu perfil encaja con una oportunidad.
+              </p>
+            }
+            @if (status() === 'error') {
+              <p class="form-notice form-notice--error" role="alert">{{ error() }}</p>
+            }
+          </div>
+        </form>
+      </div>
+    </app-container>
+  </section>
+</main>

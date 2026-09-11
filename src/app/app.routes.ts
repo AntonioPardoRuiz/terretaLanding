@@ -96,6 +96,18 @@ export const routes: Routes = [
     },
   },
   {
+    path: 'trabajar-con-nosotros',
+    loadComponent: () => import('./pages/careers/careers').then((c) => c.CareersComponent),
+    data: {
+      seo: {
+        title: 'Trabajar con nosotros | Envía tu CV | Terreta',
+        description:
+          'Conoce Terreta y envíanos tu candidatura. Buscamos conocer talento en desarrollo de software, automatización, inteligencia artificial y diseño.',
+        canonicalPath: '/trabajar-con-nosotros',
+      },
+    },
+  },
+  {
     path: 'privacy-policy',
     loadComponent: () => import('./pages/privacy/privacy').then((c) => c.PrivacyComponent),
     data: {

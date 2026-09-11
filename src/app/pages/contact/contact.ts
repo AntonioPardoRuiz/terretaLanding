@@ -43,6 +43,10 @@ export class ContactComponent {
 
   submit(): void {
     if (this.status() === 'loading') return;
+    for (const key of ['name', 'company', 'email', 'phone', 'needs', 'website'] as const) {
+      const control = this.contactForm.controls[key];
+      control.setValue(control.value.trim());
+    }
     this.submitted.set(true);
     this.status.set('idle');
     if (this.contactForm.invalid) {

@@ -8,7 +8,7 @@ export interface PublicRuntimeConfig {
 
 export const CRM_URL = 'https://terretacrm.web.app';
 
-const DEFAULT_CONFIG: PublicRuntimeConfig = { contactEndpoint: '/api/contact', crmUrl: CRM_URL };
+const DEFAULT_CONFIG: PublicRuntimeConfig = { contactEndpoint: 'https://terreta-contact.terretasoftware.workers.dev/', crmUrl: CRM_URL };
 
 @Injectable({ providedIn: 'root' })
 export class RuntimeConfigService {
@@ -29,7 +29,7 @@ export class RuntimeConfigService {
         crmUrl: this.validExternalUrl(candidate.crmUrl) ?? DEFAULT_CONFIG.crmUrl,
       });
     } catch {
-      /* Safe defaults keep contact same-origin and preserve the official public CRM URL. */
+      /* Defaults preserve the contact Worker and the official public CRM URL. */
     }
   }
 

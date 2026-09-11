@@ -1,3 +1,3 @@
 {
-  "contactEndpoint": "/api/contact"
+  "contactEndpoint": "https://terreta-contact.terretasoftware.workers.dev/"
 }
