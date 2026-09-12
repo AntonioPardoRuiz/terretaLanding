@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../../shared/ui/button/button';
 import { ContainerComponent } from '../../shared/ui/container/container';
 import { CtaComponent } from '../../shared/ui/cta/cta';
 
 @Component({
   selector: 'app-outsourcing',
-  imports: [ButtonComponent, ContainerComponent, CtaComponent],
+  imports: [ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
   templateUrl: './outsourcing.html',
   styleUrl: './outsourcing.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

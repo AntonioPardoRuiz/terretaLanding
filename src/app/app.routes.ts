@@ -71,9 +71,9 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/outsourcing/outsourcing').then((c) => c.OutsourcingComponent),
     data: {
       seo: {
-        title: 'Outsourcing | Equipo 100 % español y tarifas de lanzamiento | Terreta',
+        title: 'Outsourcing | Equipo en España y desarrollo propio | Terreta',
         description:
-          'Externaliza tu desarrollo con un equipo 100 % español. Bolsas de 40, 80 y 160 horas desde 25 €/h en la bolsa de 160 h, sin IVA. Presupuesto sin compromiso.',
+          'Equipo en España: desarrollamos sin externalizar ni subcontratar a terceros. Bolsas desde 25 €/h en la de 160 h, sin IVA. Presupuesto sin compromiso.',
         canonicalPath: '/outsourcing',
       },
     },

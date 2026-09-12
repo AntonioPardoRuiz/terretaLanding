@@ -23,4 +23,4 @@ Tras la petición de reducir los precios para captar clientes, se implementan im
 
 Son una decisión comercial propuesta para Terreta, no tarifas extraídas de las consultoras ni una media de mercado. No se ha evaluado la rentabilidad: no se dispone del coste interno del equipo. La página explica el carácter orientativo, las exclusiones y la necesidad de concretar el presupuesto según alcance, complejidad y perfiles. Los ejemplos por proyecto se calculan a partir de esas mismas bolsas, sin garantizar que un tipo de producto completo quepa en esas horas.
 
-La afirmación «Equipo 100 % español» procede de la indicación explícita del usuario en esta tarea. No se añaden certificaciones, tamaño del equipo ni promesas de disponibilidad no facilitadas.
+El usuario aclara que el equipo trabaja desde España y que los desarrollos se realizan internamente, sin externalizarlos. La web utiliza «Equipo en España» y explica que no se subcontratan a terceros; no se hace una afirmación sobre la nacionalidad del equipo. No se añaden certificaciones, tamaño del equipo ni promesas de disponibilidad no facilitadas.
