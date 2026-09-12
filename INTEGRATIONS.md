@@ -71,8 +71,11 @@ los tramos con sus fechas, sin un precio vigente fijado durante el prerenderizad
 
 ### Imagen y contenido de Power BI
 
-El icono local `public/assets/images/power-bi.svg` procede, sin modificaciones, de
-https://github.com/microsoft/PowerBI-Icons/blob/main/SVG/Power-BI.svg (Microsoft).
+El icono mostrado `public/assets/images/power-bi.png` procede, sin modificaciones, de
+https://github.com/microsoft/PowerBI-Icons/blob/main/PNG/Power-BI.png (Microsoft).
+La versión SVG anterior se conserva como recurso. Los enlaces al índice, contenido
+e inscripción usan `/cursos` con fragmentos para evitar que `<base href="/">`
+los resuelva hacia la portada.
 Contenido bajo CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.
 Power BI es una marca de Microsoft. El curso lo organiza Terreta.
 Referencias del temario:

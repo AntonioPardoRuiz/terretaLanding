@@ -9,7 +9,7 @@
       <article class="course-card" aria-labelledby="power-bi-title">
         <div>
           <figure class="power-bi-image">
-            <img src="assets/images/power-bi.svg" width="112" height="112" alt="Power BI" />
+            <img src="/assets/images/power-bi.png" width="112" height="112" alt="Power BI" />
             <figcaption>
               Microsoft Power BI<small
                 >Icono de <a href="https://github.com/microsoft/PowerBI-Icons">Microsoft</a> ·
@@ -27,6 +27,32 @@
             <span>10 horas</span><span>Máximo 30 plazas</span
             ><span>Inicio: <time datetime="2026-11-01">1 de noviembre de 2026</time></span>
           </div>
+          <nav class="course-index" aria-label="Índice de contenidos del curso">
+            <h3>Índice de contenidos</h3>
+            <ol>
+              <li>
+                <a routerLink="/cursos" fragment="instalacion">Instalación y primeros pasos</a>
+              </li>
+              <li><a routerLink="/cursos" fragment="datos">Conexión e importación de datos</a></li>
+              <li>
+                <a routerLink="/cursos" fragment="power-query"
+                  >Limpieza y transformación con Power Query</a
+                >
+              </li>
+              <li><a routerLink="/cursos" fragment="modelado">Modelado y relaciones</a></li>
+              <li>
+                <a routerLink="/cursos" fragment="informes">Diseño de informes interactivos</a>
+              </li>
+              <li>
+                <a routerLink="/cursos" fragment="metricas"
+                  >Creación y gestión de métricas con DAX</a
+                >
+              </li>
+              <li>
+                <a routerLink="/cursos" fragment="publicacion">Publicación y entrega del informe</a>
+              </li>
+            </ol>
+          </nav>
         </div>
         <div class="course-price">
           <h3>Cuatro tramos de inscripción</h3>
@@ -74,13 +100,19 @@
           <p>
             Última sesión, lunes 16: de 10:00 a 11:00 o de 18:00 a 19:00, según el turno elegido.
           </p>
-          <a class="course-link" href="#inscripcion">Solicitar inscripción →</a>
+          <div class="course-actions">
+            <a class="course-link" routerLink="/cursos" fragment="contenido"
+              >Información del curso →</a
+            ><a class="course-link" routerLink="/cursos" fragment="inscripcion"
+              >Solicitar inscripción →</a
+            >
+          </div>
         </div>
       </article>
       <p class="upcoming">Próximamente ampliaremos el catálogo con nuevos cursos.</p>
     </app-container>
   </section>
-  <section class="syllabus" aria-labelledby="syllabus-title">
+  <section id="contenido" class="syllabus" aria-labelledby="syllabus-title">
     <app-container>
       <span class="section-label">De cero a tu primer informe · 10 horas</span>
       <h2 id="syllabus-title">Contenido del curso</h2>
@@ -89,7 +121,7 @@
         curso.
       </p>
       <ol class="syllabus-list">
-        <li>
+        <li id="instalacion">
           <div class="module-heading">
             <h3>Instalación y primeros pasos</h3>
             <span>1 h</span>
@@ -99,7 +131,7 @@
             Diferencias entre Desktop y el servicio Power BI.
           </p>
         </li>
-        <li>
+        <li id="datos">
           <div class="module-heading">
             <h3>Conexión e importación de datos</h3>
             <span>1,5 h</span>
@@ -109,7 +141,7 @@
             Organización de las fuentes del ejercicio.
           </p>
         </li>
-        <li>
+        <li id="power-query">
           <div class="module-heading">
             <h3>Limpieza y transformación con Power Query</h3>
             <span>1,5 h</span>
@@ -119,7 +151,7 @@
             y combinación de consultas.
           </p>
         </li>
-        <li>
+        <li id="modelado">
           <div class="module-heading">
             <h3>Modelado y relaciones</h3>
             <span>1,5 h</span>
@@ -129,7 +161,7 @@
             modelo en estrella y a la tabla de fechas.
           </p>
         </li>
-        <li>
+        <li id="informes">
           <div class="module-heading">
             <h3>Diseño de informes interactivos</h3>
             <span>1,5 h</span>
@@ -139,7 +171,7 @@
             pautas de diseño para presentar la información con claridad.
           </p>
         </li>
-        <li>
+        <li id="metricas">
           <div class="module-heading">
             <h3>Creación y gestión de métricas con DAX</h3>
             <span>2 h</span>
@@ -150,7 +182,7 @@
             y validación de las métricas.
           </p>
         </li>
-        <li>
+        <li id="publicacion">
           <div class="module-heading">
             <h3>Publicación y entrega del informe</h3>
             <span>1 h</span>

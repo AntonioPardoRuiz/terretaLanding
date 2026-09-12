@@ -28,6 +28,21 @@ describe('CoursesComponent', () => {
     }).compileComponents();
   });
   afterEach(() => TestBed.inject(HttpTestingController).verify());
+  it('keeps course information, index and registration links on the courses route', () => {
+    const fixture = TestBed.createComponent(CoursesComponent);
+    fixture.detectChanges();
+    const element = fixture.nativeElement as HTMLElement;
+    const links = element.querySelectorAll<HTMLAnchorElement>('.course-index a, .course-actions a');
+    expect(links).toHaveLength(9);
+    for (const link of links) {
+      const url = new URL(link.getAttribute('href')!, 'https://www.realterretaia.com/');
+      expect(url.pathname).toBe('/cursos');
+      expect(element.querySelector(url.hash)).toBeTruthy();
+    }
+    expect(element.querySelector('img[alt="Power BI"]')?.getAttribute('src')).toBe(
+      '/assets/images/power-bi.png',
+    );
+  });
   it('requires equipment, connectivity and consent before sending', async () => {
     const component = TestBed.createComponent(CoursesComponent).componentInstance;
     component.form.patchValue({ ...valid, internet: '', privacy: false });
