@@ -5,6 +5,8 @@ describe('public routes', () => {
     const primaryPaths = [
       '',
       'servicios',
+      'tarifas',
+      'outsourcing',
       'productos',
       'aplicaciones/fitness-app',
       'como-trabajamos',
@@ -19,10 +21,11 @@ describe('public routes', () => {
     }
   });
 
-  it('preserves the outsourcing URL as a redirect to services', () => {
+  it('serves outsourcing as its own page with a matching canonical URL', async () => {
     const outsourcing = routes.find((route) => route.path === 'outsourcing');
-    expect(outsourcing?.redirectTo).toBe('servicios');
-    expect(outsourcing?.pathMatch).toBe('full');
+    expect(outsourcing?.redirectTo).toBeUndefined();
+    expect(outsourcing?.data?.['seo'].canonicalPath).toBe('/outsourcing');
+    expect(await outsourcing?.loadComponent?.()).toBeDefined();
   });
 
   it('does not add corporate login or CRM redirect routes', () => {

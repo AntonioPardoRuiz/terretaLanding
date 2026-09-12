@@ -25,7 +25,7 @@ describe('App', () => {
     expect(compiled.querySelector('footer')?.textContent).toContain('Alicante, España');
   });
 
-  it('links every main corporate page and removes outsourcing from navigation', async () => {
+  it('links every main corporate page including outsourcing and pricing', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
@@ -42,7 +42,8 @@ describe('App', () => {
     expect(links).toContain('/nosotros');
     expect(links).toContain('/contacto');
     expect(links).toContain('/privacy-policy');
-    expect(links).not.toContain('/outsourcing');
+    expect(links).toContain('/outsourcing');
+    expect(links).toContain('/tarifas');
   });
 
   it('shows team access in the header and footer using the official CRM URL', async () => {

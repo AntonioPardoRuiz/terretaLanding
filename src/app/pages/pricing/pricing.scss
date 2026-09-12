@@ -48,6 +48,11 @@ li + li {
   border-top: 1px solid var(--color-border);
   font-size: 0.9rem;
 }
+.pricing__outsourcing {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
 @media (max-width: 48rem) {
   .pricing__grid {
     grid-template-columns: 1fr;

@@ -1,0 +1,196 @@
+:host {
+  display: block;
+}
+.outsourcing-hero {
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
+  background: var(--gradient-page);
+}
+.hero-grid,
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+h1 {
+  margin: 1rem 0 1.5rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.08;
+}
+h2 {
+  margin: 1rem 0;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.15;
+}
+p {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+.text-link {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.team-card {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: var(--radius-xl);
+  background: var(--gradient-dark);
+  box-shadow: var(--shadow-large);
+  color: white;
+}
+.team-card__label {
+  color: var(--color-primary-light);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.team-card h2 {
+  color: white;
+}
+.team-card h2 > strong {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: clamp(3.5rem, 7vw, 5rem);
+  color: var(--color-primary-light);
+}
+.team-card p,
+.team-card__rate > span {
+  color: var(--color-text-on-dark);
+}
+.team-card__rate {
+  display: grid;
+  gap: 0.5rem;
+  padding-top: 1.25rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid rgb(255 255 255 / 18%);
+}
+.team-card__rate > strong {
+  font-size: 2.5rem;
+}
+.team-card__rate small {
+  font-size: 1rem;
+  margin-left: 0.4rem;
+}
+.team-card__rate > span {
+  font-size: 0.8rem;
+}
+.section {
+  padding: clamp(3.5rem, 7vw, 5rem) 0;
+}
+.plans-section {
+  background: var(--color-surface-soft);
+  scroll-margin-top: 6rem;
+}
+.section-heading {
+  max-width: 43rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: white;
+}
+.plan__hours {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+.plan h3 {
+  margin: 1rem 0 0;
+  font-size: 1.3rem;
+}
+.plan > p {
+  font-size: 0.9rem;
+}
+.plan__rate {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--color-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.plan__rate > span {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.plan__total {
+  margin: 0.5rem 0 1.5rem;
+}
+.plan__total > span {
+  display: block;
+  font-size: 0.75rem;
+}
+.conditions {
+  margin: 1.5rem 0 0;
+  font-size: 0.85rem;
+}
+.projects-grid {
+  grid-template-columns: 1fr 1.2fr;
+}
+.projects-grid > *,
+.hero-grid > * {
+  min-width: 0;
+}
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.85rem;
+}
+caption {
+  padding: 1.25rem;
+  text-align: left;
+  color: var(--color-text-muted);
+}
+th,
+td {
+  padding: 1.1rem;
+  line-height: 1.5;
+  border-top: 1px solid var(--color-border);
+}
+thead {
+  background: var(--color-primary-soft);
+}
+td {
+  white-space: nowrap;
+}
+@media (max-width: 64rem) {
+  .hero-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-card {
+    max-width: 36rem;
+  }
+  .plan {
+    padding: 1.25rem;
+  }
+}
+@media (max-width: 48rem) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+  .plan__rate {
+    padding-top: 0.5rem;
+  }
+}
