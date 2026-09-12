@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+.pricing {
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
+  background: var(--gradient-page);
+}
+.pricing__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+h1 {
+  margin: 1rem 0 1.5rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.08;
+}
+p,
+li {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+p {
+  margin: 0 0 1.5rem;
+}
+.pricing__card {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+h2 {
+  margin: 1.2rem 0 1rem;
+  font-size: 1.75rem;
+}
+ul {
+  padding-left: 1.25rem;
+  margin: 0 0 1.5rem;
+}
+li + li {
+  margin-top: 0.75rem;
+}
+.pricing__note {
+  margin: 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+@media (max-width: 48rem) {
+  .pricing__grid {
+    grid-template-columns: 1fr;
+  }
+}

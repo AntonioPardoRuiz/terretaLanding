@@ -28,6 +28,18 @@ export const routes: Routes = [
     },
   },
   {
+    path: 'tarifas',
+    loadComponent: () => import('./pages/pricing/pricing').then((c) => c.PricingComponent),
+    data: {
+      seo: {
+        title: 'Tarifas | Presupuesto sin compromiso | Terreta',
+        description:
+          'Cuéntanos qué necesitas realizar a través de nuestro formulario de contacto y te enviaremos un presupuesto personalizado sin ningún compromiso.',
+        canonicalPath: '/tarifas',
+      },
+    },
+  },
+  {
     path: 'productos',
     loadComponent: () => import('./pages/products/products').then((c) => c.ProductsComponent),
     data: {
