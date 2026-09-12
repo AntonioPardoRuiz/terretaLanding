@@ -50,3 +50,13 @@ No crear otro Worker ni cambiar los DNS o las claves.
 
 Validación del Worker: `node --test cloudflare/test/*.test.mjs`.
 Las pruebas simulan Resend y no envían correos. Probar la recepción del CV después de desplegar.
+
+## Cursos
+
+`/cursos` utiliza el servicio de contacto existente. El mensaje incluye el curso,
+nombre, email, tipo de ordenador, sistema operativo, conexión a internet y consentimiento.
+El Worker lo remite al destinatario fijo `terretasoftware@gmail.com`; no requiere
+modificaciones del Worker. Las solicitudes requieren confirmación manual de plaza
+(máximo 30 participantes), fecha y precio. No hay cobro ni reserva automática.
+Pendiente de definir: fecha de inicio, horario e incrementos desde los 50 € de lanzamiento
+cuatro semanas antes. No se calcula un precio vigente sin estos datos.

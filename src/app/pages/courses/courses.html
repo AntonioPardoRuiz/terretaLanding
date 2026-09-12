@@ -1,0 +1,201 @@
+<main>
+  <section class="contact-hero" aria-labelledby="courses-title">
+    <app-container>
+      <span class="eyebrow">Formación · Terreta</span>
+      <h1 id="courses-title">Cursos</h1>
+      <p class="intro">
+        Da el primer paso para aprender nuevas herramientas. Descubre nuestro primer curso.
+      </p>
+      <article class="course-card" aria-labelledby="power-bi-title">
+        <div>
+          <span class="section-label">Nivel principiante</span>
+          <h2 id="power-bi-title">Curso principiante en Power BI</h2>
+          <p>Una formación de iniciación para empezar a trabajar con Power BI.</p>
+          <div class="contact-points">
+            <span>10 horas</span><span>Máximo 30 plazas</span><span>Fecha de inicio pendiente</span>
+          </div>
+        </div>
+        <div class="course-price">
+          <span>Precio de lanzamiento</span><strong>50 €</strong>
+          <p>
+            Cuatro semanas antes del inicio. El precio irá aumentando conforme se acerque la fecha.
+          </p>
+          <p>Fecha, horario e importes de los siguientes tramos pendientes de confirmar.</p>
+          <a class="course-link" href="#inscripcion">Solicitar inscripción →</a>
+        </div>
+      </article>
+      <p class="upcoming">Próximamente ampliaremos el catálogo con nuevos cursos.</p>
+    </app-container>
+  </section>
+  <section id="inscripcion" class="contact-content" aria-labelledby="registration-title">
+    <app-container
+      ><div class="contact-content__grid">
+        <div>
+          <span class="section-label">Power BI · Principiantes</span>
+          <h2 id="registration-title">Solicita tu inscripción</h2>
+          <p>
+            Indica qué ordenador utilizas, su sistema operativo y si dispones de conexión a
+            internet. Los campos con * son obligatorios.
+          </p>
+          <p>
+            Te contactaremos para confirmar fecha, precio y disponibilidad. Enviar este formulario
+            no garantiza una plaza. El grupo estará limitado a 30 participantes.
+          </p>
+          <div class="privacy-note">
+            <strong>Tus datos, para gestionar tu inscripción</strong
+            ><span
+              >La solicitud se enviará a terretasoftware@gmail.com. Utilizaremos esta información
+              para gestionar tu solicitud y contactar contigo sobre el curso.</span
+            ><a routerLink="/privacy-policy" fragment="cursos">Información sobre privacidad</a>
+          </div>
+        </div>
+        <form
+          [formGroup]="form"
+          (ngSubmit)="submit()"
+          novalidate
+          aria-labelledby="registration-title"
+        >
+          <fieldset [disabled]="status() === 'loading'">
+            <legend class="visually-hidden">Datos para el curso principiante en Power BI</legend>
+            <div class="field">
+              <label for="course-name">Nombre y apellidos *</label
+              ><input
+                id="course-name"
+                type="text"
+                formControlName="name"
+                autocomplete="name"
+                maxlength="100"
+                placeholder=""
+                required
+                [attr.aria-invalid]="hasError('name')"
+                [attr.aria-describedby]="hasError('name') ? 'course-name-error' : null"
+              />
+              @if (hasError('name')) {
+                <small id="course-name-error">Indica tu nombre (entre 2 y 100 caracteres).</small>
+              }
+            </div>
+            <div class="field">
+              <label for="course-email">Email *</label
+              ><input
+                id="course-email"
+                type="email"
+                formControlName="email"
+                autocomplete="email"
+                maxlength="254"
+                placeholder=""
+                required
+                [attr.aria-invalid]="hasError('email')"
+                [attr.aria-describedby]="hasError('email') ? 'course-email-error' : null"
+              />
+              @if (hasError('email')) {
+                <small id="course-email-error">Introduce un email válido.</small>
+              }
+            </div>
+            <div class="field">
+              <label for="course-computer">Tipo de ordenador *</label
+              ><input
+                id="course-computer"
+                type="text"
+                formControlName="computer"
+                autocomplete="off"
+                maxlength="120"
+                placeholder="Ej.: portátil Lenovo, sobremesa, MacBook"
+                required
+                [attr.aria-invalid]="hasError('computer')"
+                [attr.aria-describedby]="hasError('computer') ? 'course-computer-error' : null"
+              />
+              @if (hasError('computer')) {
+                <small id="course-computer-error"
+                  >Indica el tipo de ordenador (máximo 120 caracteres).</small
+                >
+              }
+            </div>
+            <div class="field">
+              <label for="course-os">Sistema operativo y versión *</label
+              ><input
+                id="course-os"
+                type="text"
+                formControlName="os"
+                autocomplete="off"
+                maxlength="120"
+                placeholder="Ej.: Windows 11, macOS, Linux o No lo sé"
+                required
+                [attr.aria-invalid]="hasError('os')"
+                [attr.aria-describedby]="hasError('os') ? 'course-os-error' : null"
+              />
+              @if (hasError('os')) {
+                <small id="course-os-error"
+                  >Indica tu sistema operativo o escribe «No lo sé» (máximo 120 caracteres).</small
+                >
+              }
+            </div>
+            <div class="field">
+              <label for="course-internet">¿Dispones de conexión a internet? *</label
+              ><select
+                id="course-internet"
+                formControlName="internet"
+                required
+                [attr.aria-invalid]="hasError('internet')"
+                [attr.aria-describedby]="hasError('internet') ? 'course-internet-error' : null"
+              >
+                <option value="" disabled>Selecciona una opción</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+              </select>
+              @if (hasError('internet')) {
+                <small id="course-internet-error">Indica si dispones de conexión a internet.</small>
+              }
+            </div>
+            <div class="honeypot" aria-hidden="true">
+              <label for="course-website">Sitio web</label
+              ><input
+                id="course-website"
+                formControlName="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+            <div class="consent">
+              <input
+                id="course-privacy"
+                type="checkbox"
+                formControlName="privacy"
+                required
+                [attr.aria-invalid]="hasError('privacy')"
+                [attr.aria-describedby]="hasError('privacy') ? 'course-privacy-error' : null"
+              /><label for="course-privacy"
+                >He leído la <a routerLink="/privacy-policy" fragment="cursos">política de privacidad</a> y acepto el
+                tratamiento de mis datos para gestionar mi solicitud de inscripción. *</label
+              >
+            </div>
+            @if (hasError('privacy')) {
+              <small id="course-privacy-error" class="consent-error"
+                >Debes aceptar el tratamiento de tus datos para enviar la solicitud.</small
+              >
+            }
+            <button
+              type="submit"
+              [disabled]="status() === 'loading'"
+              [attr.aria-busy]="status() === 'loading'"
+            >
+              {{
+                status() === 'loading' ? 'Enviando solicitud…' : 'Enviar solicitud de inscripción →'
+              }}
+            </button>
+          </fieldset>
+          <div class="form-feedback" aria-live="polite" aria-atomic="true">
+            @if (status() === 'success') {
+              <p class="form-notice form-notice--success" role="status">
+                Tu solicitud se ha enviado correctamente. Te contactaremos para confirmar fecha,
+                precio y disponibilidad de plaza.
+              </p>
+            }
+            @if (status() === 'error') {
+              <p class="form-notice form-notice--error" role="alert">{{ error() }}</p>
+            }
+          </div>
+        </form>
+      </div></app-container
+    >
+  </section>
+</main>

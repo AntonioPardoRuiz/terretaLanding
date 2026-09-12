@@ -40,6 +40,18 @@ export const routes: Routes = [
     },
   },
   {
+    path: 'cursos',
+    loadComponent: () => import('./pages/courses/courses').then((c) => c.CoursesComponent),
+    data: {
+      seo: {
+        title: 'Cursos | Power BI para principiantes | Terreta',
+        description:
+          'Curso principiante en Power BI: 10 horas, máximo 30 plazas y precio de lanzamiento de 50 €. Solicita tu inscripción e indícanos tu equipo.',
+        canonicalPath: '/cursos',
+      },
+    },
+  },
+  {
     path: 'productos',
     loadComponent: () => import('./pages/products/products').then((c) => c.ProductsComponent),
     data: {
@@ -68,7 +80,8 @@ export const routes: Routes = [
   },
   {
     path: 'outsourcing',
-    loadComponent: () => import('./pages/outsourcing/outsourcing').then((c) => c.OutsourcingComponent),
+    loadComponent: () =>
+      import('./pages/outsourcing/outsourcing').then((c) => c.OutsourcingComponent),
     data: {
       seo: {
         title: 'Outsourcing | Equipo en España y desarrollo propio | Terreta',

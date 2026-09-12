@@ -8,6 +8,7 @@ describe('public routes', () => {
       'tarifas',
       'outsourcing',
       'productos',
+      'cursos',
       'aplicaciones/fitness-app',
       'como-trabajamos',
       'nosotros',
