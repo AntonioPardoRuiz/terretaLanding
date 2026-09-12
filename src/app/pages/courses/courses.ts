@@ -51,6 +51,10 @@ export class CoursesComponent {
       nonNullable: true,
       validators: [Validators.required, Validators.maxLength(120)],
     }),
+    shift: new FormControl('', {
+      nonNullable: true,
+      validators: [Validators.required, Validators.pattern(/^(Mañana|Tarde)$/)],
+    }),
     privacy: new FormControl(false, { nonNullable: true, validators: [Validators.requiredTrue] }),
     website: new FormControl('', { nonNullable: true, validators: [Validators.maxLength(0)] }),
   });
@@ -60,7 +64,15 @@ export class CoursesComponent {
   }
   async submit() {
     if (this.status() === 'loading') return;
-    for (const key of ['name', 'email', 'computer', 'internet', 'os', 'website'] as const) {
+    for (const key of [
+      'name',
+      'email',
+      'computer',
+      'internet',
+      'os',
+      'shift',
+      'website',
+    ] as const) {
       const control = this.form.controls[key];
       control.setValue(control.value.trim());
     }
@@ -90,6 +102,9 @@ export class CoursesComponent {
             'Precios por fecha de inscripción (octubre de 2026, hora de España peninsular):',
             ...this.priceTiers.map((tier) => `${tier.dates}: ${tier.price} €`),
             'Fecha de inicio: 1 de noviembre de 2026. Solicitud sujeta a confirmación de disponibilidad y precio.',
+            `Turno elegido: ${value.shift}`,
+            'Lunes, miércoles y viernes. Mañana: 10:00–11:30. Tarde: 18:00–19:30. Horario de España peninsular.',
+            'Clases: 2, 4, 6, 9, 11, 13 y 16 de noviembre de 2026. Seis sesiones de 90 minutos y una de 60 minutos. Última sesión: 10:00–11:00 o 18:00–19:00.',
             `Tipo de ordenador: ${value.computer}`,
             `Conexión a internet: ${value.internet}`,
             `Sistema operativo: ${value.os}`,

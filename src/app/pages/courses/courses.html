@@ -57,7 +57,23 @@
             Los cambios se aplican a las 00:00, hora de España peninsular. Antes del 4 de octubre
             puedes solicitar información; la inscripción con precio de lanzamiento comienza ese día.
           </p>
-          <p>Inicio: 1 de noviembre de 2026. Horario pendiente de confirmar.</p>
+          <p>Inicio: 1 de noviembre de 2026.</p>
+          <h3>Dos turnos a elegir</h3>
+          <ul class="course-shifts">
+            <li><b>Mañana:</b> lunes, miércoles y viernes, de 10:00 a 11:30.</li>
+            <li><b>Tarde:</b> lunes, miércoles y viernes, de 18:00 a 19:30.</li>
+          </ul>
+          <p>
+            Elige tu turno al solicitar la inscripción. Seis sesiones de 1,5 horas y una última de 1
+            hora: 10 horas en total. Horario de España peninsular.
+          </p>
+          <p>
+            Clases los días 2, 4, 6, 9, 11, 13 y 16 de noviembre de 2026. El curso arranca el día 1;
+            la primera clase será el lunes 2.
+          </p>
+          <p>
+            Última sesión, lunes 16: de 10:00 a 11:00 o de 18:00 a 19:00, según el turno elegido.
+          </p>
           <a class="course-link" href="#inscripcion">Solicitar inscripción →</a>
         </div>
       </article>
@@ -162,7 +178,7 @@
           <h2 id="registration-title">Solicita tu inscripción</h2>
           <p>
             Indica qué ordenador utilizas, su sistema operativo y si dispones de conexión a
-            internet. Los campos con * son obligatorios.
+            internet, y elige el turno de mañana o de tarde. Los campos con * son obligatorios.
           </p>
           <p>
             Te contactaremos para confirmar horario, precio y disponibilidad. Enviar este formulario
@@ -271,6 +287,29 @@
               </select>
               @if (hasError('internet')) {
                 <small id="course-internet-error">Indica si dispones de conexión a internet.</small>
+              }
+            </div>
+            <div class="field">
+              <label for="course-shift">Turno elegido *</label>
+              <select
+                id="course-shift"
+                formControlName="shift"
+                required
+                [attr.aria-invalid]="hasError('shift')"
+                [attr.aria-describedby]="
+                  hasError('shift') ? 'course-shift-help course-shift-error' : 'course-shift-help'
+                "
+              >
+                <option value="" disabled>Selecciona un turno</option>
+                <option value="Mañana">Mañana · L, X y V · 10:00–11:30</option>
+                <option value="Tarde">Tarde · L, X y V · 18:00–19:30</option>
+              </select>
+              <p id="course-shift-help" class="course-reference">
+                Lunes, miércoles y viernes. Horario de España peninsular. La última sesión termina a
+                las 11:00 o a las 19:00.
+              </p>
+              @if (hasError('shift')) {
+                <small id="course-shift-error">Selecciona el turno de mañana o de tarde.</small>
               }
             </div>
             <div class="honeypot" aria-hidden="true">

@@ -54,11 +54,15 @@ Las pruebas simulan Resend y no envían correos. Probar la recepción del CV des
 ## Cursos
 
 `/cursos` utiliza el servicio de contacto existente. El mensaje incluye el curso,
-nombre, email, tipo de ordenador, sistema operativo, conexión a internet y consentimiento.
+nombre, email, tipo de ordenador, sistema operativo, conexión a internet, turno elegido y consentimiento.
 El Worker lo remite al destinatario fijo `terretasoftware@gmail.com`; no requiere
 modificaciones del Worker. Las solicitudes requieren confirmación manual de plaza
 (máximo 30 participantes), horario y precio. No hay cobro ni reserva automática.
-Inicio: 1 de noviembre de 2026. Horario pendiente de confirmar.
+Inicio: 1 de noviembre de 2026. Turno obligatorio a elegir: mañana (10:00–11:30)
+o tarde (18:00–19:30), lunes, miércoles y viernes, hora de España peninsular.
+Clases: 2, 4, 6, 9, 11, 13 y 16 de noviembre de 2026. Seis sesiones de 90 minutos
+y una última de 60: 10 horas en total. El día 16 los turnos terminan a las 11:00
+y a las 19:00 respectivamente. El día 1 es domingo; la primera clase es el lunes 2.
 Cuatro tramos semanales en octubre de 2026: 4–10 (50 €), 11–17 (65 €),
 18–24 (75 €), 25–31 (90 €). Los cambios se aplican a las 00:00, hora de España
 peninsular. Antes del 4 de octubre las solicitudes son de información.

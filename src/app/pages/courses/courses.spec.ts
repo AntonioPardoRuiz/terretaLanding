@@ -11,6 +11,7 @@ const valid = {
   computer: 'Portátil Lenovo',
   os: 'Windows 11',
   internet: 'No',
+  shift: 'Mañana',
   privacy: true,
   website: '',
 };
@@ -52,12 +53,33 @@ describe('CoursesComponent', () => {
       valid.computer,
       valid.os,
       'Conexión a internet: No',
+      'Turno elegido: Mañana',
+      '10:00–11:30',
+      '18:00–19:30',
+      'Seis sesiones de 90 minutos y una de 60 minutos',
+      'Última sesión: 10:00–11:00 o 18:00–19:00',
     ])
       expect(request.request.body.needs).toContain(value);
     request.flush({ ok: true });
     await pending;
     expect(component.status()).toBe('success');
     expect(component.form.controls.name.value).toBe('');
+  });
+  it('requires a valid shift and sends the afternoon selection', async () => {
+    const component = TestBed.createComponent(CoursesComponent).componentInstance;
+    component.form.setValue({ ...valid, shift: '' });
+    await component.submit();
+    TestBed.inject(HttpTestingController).expectNone('/api/contact');
+    component.form.controls.shift.setValue('Noche');
+    await component.submit();
+    TestBed.inject(HttpTestingController).expectNone('/api/contact');
+    component.form.controls.shift.setValue('Tarde');
+    const pending = component.submit();
+    const request = TestBed.inject(HttpTestingController).expectOne('/api/contact');
+    expect(request.request.body.needs).toContain('Turno elegido: Tarde');
+    request.flush({ ok: true });
+    await pending;
+    expect(component.status()).toBe('success');
   });
   it('preserves data when delivery is not confirmed and prevents concurrent submissions', async () => {
     const component = TestBed.createComponent(CoursesComponent).componentInstance;
