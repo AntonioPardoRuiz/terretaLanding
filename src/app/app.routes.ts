@@ -46,7 +46,7 @@ export const routes: Routes = [
       seo: {
         title: 'Cursos | Power BI para principiantes | Terreta',
         description:
-          'Curso principiante en Power BI: 10 horas, máximo 30 plazas y precio de lanzamiento de 50 €. Solicita tu inscripción e indícanos tu equipo.',
+          'Curso principiante en Power BI desde el 1 de noviembre de 2026: 10 horas, 30 plazas y formación desde la instalación hasta las métricas y la publicación.',
         canonicalPath: '/cursos',
       },
     },

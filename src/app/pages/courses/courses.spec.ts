@@ -43,8 +43,12 @@ describe('CoursesComponent', () => {
     for (const value of [
       'Power BI',
       '10 horas',
+      '1 de noviembre de 2026',
       '30 plazas',
-      '50 €',
+      'Del 4 al 10 de octubre: 50 €',
+      'Del 11 al 17 de octubre: 65 €',
+      'Del 18 al 24 de octubre: 75 €',
+      'Del 25 al 31 de octubre: 90 €',
       valid.computer,
       valid.os,
       'Conexión a internet: No',

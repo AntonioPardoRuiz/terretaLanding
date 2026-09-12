@@ -8,23 +8,150 @@
       </p>
       <article class="course-card" aria-labelledby="power-bi-title">
         <div>
+          <figure class="power-bi-image">
+            <img src="assets/images/power-bi.svg" width="112" height="112" alt="Power BI" />
+            <figcaption>
+              Microsoft Power BI<small
+                >Icono de <a href="https://github.com/microsoft/PowerBI-Icons">Microsoft</a> ·
+                <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></small
+              >
+            </figcaption>
+          </figure>
           <span class="section-label">Nivel principiante</span>
           <h2 id="power-bi-title">Curso principiante en Power BI</h2>
-          <p>Una formación de iniciación para empezar a trabajar con Power BI.</p>
+          <p>
+            Aprende a convertir datos en informes: desde la instalación hasta la creación de
+            métricas y la publicación de tu primer informe.
+          </p>
           <div class="contact-points">
-            <span>10 horas</span><span>Máximo 30 plazas</span><span>Fecha de inicio pendiente</span>
+            <span>10 horas</span><span>Máximo 30 plazas</span
+            ><span>Inicio: <time datetime="2026-11-01">1 de noviembre de 2026</time></span>
           </div>
         </div>
         <div class="course-price">
-          <span>Precio de lanzamiento</span><strong>50 €</strong>
+          <h3>Cuatro tramos de inscripción</h3>
           <p>
-            Cuatro semanas antes del inicio. El precio irá aumentando conforme se acerque la fecha.
+            El precio aumenta cada semana. Lanzamiento el 4 de octubre, cuatro semanas antes del
+            inicio.
           </p>
-          <p>Fecha, horario e importes de los siguientes tramos pendientes de confirmar.</p>
+          <table class="price-tiers">
+            <caption>
+              Precios de inscripción · octubre de 2026
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Fechas</th>
+                <th scope="col">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (tier of priceTiers; track tier.price) {
+                <tr>
+                  <th scope="row">{{ tier.dates }}</th>
+                  <td>{{ tier.price }} €</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+          <p>
+            Los cambios se aplican a las 00:00, hora de España peninsular. Antes del 4 de octubre
+            puedes solicitar información; la inscripción con precio de lanzamiento comienza ese día.
+          </p>
+          <p>Inicio: 1 de noviembre de 2026. Horario pendiente de confirmar.</p>
           <a class="course-link" href="#inscripcion">Solicitar inscripción →</a>
         </div>
       </article>
       <p class="upcoming">Próximamente ampliaremos el catálogo con nuevos cursos.</p>
+    </app-container>
+  </section>
+  <section class="syllabus" aria-labelledby="syllabus-title">
+    <app-container>
+      <span class="section-label">De cero a tu primer informe · 10 horas</span>
+      <h2 id="syllabus-title">Contenido del curso</h2>
+      <p class="intro">
+        Un recorrido práctico para principiantes, trabajando con un ejemplo de datos a lo largo del
+        curso.
+      </p>
+      <ol class="syllabus-list">
+        <li>
+          <div class="module-heading">
+            <h3>Instalación y primeros pasos</h3>
+            <span>1 h</span>
+          </div>
+          <p>
+            Instalación de Power BI Desktop, configuración inicial y recorrido por la interfaz.
+            Diferencias entre Desktop y el servicio Power BI.
+          </p>
+        </li>
+        <li>
+          <div class="module-heading">
+            <h3>Conexión e importación de datos</h3>
+            <span>1,5 h</span>
+          </div>
+          <p>
+            Carga de archivos Excel y CSV, selección de tablas y revisión de los tipos de datos.
+            Organización de las fuentes del ejercicio.
+          </p>
+        </li>
+        <li>
+          <div class="module-heading">
+            <h3>Limpieza y transformación con Power Query</h3>
+            <span>1,5 h</span>
+          </div>
+          <p>
+            Tratamiento de valores vacíos y errores, eliminación de duplicados, división de columnas
+            y combinación de consultas.
+          </p>
+        </li>
+        <li>
+          <div class="module-heading">
+            <h3>Modelado y relaciones</h3>
+            <span>1,5 h</span>
+          </div>
+          <p>
+            Relaciones entre tablas, claves, cardinalidad y dirección de filtros. Introducción al
+            modelo en estrella y a la tabla de fechas.
+          </p>
+        </li>
+        <li>
+          <div class="module-heading">
+            <h3>Diseño de informes interactivos</h3>
+            <span>1,5 h</span>
+          </div>
+          <p>
+            Gráficos, tablas, tarjetas y segmentadores. Filtros, interacciones entre visuales y
+            pautas de diseño para presentar la información con claridad.
+          </p>
+        </li>
+        <li>
+          <div class="module-heading">
+            <h3>Creación y gestión de métricas con DAX</h3>
+            <span>2 h</span>
+          </div>
+          <p>
+            Diferencias entre columnas calculadas y medidas. SUM, AVERAGE, COUNTROWS, DIVIDE e
+            introducción a CALCULATE. Creación de totales, porcentajes y KPI; organización, formato
+            y validación de las métricas.
+          </p>
+        </li>
+        <li>
+          <div class="module-heading">
+            <h3>Publicación y entrega del informe</h3>
+            <span>1 h</span>
+          </div>
+          <p>
+            Publicación desde Desktop al servicio Power BI, espacios de trabajo y actualización de
+            datos. Revisión de permisos y licencias para compartir, y comprobación del informe
+            final.
+          </p>
+        </li>
+      </ol>
+      <p class="course-reference">
+        Material de consulta:
+        <a href="https://learn.microsoft.com/es-es/power-bi/fundamentals/desktop-getting-started"
+          >guía de Power BI Desktop de Microsoft</a
+        >.
+      </p>
     </app-container>
   </section>
   <section id="inscripcion" class="contact-content" aria-labelledby="registration-title">
@@ -38,7 +165,7 @@
             internet. Los campos con * son obligatorios.
           </p>
           <p>
-            Te contactaremos para confirmar fecha, precio y disponibilidad. Enviar este formulario
+            Te contactaremos para confirmar horario, precio y disponibilidad. Enviar este formulario
             no garantiza una plaza. El grupo estará limitado a 30 participantes.
           </p>
           <div class="privacy-note">
@@ -164,8 +291,10 @@
                 [attr.aria-invalid]="hasError('privacy')"
                 [attr.aria-describedby]="hasError('privacy') ? 'course-privacy-error' : null"
               /><label for="course-privacy"
-                >He leído la <a routerLink="/privacy-policy" fragment="cursos">política de privacidad</a> y acepto el
-                tratamiento de mis datos para gestionar mi solicitud de inscripción. *</label
+                >He leído la
+                <a routerLink="/privacy-policy" fragment="cursos">política de privacidad</a> y
+                acepto el tratamiento de mis datos para gestionar mi solicitud de inscripción.
+                *</label
               >
             </div>
             @if (hasError('privacy')) {
@@ -186,7 +315,7 @@
           <div class="form-feedback" aria-live="polite" aria-atomic="true">
             @if (status() === 'success') {
               <p class="form-notice form-notice--success" role="status">
-                Tu solicitud se ha enviado correctamente. Te contactaremos para confirmar fecha,
+                Tu solicitud se ha enviado correctamente. Te contactaremos para confirmar horario,
                 precio y disponibilidad de plaza.
               </p>
             }

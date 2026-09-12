@@ -16,6 +16,12 @@ import { ContactService } from '../contact/contact.service';
 export class CoursesComponent {
   private readonly service = inject(ContactService);
   private readonly element = inject(ElementRef) as ElementRef<HTMLElement>;
+  readonly priceTiers = [
+    { dates: 'Del 4 al 10 de octubre', price: 50 },
+    { dates: 'Del 11 al 17 de octubre', price: 65 },
+    { dates: 'Del 18 al 24 de octubre', price: 75 },
+    { dates: 'Del 25 al 31 de octubre', price: 90 },
+  ] as const;
   readonly status = signal<'idle' | 'loading' | 'success' | 'error'>('idle');
   readonly submitted = signal(false);
   readonly error = signal('');
@@ -81,8 +87,9 @@ export class CoursesComponent {
           needs: [
             'SOLICITUD DE INSCRIPCIÓN · Curso principiante en Power BI',
             'Duración: 10 horas. Máximo: 30 plazas.',
-            'Precio de lanzamiento: 50 € cuatro semanas antes del inicio; incrementos pendientes de confirmar.',
-            'Fecha de inicio pendiente. Solicitud sujeta a confirmación de disponibilidad y precio.',
+            'Precios por fecha de inscripción (octubre de 2026, hora de España peninsular):',
+            ...this.priceTiers.map((tier) => `${tier.dates}: ${tier.price} €`),
+            'Fecha de inicio: 1 de noviembre de 2026. Solicitud sujeta a confirmación de disponibilidad y precio.',
             `Tipo de ordenador: ${value.computer}`,
             `Conexión a internet: ${value.internet}`,
             `Sistema operativo: ${value.os}`,

@@ -73,3 +73,124 @@ fieldset {
     grid-template-columns: 1fr;
   }
 }
+
+.power-bi-image {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 2rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: #fffbeb;
+}
+.power-bi-image img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+}
+.power-bi-image figcaption {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+.syllabus {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+.syllabus h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.syllabus-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: module;
+}
+.syllabus-list li {
+  counter-increment: module;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background: white;
+}
+.syllabus-list li::before {
+  content: '0' counter(module);
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+.module-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.module-heading h3 {
+  margin: 0.75rem 0;
+  font-size: 1.15rem;
+}
+.module-heading span {
+  flex-shrink: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.syllabus-list p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+.course-reference {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+.course-reference a {
+  color: var(--color-primary);
+}
+@media (max-width: 48rem) {
+  .syllabus-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.power-bi-image small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 400;
+}
+.power-bi-image a {
+  color: inherit;
+}
+
+.course-price h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.price-tiers {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.price-tiers caption {
+  text-align: left;
+  padding: 0.5rem 0;
+  color: var(--color-text-muted);
+}
+.price-tiers th,
+.price-tiers td {
+  padding: 0.85rem 0.25rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+.price-tiers tbody th {
+  font-weight: 500;
+}
+.price-tiers td {
+  text-align: right;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  white-space: nowrap;
+}

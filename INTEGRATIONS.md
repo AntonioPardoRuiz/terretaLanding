@@ -57,6 +57,21 @@ Las pruebas simulan Resend y no envían correos. Probar la recepción del CV des
 nombre, email, tipo de ordenador, sistema operativo, conexión a internet y consentimiento.
 El Worker lo remite al destinatario fijo `terretasoftware@gmail.com`; no requiere
 modificaciones del Worker. Las solicitudes requieren confirmación manual de plaza
-(máximo 30 participantes), fecha y precio. No hay cobro ni reserva automática.
-Pendiente de definir: fecha de inicio, horario e incrementos desde los 50 € de lanzamiento
-cuatro semanas antes. No se calcula un precio vigente sin estos datos.
+(máximo 30 participantes), horario y precio. No hay cobro ni reserva automática.
+Inicio: 1 de noviembre de 2026. Horario pendiente de confirmar.
+Cuatro tramos semanales en octubre de 2026: 4–10 (50 €), 11–17 (65 €),
+18–24 (75 €), 25–31 (90 €). Los cambios se aplican a las 00:00, hora de España
+peninsular. Antes del 4 de octubre las solicitudes son de información.
+La tabla pública y el correo usan la misma lista `priceTiers`; se muestran todos
+los tramos con sus fechas, sin un precio vigente fijado durante el prerenderizado.
+
+### Imagen y contenido de Power BI
+
+El icono local `public/assets/images/power-bi.svg` procede, sin modificaciones, de
+https://github.com/microsoft/PowerBI-Icons/blob/main/SVG/Power-BI.svg (Microsoft).
+Contenido bajo CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.
+Power BI es una marca de Microsoft. El curso lo organiza Terreta.
+Referencias del temario:
+- https://learn.microsoft.com/es-es/power-bi/fundamentals/desktop-getting-started
+- https://learn.microsoft.com/es-es/power-bi/transform-model/desktop-measures
+- https://learn.microsoft.com/es-es/power-bi/create-reports/desktop-upload-desktop-files
