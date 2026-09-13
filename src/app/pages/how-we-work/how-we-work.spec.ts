@@ -16,7 +16,9 @@ describe('HowWeWorkComponent', () => {
     const element = fixture.nativeElement as HTMLElement;
 
     expect(element.querySelectorAll('h1')).toHaveLength(1);
-    expect(element.querySelector('h1')?.textContent).toContain('Cómo trabajamos en Terreta');
+    expect(element.querySelector('h1')?.textContent).toContain(
+      'Cómo desarrollamos tu software en Terreta',
+    );
     expect(element.querySelector('#principles-title')).toBeTruthy();
     expect(element.querySelector('#phases-title')).toBeTruthy();
     expect(element.querySelector('#collaboration-title')).toBeTruthy();
@@ -30,8 +32,12 @@ describe('HowWeWorkComponent', () => {
 
     expect(element.querySelectorAll('.principle-card')).toHaveLength(4);
     expect(element.querySelectorAll('.timeline > .phase')).toHaveLength(6);
-    expect(element.querySelector('.timeline')?.textContent).toContain('Descubrimiento y alineación');
-    expect(element.querySelector('.timeline')?.textContent).toContain('Despliegue, soporte y evolución');
+    expect(element.querySelector('.timeline')?.textContent).toContain(
+      'Descubrimiento y alineación',
+    );
+    expect(element.querySelector('.timeline')?.textContent).toContain(
+      'Despliegue, soporte y evolución',
+    );
   });
 
   it('links the CTA to contact and includes internal links', () => {

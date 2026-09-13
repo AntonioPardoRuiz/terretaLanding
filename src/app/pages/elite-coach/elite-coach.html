@@ -5,21 +5,36 @@
         <div class="product-hero__copy">
           <span class="eyebrow">Producto desarrollado por Terreta</span>
           <p class="product-name">Elite Coach</p>
-          <h1 id="elite-title">La app que profesionaliza tu negocio fitness</h1>
-          <p class="lead">Organiza rutinas, seguimiento, nutrición y clientes en una sola plataforma diseñada para entrenadores y gimnasios.</p>
+          <h1 id="elite-title">Elite Coach, la app para tu negocio fitness</h1>
+          <p class="lead">
+            Organiza rutinas, seguimiento, nutrición y clientes en una sola plataforma diseñada para
+            entrenadores y gimnasios.
+          </p>
           <div class="hero-actions">
             <app-button label="Solicitar propuesta" link="/contacto" />
-            <a class="text-link" href="#funcionalidades">Descubrir el producto <span aria-hidden="true">↓</span></a>
+            <a class="text-link" routerLink="/aplicaciones/fitness-app" fragment="funcionalidades"
+              >Descubrir el producto <span aria-hidden="true">↓</span></a
+            >
           </div>
         </div>
         <div class="product-stage" aria-label="Vista de Elite Coach en un dispositivo móvil">
           <div class="stage-glow" aria-hidden="true"></div>
           <div class="phone">
             <span class="phone__speaker" aria-hidden="true"></span>
-            <img src="assets/images/elite-coach.webp" width="900" height="900" alt="Pantalla de acceso de la aplicación Elite Coach" fetchpriority="high">
+            <img
+              src="assets/images/elite-coach.webp"
+              width="900"
+              height="900"
+              alt="Pantalla de acceso de la aplicación Elite Coach"
+              fetchpriority="high"
+            />
           </div>
-          <div class="stage-note stage-note--routine" aria-hidden="true"><i>✓</i><span><strong>Rutinas</strong><small>Planificación clara</small></span></div>
-          <div class="stage-note stage-note--progress" aria-hidden="true"><i>↗</i><span><strong>Progreso</strong><small>Seguimiento visible</small></span></div>
+          <div class="stage-note stage-note--routine" aria-hidden="true">
+            <i>✓</i><span><strong>Rutinas</strong><small>Planificación clara</small></span>
+          </div>
+          <div class="stage-note stage-note--progress" aria-hidden="true">
+            <i>↗</i><span><strong>Progreso</strong><small>Seguimiento visible</small></span>
+          </div>
         </div>
       </div>
     </app-container>
@@ -30,13 +45,20 @@
       <header class="section-heading">
         <span class="section-label">El punto de partida</span>
         <h2 id="problem-title">El problema que viven muchos entrenadores</h2>
-        <p>Muchos entrenadores gestionan clientes con WhatsApp, Excel y notas. Cuando el número de clientes crece, todo se vuelve difícil de controlar.</p>
+        <p>
+          Muchos entrenadores gestionan clientes con WhatsApp, Excel y notas. Cuando el número de
+          clientes crece, todo se vuelve difícil de controlar.
+        </p>
       </header>
       <div class="problem-grid">
         @for (problem of problems; track problem.title; let index = $index) {
           <article class="problem-card">
             <span class="problem-card__number">0{{ index + 1 }}</span>
-            <div class="problem-card__icon" [attr.data-icon]="problem.icon" aria-hidden="true"></div>
+            <div
+              class="problem-card__icon"
+              [attr.data-icon]="problem.icon"
+              aria-hidden="true"
+            ></div>
             <h3>{{ problem.title }}</h3>
             <p>{{ problem.description }}</p>
           </article>
@@ -50,21 +72,33 @@
       <header class="section-heading section-heading--light">
         <span class="section-label">Una experiencia conectada</span>
         <h2 id="features-title">Una sola plataforma para entrenadores y gimnasios</h2>
-        <p>La gestión del profesional y la experiencia del cliente conviven en un mismo producto.</p>
+        <p>
+          La gestión del profesional y la experiencia del cliente conviven en un mismo producto.
+        </p>
       </header>
       <div class="feature-composition">
         <article class="feature-panel">
           <span class="feature-panel__audience">Para el entrenador</span>
           <h3>Control para organizar el servicio</h3>
-          <ul>@for (feature of trainerFeatures; track feature) { <li>{{ feature }}</li> }</ul>
+          <ul>
+            @for (feature of trainerFeatures; track feature) {
+              <li>{{ feature }}</li>
+            }
+          </ul>
         </article>
         <div class="feature-device" aria-hidden="true">
-          <div class="mini-screen"><span>ELITE COACH</span><i></i><i></i><i></i><b>Tu plan, siempre contigo</b></div>
+          <div class="mini-screen">
+            <span>ELITE COACH</span><i></i><i></i><i></i><b>Tu plan, siempre contigo</b>
+          </div>
         </div>
         <article class="feature-panel feature-panel--client">
           <span class="feature-panel__audience">Para el cliente</span>
           <h3>Claridad para avanzar cada día</h3>
-          <ul>@for (feature of clientFeatures; track feature) { <li>{{ feature }}</li> }</ul>
+          <ul>
+            @for (feature of clientFeatures; track feature) {
+              <li>{{ feature }}</li>
+            }
+          </ul>
         </article>
       </div>
     </app-container>
@@ -76,13 +110,36 @@
         <div class="experience__copy">
           <span class="section-label">Experiencia del producto</span>
           <h2 id="experience-title">Del plan del entrenador al día a día del cliente</h2>
-          <p>Elite Coach reúne la planificación, el seguimiento y la comunicación para que cada persona sepa qué tiene que hacer y el profesional pueda acompañar su evolución.</p>
-          <a routerLink="/servicios" class="inline-link">Conoce nuestros servicios de desarrollo <span aria-hidden="true">→</span></a>
+          <p>
+            Elite Coach reúne la planificación, el seguimiento y la comunicación para que cada
+            persona sepa qué tiene que hacer y el profesional pueda acompañar su evolución.
+          </p>
+          <a routerLink="/servicios" class="inline-link"
+            >Conoce nuestros servicios de desarrollo <span aria-hidden="true">→</span></a
+          >
         </div>
         <ol class="product-flow">
-          <li><span>01</span><div><strong>Planifica</strong><p>El entrenador organiza rutinas, calendario y objetivos.</p></div></li>
-          <li><span>02</span><div><strong>Acompaña</strong><p>El cliente consulta su plan y recibe recordatorios.</p></div></li>
-          <li><span>03</span><div><strong>Haz seguimiento</strong><p>Las métricas y el progreso permanecen visibles.</p></div></li>
+          <li>
+            <span>01</span>
+            <div>
+              <strong>Planifica</strong>
+              <p>El entrenador organiza rutinas, calendario y objetivos.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <strong>Acompaña</strong>
+              <p>El cliente consulta su plan y recibe recordatorios.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <strong>Haz seguimiento</strong>
+              <p>Las métricas y el progreso permanecen visibles.</p>
+            </div>
+          </li>
         </ol>
       </div>
     </app-container>
@@ -93,8 +150,14 @@
       <div class="benefits__inner">
         <span class="section-label">Beneficios</span>
         <h2 id="benefits-title">Más control. Más retención. Más ingresos.</h2>
-        <p>Ahorra tiempo con automatización, ofrece una experiencia premium y gestiona más clientes sin perder calidad.</p>
-        <div class="benefit-list" aria-label="Beneficios de Elite Coach"><span>Gestión centralizada</span><span>Experiencia cuidada</span><span>Seguimiento continuo</span></div>
+        <p>
+          Ahorra tiempo con automatización, ofrece una experiencia premium y gestiona más clientes
+          sin perder calidad.
+        </p>
+        <div class="benefit-list" aria-label="Beneficios de Elite Coach">
+          <span>Gestión centralizada</span><span>Experiencia cuidada</span
+          ><span>Seguimiento continuo</span>
+        </div>
       </div>
     </app-container>
   </section>
@@ -104,22 +167,53 @@
       <header class="section-heading">
         <span class="section-label">Videotutoriales</span>
         <h2 id="tutorials-title">Descubre Elite Coach</h2>
-        <p>Aprende a configurar tu cuenta y a aprovechar las herramientas de Elite Coach con estos videotutoriales.</p>
+        <p>
+          Aprende a configurar tu cuenta y a aprovechar las herramientas de Elite Coach con estos
+          videotutoriales.
+        </p>
       </header>
       <div class="tutorial-grid">
         @for (video of videos; track video.id) {
           <article class="tutorial-card">
             <div class="video-frame">
               @if (activeVideo() === video.id) {
-                <iframe [src]="videoUrl(video.id)" [title]="video.title" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe
+                  [src]="videoUrl(video.id)"
+                  [title]="video.title"
+                  loading="lazy"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  allowfullscreen
+                ></iframe>
               } @else {
-                <button type="button" (click)="playVideo(video.id)" [attr.aria-label]="'Reproducir videotutorial: ' + video.title">
-                  <img [src]="'https://i.ytimg.com/vi/' + video.id + '/hqdefault.jpg'" width="480" height="360" loading="lazy" [alt]="'Vista previa del videotutorial ' + video.title">
+                <button
+                  type="button"
+                  (click)="playVideo(video.id)"
+                  [attr.aria-label]="'Reproducir videotutorial: ' + video.title"
+                >
+                  <img
+                    [src]="'https://i.ytimg.com/vi/' + video.id + '/hqdefault.jpg'"
+                    width="480"
+                    height="360"
+                    loading="lazy"
+                    [alt]="'Vista previa del videotutorial ' + video.title"
+                  />
                   <span aria-hidden="true">▶</span>
                 </button>
               }
             </div>
-            <div class="tutorial-card__body"><small>{{ video.label }}</small><h3>{{ video.title }}</h3><p>{{ video.description }}</p></div>
+            <div class="tutorial-card__body">
+              <small>{{ video.label }}</small>
+              <h3>{{ video.title }}</h3>
+              <p>{{ video.description }}</p>
+            </div>
           </article>
         }
       </div>
@@ -133,12 +227,22 @@
         <div>
           <span class="section-label">Terreta + Elite Coach</span>
           <h2 id="built-title">Un producto real desarrollado por Terreta</h2>
-          <p>Elite Coach muestra cómo convertimos una idea en una plataforma digital pensada para entrenadores, clientes y centros deportivos, con gestión, seguimiento, comunicación y una experiencia de usuario moderna.</p>
-          <div class="built-links"><a routerLink="/">Conocer Terreta</a><a routerLink="/servicios">Ver servicios</a></div>
+          <p>
+            Elite Coach muestra cómo convertimos una idea en una plataforma digital pensada para
+            entrenadores, clientes y centros deportivos, con gestión, seguimiento, comunicación y
+            una experiencia de usuario moderna.
+          </p>
+          <div class="built-links">
+            <a routerLink="/">Conocer Terreta</a><a routerLink="/servicios">Ver servicios</a>
+          </div>
         </div>
       </div>
     </app-container>
   </section>
 
-  <app-cta heading="¿Quieres llevar tu servicio al siguiente nivel con una app propia?" description="Elite Coach es un ejemplo de cómo una solución digital puede hacer más accesible un servicio profesional. Cuéntanos qué producto necesitas desarrollar." buttonLabel="Hablemos de tu producto →" />
+  <app-cta
+    heading="¿Quieres llevar tu servicio al siguiente nivel con una app propia?"
+    description="Elite Coach es un ejemplo de cómo una solución digital puede hacer más accesible un servicio profesional. Cuéntanos qué producto necesitas desarrollar."
+    buttonLabel="Hablemos de tu producto →"
+  />
 </main>

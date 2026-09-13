@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-09-13T07:37:28.186Z",
+  "environment": "Chrome headless local HTTP, no CPU/network throttling; isolated samples, not CrUX or field Core Web Vitals",
+  "results": [
+    {
+      "path": "/",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Desarrollo de software para empresas en Alicante | Terreta",
+      "h1": "Desarrollamos software para impulsar tu empresa.",
+      "canonical": "https://www.realterretaia.com/",
+      "graphCount": 1,
+      "lcpMs": 768,
+      "cls": 0
+    },
+    {
+      "path": "/servicios",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+      "h1": "Software a medida, aplicaciones y soluciones para tu empresa",
+      "canonical": "https://www.realterretaia.com/servicios",
+      "graphCount": 1,
+      "lcpMs": 152,
+      "cls": 0
+    },
+    {
+      "path": "/servicios",
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+      "h1": "Software a medida, aplicaciones y soluciones para tu empresa",
+      "canonical": "https://www.realterretaia.com/servicios",
+      "graphCount": 1,
+      "lcpMs": 168,
+      "cls": 0
+    },
+    {
+      "path": "/productos",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Productos y soluciones de software empresarial | Terreta",
+      "h1": "Productos de software para problemas reales.",
+      "canonical": "https://www.realterretaia.com/productos",
+      "graphCount": 1,
+      "lcpMs": 120,
+      "cls": 0
+    },
+    {
+      "path": "/cursos",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Cursos | Power BI para principiantes | Terreta",
+      "h1": "Cursos",
+      "canonical": "https://www.realterretaia.com/cursos",
+      "graphCount": 1,
+      "lcpMs": 96,
+      "cls": 0
+    }
+  ],
+  "navigation": {
+    "path": "/servicios",
+    "hash": "#software-a-medida",
+    "title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+    "canonical": "https://www.realterretaia.com/servicios",
+    "services": 6
+  },
+  "errors": []
+}

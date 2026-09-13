@@ -1,0 +1,2322 @@
+{
+  "auditedAt": "2026-09-13T07:23:08.484Z",
+  "pages": [
+    {
+      "path": "/",
+      "title": "Desarrollo de software para empresas en Alicante | Terreta",
+      "description": "Desarrollamos software para empresas desde Alicante: aplicaciones web y móviles, automatización e IA. Conoce nuestros productos y cuéntanos tu proyecto.",
+      "canonical": "https://www.realterretaia.com/",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Desarrollamos software para impulsar tu empresa."
+        },
+        {
+          "level": "H2",
+          "text": "Software a medida, automatización e IA con sentido de negocio"
+        },
+        {
+          "level": "H3",
+          "text": "Software a medida"
+        },
+        {
+          "level": "H3",
+          "text": "Automatización inteligente"
+        },
+        {
+          "level": "H3",
+          "text": "IA aplicada al negocio"
+        },
+        {
+          "level": "H3",
+          "text": "Acompañamiento real"
+        },
+        {
+          "level": "H2",
+          "text": "Soluciones digitales para empresas que quieren avanzar"
+        },
+        {
+          "level": "H3",
+          "text": "Aplicaciones Web"
+        },
+        {
+          "level": "H3",
+          "text": "Apps Móviles"
+        },
+        {
+          "level": "H3",
+          "text": "Automatizaciones"
+        },
+        {
+          "level": "H3",
+          "text": "Inteligencia Artificial"
+        },
+        {
+          "level": "H3",
+          "text": "Soporte y evolución"
+        },
+        {
+          "level": "H2",
+          "text": "Software para negocios y sectores diferentes"
+        },
+        {
+          "level": "H3",
+          "text": "Elite Coach"
+        },
+        {
+          "level": "H3",
+          "text": "J. Castejón Psicología"
+        },
+        {
+          "level": "H3",
+          "text": "TerretaAgro"
+        },
+        {
+          "level": "H2",
+          "text": "¿Tienes una idea o proceso que quieres convertir en software?"
+        }
+      ],
+      "firstText": "Desde Alicante, creamos software a medida y aplicaciones web y móviles para empresas. Desarrollamos tu página web, conectamos procesos con automatizaciones e integramos inteligencia artificial cuando aporta una solución útil a tu negocio.",
+      "internalLinks": [
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar propuesta"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Ver cómo trabajamos →"
+        },
+        {
+          "url": "/aplicaciones/fitness-app",
+          "anchor": "Producto desarrolladoElite CoachPlataforma para entrenadores, clientes y centros deportivos."
+        },
+        {
+          "url": "/servicios#software-a-medida",
+          "anchor": "Aplicaciones WebPlataformas internas, portales de clientes, sistemas de reservas, dashboards y herramientas de gestión.Desarrollo de aplicaciones web →"
+        },
+        {
+          "url": "/servicios#aplicaciones-moviles",
+          "anchor": "Apps MóvilesAplicaciones para iOS y Android orientadas a clientes, equipos internos, comunidades o nuevos modelos de negocio.Desarrollo de apps móviles →"
+        },
+        {
+          "url": "/servicios#automatizacion",
+          "anchor": "AutomatizacionesFlujos conectados entre formularios, CRM, email, WhatsApp, hojas de cálculo, bases de datos y herramientas empresariales.Automatización de procesos →"
+        },
+        {
+          "url": "/servicios#inteligencia-artificial",
+          "anchor": "Inteligencia ArtificialChatbots, asistentes internos, análisis de datos, generación de contenido y procesos inteligentes personalizados.IA para empresas →"
+        },
+        {
+          "url": "/servicios#soporte",
+          "anchor": "Soporte y evoluciónMantenimiento, mejoras y acompañamiento para que cada solución siga respondiendo a las necesidades del negocio.Mantenimiento de software →"
+        },
+        {
+          "url": "/aplicaciones/fitness-app",
+          "anchor": "Conocer producto →"
+        },
+        {
+          "url": "/productos#terreta-agro",
+          "anchor": "Conocer TerretaAgro →"
+        },
+        {
+          "url": "/productos#crm",
+          "anchor": "Terreta CRM"
+        },
+        {
+          "url": "/productos#crmhealth",
+          "anchor": "CRMHealth · Demo disponible →"
+        },
+        {
+          "url": "/productos",
+          "anchor": "Ver todos los productos →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Agendar diagnóstico gratuito →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        },
+        {
+          "src": "assets/images/elite-coach.webp",
+          "alt": "Pantalla de acceso de Elite Coach",
+          "width": "900",
+          "height": "900",
+          "loading": "eager",
+          "bytes": 39390
+        },
+        {
+          "src": "assets/images/elite-coach.webp",
+          "alt": "Pantalla de acceso de Elite Coach",
+          "width": "900",
+          "height": "900",
+          "loading": "lazy",
+          "bytes": 39390
+        }
+      ],
+      "openGraph": {
+        "og:title": "Desarrollo de software para empresas en Alicante | Terreta",
+        "og:description": "Desarrollamos software para empresas desde Alicante: aplicaciones web y móviles, automatización e IA. Conoce nuestros productos y cuéntanos tu proyecto.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/#webpage",
+              "url": "https://www.realterretaia.com/",
+              "name": "Desarrollo de software para empresas en Alicante | Terreta",
+              "description": "Desarrollamos software para empresas desde Alicante: aplicaciones web y móviles, automatización e IA. Conoce nuestros productos y cuéntanos tu proyecto.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/servicios",
+      "title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+      "description": "Software a medida, aplicaciones web y móviles, páginas web, automatización e IA para empresas. Desde Alicante, te ayudamos a definir la solución que necesitas.",
+      "canonical": "https://www.realterretaia.com/servicios",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Software a medida, aplicaciones y soluciones para tu empresa"
+        },
+        {
+          "level": "H2",
+          "text": "En Terreta diseñamos y desarrollamos soluciones tecnológicas adaptadas a las necesidades reales de cada negocio."
+        },
+        {
+          "level": "H2",
+          "text": "Desarrollo de software a medida y aplicaciones web"
+        },
+        {
+          "level": "H3",
+          "text": "Qué incluye"
+        },
+        {
+          "level": "H2",
+          "text": "Desarrollo de aplicaciones móviles"
+        },
+        {
+          "level": "H3",
+          "text": "Qué incluye"
+        },
+        {
+          "level": "H2",
+          "text": "Desarrollo web y páginas web para empresas"
+        },
+        {
+          "level": "H3",
+          "text": "Qué incluye"
+        },
+        {
+          "level": "H2",
+          "text": "Automatización de procesos"
+        },
+        {
+          "level": "H3",
+          "text": "Qué incluye"
+        },
+        {
+          "level": "H2",
+          "text": "Inteligencia artificial para empresas"
+        },
+        {
+          "level": "H3",
+          "text": "Qué incluye"
+        },
+        {
+          "level": "H2",
+          "text": "Soporte, mantenimiento y evolución"
+        },
+        {
+          "level": "H3",
+          "text": "Qué incluye"
+        },
+        {
+          "level": "H2",
+          "text": "Modelos de contratación flexibles"
+        },
+        {
+          "level": "H3",
+          "text": "Proyecto cerrado"
+        },
+        {
+          "level": "H3",
+          "text": "Entrega por hitos"
+        },
+        {
+          "level": "H3",
+          "text": "Bolsa de horas"
+        },
+        {
+          "level": "H3",
+          "text": "Suscripción mensual o anual"
+        },
+        {
+          "level": "H2",
+          "text": "Una forma de trabajar más clara, más flexible y más comprometida"
+        },
+        {
+          "level": "H2",
+          "text": "Casos habituales en los que ayudamos"
+        },
+        {
+          "level": "H2",
+          "text": "Cuéntanos qué necesitas y te proponemos la mejor solución"
+        }
+      ],
+      "firstText": "Desde Alicante, desarrollamos software a medida, aplicaciones y páginas web para empresas. Automatizamos procesos e integramos inteligencia artificial según la necesidad del negocio, con alcance definido y seguimiento del proyecto.",
+      "internalLinks": [
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar propuesta"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Ver cómo trabajamos →"
+        },
+        {
+          "url": "/productos#terreta-agro",
+          "anchor": "Ver TerretaAgro: gestión agrícola, almacenes y transporte →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Ver si esta solución encaja con mi empresa"
+        },
+        {
+          "url": "/productos#elite-coach",
+          "anchor": "Conocer Elite Coach, una aplicación para el sector fitness →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Quiero valorar una app para mi negocio"
+        },
+        {
+          "url": "/productos#psicologia",
+          "anchor": "Ver el proyecto Jessica Castejón Psicología →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Quiero valorar la web de mi empresa"
+        },
+        {
+          "url": "/productos#conta-terra",
+          "anchor": "Ver ContaTerra y su enfoque de gestión empresarial →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Quiero automatizar un proceso de mi empresa"
+        },
+        {
+          "url": "/productos#software-sectorial",
+          "anchor": "Explorar los productos de software de Terreta →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Quiero aplicar IA a un caso real"
+        },
+        {
+          "url": "/productos#software-sectorial",
+          "anchor": "Conocer el catálogo de productos desarrollados →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Necesito soporte o mejoras continuas"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Conoce cómo trabajamos →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar propuesta →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+        "og:description": "Software a medida, aplicaciones web y móviles, páginas web, automatización e IA para empresas. Desde Alicante, te ayudamos a definir la solución que necesitas.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/servicios",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/servicios#webpage",
+              "url": "https://www.realterretaia.com/servicios",
+              "name": "Software a medida, aplicaciones y desarrollo web | Terreta",
+              "description": "Software a medida, aplicaciones web y móviles, páginas web, automatización e IA para empresas. Desde Alicante, te ayudamos a definir la solución que necesitas.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/servicios#breadcrumb"
+              },
+              "mainEntity": [
+                {
+                  "@id": "https://www.realterretaia.com/servicios#software-a-medida"
+                },
+                {
+                  "@id": "https://www.realterretaia.com/servicios#aplicaciones-moviles"
+                },
+                {
+                  "@id": "https://www.realterretaia.com/servicios#desarrollo-web"
+                },
+                {
+                  "@id": "https://www.realterretaia.com/servicios#automatizacion"
+                },
+                {
+                  "@id": "https://www.realterretaia.com/servicios#inteligencia-artificial"
+                },
+                {
+                  "@id": "https://www.realterretaia.com/servicios#soporte"
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/servicios#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Servicios",
+                  "item": "https://www.realterretaia.com/servicios"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/servicios#software-a-medida",
+              "name": "Desarrollo de software a medida y aplicaciones web",
+              "serviceType": "Desarrollo de software a medida y aplicaciones web",
+              "url": "https://www.realterretaia.com/servicios#software-a-medida",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              }
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/servicios#aplicaciones-moviles",
+              "name": "Desarrollo de aplicaciones móviles",
+              "serviceType": "Desarrollo de aplicaciones móviles",
+              "url": "https://www.realterretaia.com/servicios#aplicaciones-moviles",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              }
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/servicios#desarrollo-web",
+              "name": "Desarrollo web y páginas web para empresas",
+              "serviceType": "Desarrollo web y páginas web para empresas",
+              "url": "https://www.realterretaia.com/servicios#desarrollo-web",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              }
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/servicios#automatizacion",
+              "name": "Automatización de procesos",
+              "serviceType": "Automatización de procesos",
+              "url": "https://www.realterretaia.com/servicios#automatizacion",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              }
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/servicios#inteligencia-artificial",
+              "name": "Inteligencia artificial para empresas",
+              "serviceType": "Inteligencia artificial para empresas",
+              "url": "https://www.realterretaia.com/servicios#inteligencia-artificial",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              }
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/servicios#soporte",
+              "name": "Soporte, mantenimiento y evolución",
+              "serviceType": "Soporte, mantenimiento y evolución",
+              "url": "https://www.realterretaia.com/servicios#soporte",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/tarifas",
+      "title": "Tarifas | Presupuesto sin compromiso | Terreta",
+      "description": "Cuéntanos qué necesitas realizar a través de nuestro formulario de contacto y te enviaremos un presupuesto personalizado sin ningún compromiso.",
+      "canonical": "https://www.realterretaia.com/tarifas",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Un presupuesto a medida de lo que necesitas"
+        },
+        {
+          "level": "H2",
+          "text": "Cuéntanos tu proyecto"
+        }
+      ],
+      "firstText": "Cada proyecto tiene sus propias necesidades. Por eso, nuestras tarifas se adaptan al alcance y a las características del trabajo que quieres realizar.",
+      "internalLinks": [
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar presupuesto →"
+        },
+        {
+          "url": "/outsourcing",
+          "anchor": "Ver tarifas de outsourcing →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Tarifas | Presupuesto sin compromiso | Terreta",
+        "og:description": "Cuéntanos qué necesitas realizar a través de nuestro formulario de contacto y te enviaremos un presupuesto personalizado sin ningún compromiso.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/tarifas",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/tarifas#webpage",
+              "url": "https://www.realterretaia.com/tarifas",
+              "name": "Tarifas | Presupuesto sin compromiso | Terreta",
+              "description": "Cuéntanos qué necesitas realizar a través de nuestro formulario de contacto y te enviaremos un presupuesto personalizado sin ningún compromiso.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/tarifas#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/tarifas#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Tarifas",
+                  "item": "https://www.realterretaia.com/tarifas"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/outsourcing",
+      "title": "Outsourcing | Equipo en España y desarrollo propio | Terreta",
+      "description": "Equipo en España: desarrollamos sin externalizar ni subcontratar a terceros. Bolsas desde 25 €/h en la de 160 h, sin IVA. Presupuesto sin compromiso.",
+      "canonical": "https://www.realterretaia.com/outsourcing",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Amplía tu equipo con tarifas pensadas para empezar"
+        },
+        {
+          "level": "H2",
+          "text": "Equipo en España"
+        },
+        {
+          "level": "H2",
+          "text": "Más horas, menor precio por hora"
+        },
+        {
+          "level": "H3",
+          "text": "Primer impulso"
+        },
+        {
+          "level": "H3",
+          "text": "Avance continuo"
+        },
+        {
+          "level": "H3",
+          "text": "Mayor capacidad"
+        },
+        {
+          "level": "H2",
+          "text": "Un alcance definido, un presupuesto claro"
+        },
+        {
+          "level": "H2",
+          "text": "Cuéntanos qué necesitas realizar"
+        }
+      ],
+      "firstText": "Externaliza el desarrollo de software, las automatizaciones o las mejoras de tus aplicaciones con Terreta. Nos adaptamos a tu proyecto y a las horas de trabajo que necesitas.",
+      "internalLinks": [
+        {
+          "url": "/contacto",
+          "anchor": "Pedir presupuesto sin compromiso →"
+        },
+        {
+          "url": "/outsourcing#bolsas-horas",
+          "anchor": "Ver bolsas de horas ↓"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Consultar bolsa de 40 h →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Consultar bolsa de 80 h →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Consultar bolsa de 160 h →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar presupuesto →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Outsourcing | Equipo en España y desarrollo propio | Terreta",
+        "og:description": "Equipo en España: desarrollamos sin externalizar ni subcontratar a terceros. Bolsas desde 25 €/h en la de 160 h, sin IVA. Presupuesto sin compromiso.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/outsourcing",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/outsourcing#webpage",
+              "url": "https://www.realterretaia.com/outsourcing",
+              "name": "Outsourcing | Equipo en España y desarrollo propio | Terreta",
+              "description": "Equipo en España: desarrollamos sin externalizar ni subcontratar a terceros. Bolsas desde 25 €/h en la de 160 h, sin IVA. Presupuesto sin compromiso.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/outsourcing#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/outsourcing#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Outsourcing",
+                  "item": "https://www.realterretaia.com/outsourcing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/productos",
+      "title": "Productos y soluciones de software empresarial | Terreta",
+      "description": "Conoce Elite Coach, TerretaAgro, ContaTerra y TerretaRail: productos de software de Terreta, junto a proyectos reales para servicios profesionales.",
+      "canonical": "https://www.realterretaia.com/productos",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Productos de software para problemas reales."
+        },
+        {
+          "level": "H2",
+          "text": "Elite Coach"
+        },
+        {
+          "level": "H3",
+          "text": "El problema que resuelve"
+        },
+        {
+          "level": "H3",
+          "text": "Capacidades verificadas"
+        },
+        {
+          "level": "H2",
+          "text": "Una lógica de producto para cada operativa"
+        },
+        {
+          "level": "H3",
+          "text": "TerretaAgro"
+        },
+        {
+          "level": "H4",
+          "text": "Campo"
+        },
+        {
+          "level": "H4",
+          "text": "Almacén"
+        },
+        {
+          "level": "H4",
+          "text": "Transporte"
+        },
+        {
+          "level": "H3",
+          "text": "ContaTerra"
+        },
+        {
+          "level": "H3",
+          "text": "TerretaRail"
+        },
+        {
+          "level": "H2",
+          "text": "Jessica Castejón Psicología"
+        },
+        {
+          "level": "H3",
+          "text": "El problema que resuelve"
+        },
+        {
+          "level": "H3",
+          "text": "Capacidades verificadas"
+        },
+        {
+          "level": "H2",
+          "text": "Terreta CRM"
+        },
+        {
+          "level": "H2",
+          "text": "CRMHealth"
+        },
+        {
+          "level": "H2",
+          "text": "¿Necesitas software para tu empresa?"
+        }
+      ],
+      "firstText": "Terreta no desarrolla software genérico. Analizamos procesos y construimos soluciones digitales adaptadas a problemas reales de negocio, desde el fitness hasta la agricultura, la contabilidad, el ferrocarril, la gestión de clientes y los servicios profesionales.",
+      "internalLinks": [
+        {
+          "url": "/productos#elite-coach",
+          "anchor": "Fitness"
+        },
+        {
+          "url": "/productos#software-sectorial",
+          "anchor": "Software sectorial"
+        },
+        {
+          "url": "/productos#psicologia",
+          "anchor": "Digitalización"
+        },
+        {
+          "url": "/productos#crm",
+          "anchor": "CRM"
+        },
+        {
+          "url": "/aplicaciones/fitness-app",
+          "anchor": "Descubrir Elite Coach →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Hablar sobre TerretaAgro →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Consultar ContaTerra →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Consultar TerretaRail →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Consultar Terreta CRM →"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "servicios de desarrollo de software a medida"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Hablar con Terreta →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        },
+        {
+          "src": "assets/images/elite-coach.webp",
+          "alt": "Pantalla de acceso de Elite Coach",
+          "width": "900",
+          "height": "900",
+          "loading": "lazy",
+          "bytes": 39390
+        }
+      ],
+      "openGraph": {
+        "og:title": "Productos y soluciones de software empresarial | Terreta",
+        "og:description": "Conoce Elite Coach, TerretaAgro, ContaTerra y TerretaRail: productos de software de Terreta, junto a proyectos reales para servicios profesionales.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/productos",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/productos#webpage",
+              "url": "https://www.realterretaia.com/productos",
+              "name": "Productos y soluciones de software empresarial | Terreta",
+              "description": "Conoce Elite Coach, TerretaAgro, ContaTerra y TerretaRail: productos de software de Terreta, junto a proyectos reales para servicios profesionales.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/productos#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/productos#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Productos",
+                  "item": "https://www.realterretaia.com/productos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/aplicaciones/fitness-app",
+      "title": "Elite Coach | App para entrenadores y gimnasios | Terreta",
+      "description": "Descubre Elite Coach: rutinas, clientes, seguimiento y nutrición para entrenadores y gimnasios. Conoce esta aplicación desarrollada por Terreta.",
+      "canonical": "https://www.realterretaia.com/aplicaciones/fitness-app",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Elite Coach, la app para tu negocio fitness"
+        },
+        {
+          "level": "H2",
+          "text": "El problema que viven muchos entrenadores"
+        },
+        {
+          "level": "H3",
+          "text": "Gestión fragmentada"
+        },
+        {
+          "level": "H3",
+          "text": "Falta de claridad"
+        },
+        {
+          "level": "H3",
+          "text": "Difícil de escalar"
+        },
+        {
+          "level": "H2",
+          "text": "Una sola plataforma para entrenadores y gimnasios"
+        },
+        {
+          "level": "H3",
+          "text": "Control para organizar el servicio"
+        },
+        {
+          "level": "H3",
+          "text": "Claridad para avanzar cada día"
+        },
+        {
+          "level": "H2",
+          "text": "Del plan del entrenador al día a día del cliente"
+        },
+        {
+          "level": "H2",
+          "text": "Más control. Más retención. Más ingresos."
+        },
+        {
+          "level": "H2",
+          "text": "Descubre Elite Coach"
+        },
+        {
+          "level": "H3",
+          "text": "Elite Coach Login"
+        },
+        {
+          "level": "H3",
+          "text": "Elite Coach Intro"
+        },
+        {
+          "level": "H3",
+          "text": "Restablecer contraseña"
+        },
+        {
+          "level": "H3",
+          "text": "Configura tu perfil"
+        },
+        {
+          "level": "H3",
+          "text": "Calendario de nutrición"
+        },
+        {
+          "level": "H3",
+          "text": "Tus medidas"
+        },
+        {
+          "level": "H2",
+          "text": "Un producto real desarrollado por Terreta"
+        },
+        {
+          "level": "H2",
+          "text": "¿Quieres llevar tu servicio al siguiente nivel con una app propia?"
+        }
+      ],
+      "firstText": "Organiza rutinas, seguimiento, nutrición y clientes en una sola plataforma diseñada para entrenadores y gimnasios.",
+      "internalLinks": [
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar propuesta"
+        },
+        {
+          "url": "/aplicaciones/fitness-app#funcionalidades",
+          "anchor": "Descubrir el producto ↓"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Conoce nuestros servicios de desarrollo →"
+        },
+        {
+          "url": "/",
+          "anchor": "Conocer Terreta"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Ver servicios"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Hablemos de tu producto →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        },
+        {
+          "src": "assets/images/elite-coach.webp",
+          "alt": "Pantalla de acceso de la aplicación Elite Coach",
+          "width": "900",
+          "height": "900",
+          "loading": "eager",
+          "bytes": 39390
+        },
+        {
+          "src": "https://i.ytimg.com/vi/0jJvLwX_HuM/hqdefault.jpg",
+          "alt": "Vista previa del videotutorial Elite Coach Login",
+          "width": "480",
+          "height": "360",
+          "loading": "lazy",
+          "bytes": null
+        },
+        {
+          "src": "https://i.ytimg.com/vi/KtMRqJarr4U/hqdefault.jpg",
+          "alt": "Vista previa del videotutorial Elite Coach Intro",
+          "width": "480",
+          "height": "360",
+          "loading": "lazy",
+          "bytes": null
+        },
+        {
+          "src": "https://i.ytimg.com/vi/2vAL_JeNc4Q/hqdefault.jpg",
+          "alt": "Vista previa del videotutorial Restablecer contraseña",
+          "width": "480",
+          "height": "360",
+          "loading": "lazy",
+          "bytes": null
+        },
+        {
+          "src": "https://i.ytimg.com/vi/j4t8Eh6SwRo/hqdefault.jpg",
+          "alt": "Vista previa del videotutorial Configura tu perfil",
+          "width": "480",
+          "height": "360",
+          "loading": "lazy",
+          "bytes": null
+        },
+        {
+          "src": "https://i.ytimg.com/vi/9faRXaxaFtU/hqdefault.jpg",
+          "alt": "Vista previa del videotutorial Calendario de nutrición",
+          "width": "480",
+          "height": "360",
+          "loading": "lazy",
+          "bytes": null
+        },
+        {
+          "src": "https://i.ytimg.com/vi/aUsokc1uh38/hqdefault.jpg",
+          "alt": "Vista previa del videotutorial Tus medidas",
+          "width": "480",
+          "height": "360",
+          "loading": "lazy",
+          "bytes": null
+        }
+      ],
+      "openGraph": {
+        "og:title": "Elite Coach | App para entrenadores y gimnasios | Terreta",
+        "og:description": "Descubre Elite Coach: rutinas, clientes, seguimiento y nutrición para entrenadores y gimnasios. Conoce esta aplicación desarrollada por Terreta.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/aplicaciones/fitness-app",
+        "og:image": "https://www.realterretaia.com/assets/images/elite-coach.webp",
+        "og:image:alt": "Pantalla de acceso de Elite Coach"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/aplicaciones/fitness-app#webpage",
+              "url": "https://www.realterretaia.com/aplicaciones/fitness-app",
+              "name": "Elite Coach | App para entrenadores y gimnasios | Terreta",
+              "description": "Descubre Elite Coach: rutinas, clientes, seguimiento y nutrición para entrenadores y gimnasios. Conoce esta aplicación desarrollada por Terreta.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/aplicaciones/fitness-app#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/aplicaciones/fitness-app#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Productos",
+                  "item": "https://www.realterretaia.com/productos"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Elite Coach",
+                  "item": "https://www.realterretaia.com/aplicaciones/fitness-app"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/como-trabajamos",
+      "title": "Proceso de desarrollo de software | Cómo trabaja Terreta",
+      "description": "Así desarrollamos software en Terreta: definición de alcance, planificación, diseño, desarrollo y validación por hitos, con soporte y evolución del proyecto.",
+      "canonical": "https://www.realterretaia.com/como-trabajamos",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Cómo desarrollamos tu software en Terreta"
+        },
+        {
+          "level": "H2",
+          "text": "Un proyecto tecnológico debe estar bien desarrollado y bien gestionado"
+        },
+        {
+          "level": "H2",
+          "text": "Los principios que guían cada proyecto"
+        },
+        {
+          "level": "H3",
+          "text": "Claridad desde el inicio"
+        },
+        {
+          "level": "H3",
+          "text": "Seguimiento continuo"
+        },
+        {
+          "level": "H3",
+          "text": "Flexibilidad controlada"
+        },
+        {
+          "level": "H3",
+          "text": "Compromiso con plazos y resultados"
+        },
+        {
+          "level": "H2",
+          "text": "Las seis fases del proyecto"
+        },
+        {
+          "level": "H3",
+          "text": "Descubrimiento y alineación"
+        },
+        {
+          "level": "H4",
+          "text": "Qué hacemos"
+        },
+        {
+          "level": "H4",
+          "text": "Resultado"
+        },
+        {
+          "level": "H3",
+          "text": "Análisis funcional"
+        },
+        {
+          "level": "H4",
+          "text": "Qué hacemos"
+        },
+        {
+          "level": "H4",
+          "text": "Resultado"
+        },
+        {
+          "level": "H3",
+          "text": "Diseño técnico"
+        },
+        {
+          "level": "H4",
+          "text": "Qué hacemos"
+        },
+        {
+          "level": "H4",
+          "text": "Resultado"
+        },
+        {
+          "level": "H3",
+          "text": "Desarrollo iterativo"
+        },
+        {
+          "level": "H4",
+          "text": "Qué hacemos"
+        },
+        {
+          "level": "H4",
+          "text": "Resultado"
+        },
+        {
+          "level": "H3",
+          "text": "Testing y validación"
+        },
+        {
+          "level": "H4",
+          "text": "Qué hacemos"
+        },
+        {
+          "level": "H4",
+          "text": "Resultado"
+        },
+        {
+          "level": "H3",
+          "text": "Despliegue, soporte y evolución"
+        },
+        {
+          "level": "H4",
+          "text": "Qué hacemos"
+        },
+        {
+          "level": "H4",
+          "text": "Resultado"
+        },
+        {
+          "level": "H2",
+          "text": "El cliente forma parte del proceso"
+        },
+        {
+          "level": "H2",
+          "text": "No solo desarrollamos: hacemos que el proyecto sea más claro y controlable"
+        },
+        {
+          "level": "H2",
+          "text": "¿Tienes una idea o un proyecto en marcha?"
+        }
+      ],
+      "firstText": "Organizamos el desarrollo de software por fases: entendemos tu necesidad, definimos el alcance y validamos cada avance contigo. Combinamos planificación, flexibilidad y seguimiento para que conozcas qué se construye y por qué.",
+      "internalLinks": [
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar propuesta"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Ver servicios →"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Explora nuestros servicios de software y aplicaciones →"
+        },
+        {
+          "url": "/",
+          "anchor": "Conoce Terreta →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar propuesta →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Proceso de desarrollo de software | Cómo trabaja Terreta",
+        "og:description": "Así desarrollamos software en Terreta: definición de alcance, planificación, diseño, desarrollo y validación por hitos, con soporte y evolución del proyecto.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/como-trabajamos",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/como-trabajamos#webpage",
+              "url": "https://www.realterretaia.com/como-trabajamos",
+              "name": "Proceso de desarrollo de software | Cómo trabaja Terreta",
+              "description": "Así desarrollamos software en Terreta: definición de alcance, planificación, diseño, desarrollo y validación por hitos, con soporte y evolución del proyecto.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/como-trabajamos#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/como-trabajamos#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Cómo trabajamos",
+                  "item": "https://www.realterretaia.com/como-trabajamos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/nosotros",
+      "title": "Terreta | Empresa de desarrollo de software en Alicante",
+      "description": "Somos Terreta, empresa de Alicante especializada en software para empresas y pymes. Conoce nuestro enfoque, servicios y forma de trabajar contigo.",
+      "canonical": "https://www.realterretaia.com/nosotros",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Terreta, software para empresas desde Alicante"
+        },
+        {
+          "level": "H2",
+          "text": "Convertimos necesidades reales en soluciones digitales"
+        },
+        {
+          "level": "H2",
+          "text": "Diseño y desarrollo de software para empresas"
+        },
+        {
+          "level": "H3",
+          "text": "Software a medida"
+        },
+        {
+          "level": "H3",
+          "text": "Aplicaciones web y móviles"
+        },
+        {
+          "level": "H3",
+          "text": "Automatización de procesos"
+        },
+        {
+          "level": "H3",
+          "text": "Inteligencia artificial"
+        },
+        {
+          "level": "H2",
+          "text": "La tecnología tiene valor cuando resuelve un problema real"
+        },
+        {
+          "level": "H2",
+          "text": "Colaboración, visibilidad y evolución continua"
+        },
+        {
+          "level": "H2",
+          "text": "La forma en que construimos importa"
+        },
+        {
+          "level": "H3",
+          "text": "Claridad"
+        },
+        {
+          "level": "H3",
+          "text": "Acompañamiento"
+        },
+        {
+          "level": "H3",
+          "text": "Innovación"
+        },
+        {
+          "level": "H3",
+          "text": "Calidad"
+        },
+        {
+          "level": "H3",
+          "text": "Colaboración"
+        },
+        {
+          "level": "H3",
+          "text": "Responsabilidad"
+        },
+        {
+          "level": "H2",
+          "text": "¿Hablamos de lo que necesita tu empresa?"
+        }
+      ],
+      "firstText": "Somos Terreta, una empresa de desarrollo de software en Alicante. Diseñamos aplicaciones y soluciones para empresas y pymes, desde la definición de lo que necesitan hasta su mantenimiento y evolución.",
+      "internalLinks": [
+        {
+          "url": "/contacto",
+          "anchor": "Hablar con Terreta"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Ver nuestros servicios →"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Explorar nuestros servicios de desarrollo de software →"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Conocer nuestra metodología →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Contactar con Terreta →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Terreta | Empresa de desarrollo de software en Alicante",
+        "og:description": "Somos Terreta, empresa de Alicante especializada en software para empresas y pymes. Conoce nuestro enfoque, servicios y forma de trabajar contigo.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/nosotros",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/nosotros#webpage",
+              "url": "https://www.realterretaia.com/nosotros",
+              "name": "Terreta | Empresa de desarrollo de software en Alicante",
+              "description": "Somos Terreta, empresa de Alicante especializada en software para empresas y pymes. Conoce nuestro enfoque, servicios y forma de trabajar contigo.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/nosotros#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/nosotros#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Nosotros",
+                  "item": "https://www.realterretaia.com/nosotros"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/contacto",
+      "title": "Contacto y presupuesto de software en Alicante | Terreta",
+      "description": "Habla con Terreta, en Alicante, sobre tu software, aplicación o automatización. Cuéntanos qué necesitas y solicita un presupuesto personalizado sin compromiso.",
+      "canonical": "https://www.realterretaia.com/contacto",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Hablemos de tu proyecto de software"
+        },
+        {
+          "level": "H2",
+          "text": "Información inicial del proyecto"
+        }
+      ],
+      "firstText": "Habla con nuestro equipo en Alicante sobre el software, la aplicación o el proceso que necesitas mejorar. Cuéntanos quién lo utilizará y qué herramientas tienes ya en marcha.",
+      "internalLinks": [
+        {
+          "url": "/servicios",
+          "anchor": "Consultar servicios de desarrollo →"
+        },
+        {
+          "url": "/privacy-policy",
+          "anchor": "Consultar la política de privacidad"
+        },
+        {
+          "url": "/privacy-policy",
+          "anchor": "política de privacidad"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Contacto y presupuesto de software en Alicante | Terreta",
+        "og:description": "Habla con Terreta, en Alicante, sobre tu software, aplicación o automatización. Cuéntanos qué necesitas y solicita un presupuesto personalizado sin compromiso.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/contacto",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/contacto#webpage",
+              "url": "https://www.realterretaia.com/contacto",
+              "name": "Contacto y presupuesto de software en Alicante | Terreta",
+              "description": "Habla con Terreta, en Alicante, sobre tu software, aplicación o automatización. Cuéntanos qué necesitas y solicita un presupuesto personalizado sin compromiso.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/contacto#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/contacto#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Contacto",
+                  "item": "https://www.realterretaia.com/contacto"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/privacy-policy",
+      "title": "Política de Privacidad | Terreta",
+      "description": "Consulta la política de privacidad y protección de datos personales del sitio web de Terreta.",
+      "canonical": "https://www.realterretaia.com/privacy-policy",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Política de privacidad"
+        },
+        {
+          "level": "H2",
+          "text": "Introducción"
+        },
+        {
+          "level": "H2",
+          "text": "Información que recopilamos"
+        },
+        {
+          "level": "H2",
+          "text": "Cómo usamos su información"
+        },
+        {
+          "level": "H2",
+          "text": "Divulgación de su información"
+        },
+        {
+          "level": "H2",
+          "text": "Seguridad de la información"
+        },
+        {
+          "level": "H2",
+          "text": "Sus derechos"
+        },
+        {
+          "level": "H2",
+          "text": "Cambios en esta política"
+        },
+        {
+          "level": "H2",
+          "text": "Contacto"
+        },
+        {
+          "level": "H2",
+          "text": "Candidaturas y currículums"
+        },
+        {
+          "level": "H2",
+          "text": "Solicitudes de inscripción a cursos"
+        }
+      ],
+      "firstText": "Información sobre el tratamiento y la protección de datos personales en Terreta.",
+      "internalLinks": [
+        {
+          "url": "/privacy-policy#introduccion",
+          "anchor": "Introducción"
+        },
+        {
+          "url": "/privacy-policy#datos",
+          "anchor": "Información recopilada"
+        },
+        {
+          "url": "/privacy-policy#uso",
+          "anchor": "Uso de la información"
+        },
+        {
+          "url": "/privacy-policy#divulgacion",
+          "anchor": "Divulgación"
+        },
+        {
+          "url": "/privacy-policy#seguridad",
+          "anchor": "Seguridad"
+        },
+        {
+          "url": "/privacy-policy#derechos",
+          "anchor": "Derechos"
+        },
+        {
+          "url": "/privacy-policy#cambios",
+          "anchor": "Cambios"
+        },
+        {
+          "url": "/privacy-policy#contacto-legal",
+          "anchor": "Contacto"
+        },
+        {
+          "url": "/privacy-policy#candidaturas",
+          "anchor": "Candidaturas"
+        },
+        {
+          "url": "/privacy-policy#cursos",
+          "anchor": "Cursos"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Ir a Contacto →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Política de Privacidad | Terreta",
+        "og:description": "Consulta la política de privacidad y protección de datos personales del sitio web de Terreta.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/privacy-policy",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/privacy-policy#webpage",
+              "url": "https://www.realterretaia.com/privacy-policy",
+              "name": "Política de Privacidad | Terreta",
+              "description": "Consulta la política de privacidad y protección de datos personales del sitio web de Terreta.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/privacy-policy#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/privacy-policy#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Política de privacidad",
+                  "item": "https://www.realterretaia.com/privacy-policy"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/trabajar-con-nosotros",
+      "title": "Trabajar con nosotros | Envía tu CV | Terreta",
+      "description": "Conoce Terreta y envíanos tu candidatura. Buscamos conocer talento en desarrollo de software, automatización, inteligencia artificial y diseño.",
+      "canonical": "https://www.realterretaia.com/trabajar-con-nosotros",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Trabajar con nosotros"
+        },
+        {
+          "level": "H2",
+          "text": "Cuéntanos sobre ti"
+        }
+      ],
+      "firstText": "Nos interesa conocer a personas con ganas de crear software útil. Cuéntanos qué sabes hacer, qué te gustaría aprender y cómo te gustaría aportar.",
+      "internalLinks": [
+        {
+          "url": "/nosotros",
+          "anchor": "Conoce Terreta →"
+        },
+        {
+          "url": "/privacy-policy#candidaturas",
+          "anchor": "Información sobre privacidad"
+        },
+        {
+          "url": "/privacy-policy#candidaturas",
+          "anchor": "política de privacidad"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Trabajar con nosotros | Envía tu CV | Terreta",
+        "og:description": "Conoce Terreta y envíanos tu candidatura. Buscamos conocer talento en desarrollo de software, automatización, inteligencia artificial y diseño.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/trabajar-con-nosotros",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/trabajar-con-nosotros#webpage",
+              "url": "https://www.realterretaia.com/trabajar-con-nosotros",
+              "name": "Trabajar con nosotros | Envía tu CV | Terreta",
+              "description": "Conoce Terreta y envíanos tu candidatura. Buscamos conocer talento en desarrollo de software, automatización, inteligencia artificial y diseño.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/trabajar-con-nosotros#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/trabajar-con-nosotros#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Trabajar con nosotros",
+                  "item": "https://www.realterretaia.com/trabajar-con-nosotros"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/cursos",
+      "title": "Cursos | Power BI para principiantes | Terreta",
+      "description": "Curso principiante en Power BI desde el 1 de noviembre de 2026: 10 horas, 30 plazas y formación desde la instalación hasta las métricas y la publicación.",
+      "canonical": "https://www.realterretaia.com/cursos",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Cursos"
+        },
+        {
+          "level": "H2",
+          "text": "Curso principiante en Power BI"
+        },
+        {
+          "level": "H3",
+          "text": "Índice de contenidos"
+        },
+        {
+          "level": "H3",
+          "text": "Cuatro tramos de inscripción"
+        },
+        {
+          "level": "H3",
+          "text": "Dos turnos a elegir"
+        },
+        {
+          "level": "H2",
+          "text": "Contenido del curso"
+        },
+        {
+          "level": "H3",
+          "text": "Instalación y primeros pasos"
+        },
+        {
+          "level": "H3",
+          "text": "Conexión e importación de datos"
+        },
+        {
+          "level": "H3",
+          "text": "Limpieza y transformación con Power Query"
+        },
+        {
+          "level": "H3",
+          "text": "Modelado y relaciones"
+        },
+        {
+          "level": "H3",
+          "text": "Diseño de informes interactivos"
+        },
+        {
+          "level": "H3",
+          "text": "Creación y gestión de métricas con DAX"
+        },
+        {
+          "level": "H3",
+          "text": "Publicación y entrega del informe"
+        },
+        {
+          "level": "H2",
+          "text": "Solicita tu inscripción"
+        }
+      ],
+      "firstText": "Da el primer paso para aprender nuevas herramientas. Descubre nuestro primer curso.",
+      "internalLinks": [
+        {
+          "url": "/cursos#instalacion",
+          "anchor": "Instalación y primeros pasos"
+        },
+        {
+          "url": "/cursos#datos",
+          "anchor": "Conexión e importación de datos"
+        },
+        {
+          "url": "/cursos#power-query",
+          "anchor": "Limpieza y transformación con Power Query"
+        },
+        {
+          "url": "/cursos#modelado",
+          "anchor": "Modelado y relaciones"
+        },
+        {
+          "url": "/cursos#informes",
+          "anchor": "Diseño de informes interactivos"
+        },
+        {
+          "url": "/cursos#metricas",
+          "anchor": "Creación y gestión de métricas con DAX"
+        },
+        {
+          "url": "/cursos#publicacion",
+          "anchor": "Publicación y entrega del informe"
+        },
+        {
+          "url": "/cursos#contenido",
+          "anchor": "Información del curso →"
+        },
+        {
+          "url": "/cursos#inscripcion",
+          "anchor": "Solicitar inscripción →"
+        },
+        {
+          "url": "/privacy-policy#cursos",
+          "anchor": "Información sobre privacidad"
+        },
+        {
+          "url": "/privacy-policy#cursos",
+          "anchor": "política de privacidad"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        },
+        {
+          "src": "/assets/images/power-bi-224.webp",
+          "alt": "Power BI",
+          "width": "112",
+          "height": "112",
+          "loading": "eager",
+          "bytes": 9376
+        }
+      ],
+      "openGraph": {
+        "og:title": "Cursos | Power BI para principiantes | Terreta",
+        "og:description": "Curso principiante en Power BI desde el 1 de noviembre de 2026: 10 horas, 30 plazas y formación desde la instalación hasta las métricas y la publicación.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/cursos",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/cursos#webpage",
+              "url": "https://www.realterretaia.com/cursos",
+              "name": "Cursos | Power BI para principiantes | Terreta",
+              "description": "Curso principiante en Power BI desde el 1 de noviembre de 2026: 10 horas, 30 plazas y formación desde la instalación hasta las métricas y la publicación.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/cursos#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/cursos#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Cursos",
+                  "item": "https://www.realterretaia.com/cursos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

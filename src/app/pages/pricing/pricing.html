@@ -1,48 +1,50 @@
-<section class="pricing" aria-labelledby="pricing-title">
-  <app-container>
-    <div class="pricing__grid">
-      <div>
-        <span class="eyebrow">Tarifas</span>
-        <h1 id="pricing-title">Un presupuesto a medida de lo que necesitas</h1>
-        <p>
-          Cada proyecto tiene sus propias necesidades. Por eso, nuestras tarifas se adaptan al
-          alcance y a las características del trabajo que quieres realizar.
-        </p>
-        <p>
-          Rellena nuestro formulario de contacto y explícanos qué necesitas realizar. Estudiaremos
-          tu solicitud y te enviaremos un presupuesto personalizado, sin ningún compromiso.
-        </p>
-        <app-button label="Solicitar presupuesto →" link="/contacto" />
-        <div class="pricing__outsourcing">
+<main>
+  <section class="pricing" aria-labelledby="pricing-title">
+    <app-container>
+      <div class="pricing__grid">
+        <div>
+          <span class="eyebrow">Tarifas</span>
+          <h1 id="pricing-title">Un presupuesto a medida de lo que necesitas</h1>
           <p>
-            ¿Necesitas reforzar tu equipo? Descubre nuestras bolsas de horas y tarifas de
-            lanzamiento con un equipo en España. Desarrollamos con nuestro propio equipo, sin
-            externalizar los trabajos.
+            Cada proyecto tiene sus propias necesidades. Por eso, nuestras tarifas se adaptan al
+            alcance y a las características del trabajo que quieres realizar.
           </p>
-          <app-button
-            label="Ver tarifas de outsourcing →"
-            link="/outsourcing"
-            variant="secondary"
-          />
+          <p>
+            Rellena nuestro formulario de contacto y explícanos qué necesitas realizar. Estudiaremos
+            tu solicitud y te enviaremos un presupuesto personalizado, sin ningún compromiso.
+          </p>
+          <app-button label="Solicitar presupuesto →" link="/contacto" />
+          <div class="pricing__outsourcing">
+            <p>
+              ¿Necesitas reforzar tu equipo? Descubre nuestras bolsas de horas y tarifas de
+              lanzamiento con un equipo en España. Desarrollamos con nuestro propio equipo, sin
+              externalizar los trabajos.
+            </p>
+            <app-button
+              label="Ver tarifas de outsourcing →"
+              link="/outsourcing"
+              variant="secondary"
+            />
+          </div>
         </div>
+        <aside class="pricing__card" aria-labelledby="pricing-details">
+          <span class="eyebrow">Sin compromiso</span>
+          <h2 id="pricing-details">Cuéntanos tu proyecto</h2>
+          <p>
+            Utiliza el mismo formulario de contacto. Para ayudarnos a preparar tu presupuesto,
+            puedes incluir:
+          </p>
+          <ul>
+            <li>Qué quieres desarrollar, mejorar o automatizar.</li>
+            <li>Las funcionalidades o tareas que necesitas cubrir.</li>
+            <li>Los plazos que tienes en mente, si los conoces.</li>
+          </ul>
+          <p class="pricing__note">
+            No necesitas tener todos los detalles definidos. Cuéntanos tu idea y te ayudaremos a
+            concretarla.
+          </p>
+        </aside>
       </div>
-      <aside class="pricing__card" aria-labelledby="pricing-details">
-        <span class="eyebrow">Sin compromiso</span>
-        <h2 id="pricing-details">Cuéntanos tu proyecto</h2>
-        <p>
-          Utiliza el mismo formulario de contacto. Para ayudarnos a preparar tu presupuesto, puedes
-          incluir:
-        </p>
-        <ul>
-          <li>Qué quieres desarrollar, mejorar o automatizar.</li>
-          <li>Las funcionalidades o tareas que necesitas cubrir.</li>
-          <li>Los plazos que tienes en mente, si los conoces.</li>
-        </ul>
-        <p class="pricing__note">
-          No necesitas tener todos los detalles definidos. Cuéntanos tu idea y te ayudaremos a
-          concretarla.
-        </p>
-      </aside>
-    </div>
-  </app-container>
-</section>
+    </app-container>
+  </section>
+</main>

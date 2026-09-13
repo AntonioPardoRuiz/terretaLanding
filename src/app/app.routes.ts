@@ -7,9 +7,9 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home').then((c) => c.HomeComponent),
     data: {
       seo: {
-        title: 'Terreta | Software, Automatización e IA para Empresas',
+        title: 'Desarrollo de software para empresas en Alicante | Terreta',
         description:
-          'Desarrollamos software a medida, aplicaciones web, apps móviles, automatizaciones e inteligencia artificial para empresas que quieren crecer con tecnología clara, moderna y útil.',
+          'Desarrollamos software para empresas desde Alicante: aplicaciones web y móviles, automatización e IA. Conoce nuestros productos y cuéntanos tu proyecto.',
         canonicalPath: '/',
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
@@ -20,9 +20,9 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/services/services').then((c) => c.ServicesComponent),
     data: {
       seo: {
-        title: 'Servicios Digitales | Apps, Automatización e IA | Terreta',
+        title: 'Software a medida, aplicaciones y desarrollo web | Terreta',
         description:
-          'Soluciones web, móviles, automatizaciones e inteligencia artificial adaptadas a las necesidades reales de cada empresa.',
+          'Software a medida, aplicaciones web y móviles, páginas web, automatización e IA para empresas. Desde Alicante, te ayudamos a definir la solución que necesitas.',
         canonicalPath: '/servicios',
       },
     },
@@ -56,9 +56,9 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/products/products').then((c) => c.ProductsComponent),
     data: {
       seo: {
-        title: 'Productos digitales desarrollados por Terreta',
+        title: 'Productos y soluciones de software empresarial | Terreta',
         description:
-          'Descubre el catálogo de software de Terreta: soluciones para fitness, agricultura, contabilidad, sector ferroviario y servicios profesionales.',
+          'Conoce Elite Coach, TerretaAgro, ContaTerra y TerretaRail: productos de software de Terreta, junto a proyectos reales para servicios profesionales.',
         canonicalPath: '/productos',
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
@@ -70,9 +70,9 @@ export const routes: Routes = [
       import('./pages/elite-coach/elite-coach').then((c) => c.EliteCoachComponent),
     data: {
       seo: {
-        title: 'Elite Coach App | Aplicación Fitness Desarrollada por Terreta',
+        title: 'Elite Coach | App para entrenadores y gimnasios | Terreta',
         description:
-          'Elite Coach organiza rutinas, seguimiento, nutrición y clientes en una plataforma para entrenadores y gimnasios desarrollada por Terreta.',
+          'Descubre Elite Coach: rutinas, clientes, seguimiento y nutrición para entrenadores y gimnasios. Conoce esta aplicación desarrollada por Terreta.',
         canonicalPath: '/aplicaciones/fitness-app',
         image: 'https://www.realterretaia.com/assets/images/elite-coach.webp',
       },
@@ -97,9 +97,9 @@ export const routes: Routes = [
       import('./pages/how-we-work/how-we-work').then((c) => c.HowWeWorkComponent),
     data: {
       seo: {
-        title: 'Cómo Trabajamos | Desarrollo de Software | Terreta',
+        title: 'Proceso de desarrollo de software | Cómo trabaja Terreta',
         description:
-          'Conoce cómo organizamos proyectos de software en Terreta: planificación, hitos, desarrollo iterativo, validación y seguimiento continuo.',
+          'Así desarrollamos software en Terreta: definición de alcance, planificación, diseño, desarrollo y validación por hitos, con soporte y evolución del proyecto.',
         canonicalPath: '/como-trabajamos',
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
@@ -110,9 +110,9 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/about/about').then((c) => c.AboutComponent),
     data: {
       seo: {
-        title: 'Sobre Terreta | Software, Automatización e IA',
+        title: 'Terreta | Empresa de desarrollo de software en Alicante',
         description:
-          'Conoce Terreta, empresa de Alicante especializada en software a medida, aplicaciones, automatización e inteligencia artificial para empresas.',
+          'Somos Terreta, empresa de Alicante especializada en software para empresas y pymes. Conoce nuestro enfoque, servicios y forma de trabajar contigo.',
         canonicalPath: '/nosotros',
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
@@ -123,9 +123,9 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/contact/contact').then((c) => c.ContactComponent),
     data: {
       seo: {
-        title: 'Contacto | Hablemos de tu Proyecto | Terreta',
+        title: 'Contacto y presupuesto de software en Alicante | Terreta',
         description:
-          'Contacta con Terreta para hablar sobre software a medida, aplicaciones, automatización o inteligencia artificial para tu empresa.',
+          'Habla con Terreta, en Alicante, sobre tu software, aplicación o automatización. Cuéntanos qué necesitas y solicita un presupuesto personalizado sin compromiso.',
         canonicalPath: '/contacto',
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },

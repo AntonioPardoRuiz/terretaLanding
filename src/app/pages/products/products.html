@@ -3,15 +3,17 @@
     <app-container
       ><div class="products-hero__copy">
         <span class="eyebrow">Productos Terreta</span>
-        <h1 id="products-title">Software creado para problemas reales.</h1>
+        <h1 id="products-title">Productos de software para problemas reales.</h1>
         <p>
           Terreta no desarrolla software genérico. Analizamos procesos y construimos soluciones
           digitales adaptadas a problemas reales de negocio, desde el fitness hasta la agricultura,
           la contabilidad, el ferrocarril, la gestión de clientes y los servicios profesionales.
         </p>
         <nav class="sector-nav" aria-label="Sectores del catálogo">
-          <a href="#elite-coach">Fitness</a><a href="#software-sectorial">Software sectorial</a
-          ><a href="#psicologia">Digitalización</a><a href="#crm">CRM</a>
+          <a routerLink="/productos" fragment="elite-coach">Fitness</a
+          ><a routerLink="/productos" fragment="software-sectorial">Software sectorial</a
+          ><a routerLink="/productos" fragment="psicologia">Digitalización</a
+          ><a routerLink="/productos" fragment="crm">CRM</a>
         </nav>
       </div>
       <div class="catalog-map" aria-label="Sectores de producto">
@@ -34,6 +36,8 @@
             width="900"
             height="900"
             alt="Pantalla de acceso de Elite Coach"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div class="product__content">
@@ -276,8 +280,9 @@
       ><span>Software adaptado al negocio</span>
       <h2>¿Necesitas software para tu empresa?</h2>
       <p>
-        Cuéntanos qué proceso necesitas digitalizar y estudiaremos cómo convertirlo en una solución
-        clara y útil.
+        Explora nuestros <a routerLink="/servicios">servicios de desarrollo de software a medida</a>
+        o cuéntanos qué proceso necesitas digitalizar para estudiar una solución adaptada a tu
+        empresa.
       </p>
       <a routerLink="/contacto"
         >Hablar con Terreta <span aria-hidden="true">→</span></a

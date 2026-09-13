@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-09-13T06:24:55.300Z",
+  "verified": true,
+  "results": [
+    {
+      "host": "www.realterretaia.com",
+      "status": 200,
+      "url": "https://www.realterretaia.com/",
+      "dns": [
+        {
+          "address": "199.36.158.100",
+          "family": 4
+        }
+      ],
+      "cname": [
+        "terreta-web-prod.web.app"
+      ],
+      "scripts": [
+        "main-6GAP6O4W.js"
+      ],
+      "projectId": "terreta-web-prod",
+      "htmlHash": "0e0c0f1f050758870c8b7d3b9a3f8308a9969539fe47f75995c4ac44210a1644",
+      "canonical": "https://www.realterretaia.com/"
+    },
+    {
+      "host": "terreta-web-prod.web.app",
+      "status": 200,
+      "url": "https://terreta-web-prod.web.app/",
+      "dns": [
+        {
+          "address": "199.36.158.100",
+          "family": 4
+        }
+      ],
+      "cname": [],
+      "scripts": [
+        "main-6GAP6O4W.js"
+      ],
+      "projectId": "terreta-web-prod",
+      "htmlHash": "0e0c0f1f050758870c8b7d3b9a3f8308a9969539fe47f75995c4ac44210a1644",
+      "canonical": "https://www.realterretaia.com/"
+    },
+    {
+      "host": "realterretaia.com",
+      "status": 200,
+      "url": "https://realterretaia.com/",
+      "dns": [
+        {
+          "address": "199.36.158.100",
+          "family": 4
+        }
+      ],
+      "cname": [],
+      "scripts": [
+        "main-6GAP6O4W.js"
+      ],
+      "projectId": "terreta-web-prod",
+      "htmlHash": "0e0c0f1f050758870c8b7d3b9a3f8308a9969539fe47f75995c4ac44210a1644",
+      "canonical": "https://www.realterretaia.com/"
+    }
+  ]
+}

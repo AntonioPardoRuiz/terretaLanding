@@ -71,9 +71,9 @@ los tramos con sus fechas, sin un precio vigente fijado durante el prerenderizad
 
 ### Imagen y contenido de Power BI
 
-El icono mostrado `public/assets/images/power-bi.png` procede, sin modificaciones, de
+El original `public/assets/images/power-bi.png` procede, sin modificaciones, de
 https://github.com/microsoft/PowerBI-Icons/blob/main/PNG/Power-BI.png (Microsoft).
-La versión SVG anterior se conserva como recurso. Los enlaces al índice, contenido
+La web muestra `power-bi-224.webp`, reducido a 168 × 224 px y convertido a WebP sin pérdida adicional para evitar descargar 797 kB en una imagen pequeña. Se conserva el dibujo y la transparencia. Las versiones PNG y SVG originales se conservan como recursos. Los enlaces al índice, contenido
 e inscripción usan `/cursos` con fragmentos para evitar que `<base href="/">`
 los resuelva hacia la portada.
 Contenido bajo CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.

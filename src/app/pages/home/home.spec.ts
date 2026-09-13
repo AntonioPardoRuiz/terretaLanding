@@ -16,7 +16,7 @@ describe('HomeComponent', () => {
     const element = fixture.nativeElement as HTMLElement;
 
     expect(element.querySelectorAll('h1')).toHaveLength(1);
-    expect(element.querySelector('h1')?.textContent).toContain('Software, automatización e IA');
+    expect(element.querySelector('h1')?.textContent).toContain('Desarrollamos software para');
     expect(element.querySelector<HTMLAnchorElement>('a[href="/contacto"]')?.textContent).toContain(
       'Solicitar propuesta',
     );
@@ -30,7 +30,7 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
     const element = fixture.nativeElement as HTMLElement;
 
-    expect(element.querySelectorAll('a[href="/servicios"]')).toHaveLength(5);
+    expect(element.querySelectorAll('a[href^="/servicios#"]')).toHaveLength(5);
     expect(
       element.querySelectorAll('a[href="/aplicaciones/fitness-app"]').length,
     ).toBeGreaterThanOrEqual(2);

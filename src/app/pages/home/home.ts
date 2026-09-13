@@ -54,33 +54,43 @@ export class HomeComponent {
     },
   ];
 
-  readonly services: readonly Card[] = [
+  readonly services: readonly (Card & { fragment: string; anchor: string })[] = [
     {
       title: 'Aplicaciones Web',
+      fragment: 'software-a-medida',
+      anchor: 'Desarrollo de aplicaciones web',
       description:
         'Plataformas internas, portales de clientes, sistemas de reservas, dashboards y herramientas de gestión.',
       icon: 'browser',
     },
     {
       title: 'Apps Móviles',
+      fragment: 'aplicaciones-moviles',
+      anchor: 'Desarrollo de apps móviles',
       description:
         'Aplicaciones para iOS y Android orientadas a clientes, equipos internos, comunidades o nuevos modelos de negocio.',
       icon: 'mobile',
     },
     {
       title: 'Automatizaciones',
+      fragment: 'automatizacion',
+      anchor: 'Automatización de procesos',
       description:
         'Flujos conectados entre formularios, CRM, email, WhatsApp, hojas de cálculo, bases de datos y herramientas empresariales.',
       icon: 'automation',
     },
     {
       title: 'Inteligencia Artificial',
+      fragment: 'inteligencia-artificial',
+      anchor: 'IA para empresas',
       description:
         'Chatbots, asistentes internos, análisis de datos, generación de contenido y procesos inteligentes personalizados.',
       icon: 'ai',
     },
     {
       title: 'Soporte y evolución',
+      fragment: 'soporte',
+      anchor: 'Mantenimiento de software',
       description:
         'Mantenimiento, mejoras y acompañamiento para que cada solución siga respondiendo a las necesidades del negocio.',
       icon: 'support',

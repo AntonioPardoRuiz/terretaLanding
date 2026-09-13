@@ -40,7 +40,7 @@ describe('CoursesComponent', () => {
       expect(element.querySelector(url.hash)).toBeTruthy();
     }
     expect(element.querySelector('img[alt="Power BI"]')?.getAttribute('src')).toBe(
-      '/assets/images/power-bi.png',
+      '/assets/images/power-bi-224.webp',
     );
   });
   it('requires equipment, connectivity and consent before sending', async () => {

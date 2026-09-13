@@ -16,7 +16,7 @@ describe('ProductsComponent', () => {
     const element = fixture.nativeElement as HTMLElement;
     expect(element.querySelectorAll('h1')).toHaveLength(1);
     expect(element.querySelector('h1')?.textContent).toContain(
-      'Software creado para problemas reales',
+      'Productos de software para problemas reales',
     );
     expect(element.textContent).toContain('Elite Coach');
     expect(element.textContent).toContain('Jessica Castejón Psicología');

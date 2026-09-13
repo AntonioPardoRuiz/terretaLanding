@@ -16,7 +16,9 @@ describe('EliteCoachComponent', () => {
     const element = fixture.nativeElement as HTMLElement;
 
     expect(element.querySelectorAll('h1')).toHaveLength(1);
-    expect(element.querySelector('h1')?.textContent).toContain('profesionaliza tu negocio fitness');
+    expect(element.querySelector('h1')?.textContent).toContain(
+      'Elite Coach, la app para tu negocio fitness',
+    );
     expect(element.querySelector('#problem-title')).toBeTruthy();
     expect(element.querySelector('#features-title')).toBeTruthy();
     expect(element.querySelector('#tutorials-title')).toBeTruthy();

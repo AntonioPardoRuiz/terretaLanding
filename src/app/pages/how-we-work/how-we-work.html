@@ -4,8 +4,12 @@
       <div class="process-hero__grid">
         <div class="process-hero__copy">
           <span class="eyebrow">Metodología Terreta</span>
-          <h1 id="process-title">Cómo trabajamos en Terreta</h1>
-          <p>Trabajamos con una metodología que combina planificación, flexibilidad y seguimiento continuo para que cada proyecto avance con orden, visibilidad y foco en resultados.</p>
+          <h1 id="process-title">Cómo desarrollamos tu software en Terreta</h1>
+          <p>
+            Organizamos el desarrollo de software por fases: entendemos tu necesidad, definimos el
+            alcance y validamos cada avance contigo. Combinamos planificación, flexibilidad y
+            seguimiento para que conozcas qué se construye y por qué.
+          </p>
           <div class="hero-actions">
             <app-button label="Solicitar propuesta" link="/contacto" />
             <app-button label="Ver servicios →" link="/servicios" variant="secondary" />
@@ -14,7 +18,10 @@
         <div class="process-map" aria-label="Proceso de trabajo en seis fases">
           <div class="process-map__line" aria-hidden="true"></div>
           @for (phase of phases; track phase.title; let index = $index) {
-            <div class="process-map__step"><span>0{{ index + 1 }}</span><strong>{{ phase.title }}</strong></div>
+            <div class="process-map__step">
+              <span>0{{ index + 1 }}</span
+              ><strong>{{ phase.title }}</strong>
+            </div>
           }
         </div>
       </div>
@@ -26,9 +33,19 @@
       <div class="method-intro__grid">
         <span class="section-label">Orden para avanzar</span>
         <div>
-          <h2 id="method-intro-title">Un proyecto tecnológico debe estar bien desarrollado y bien gestionado</h2>
-          <p>Por eso combinamos planificación, flexibilidad y seguimiento continuo, de forma que el cliente sepa en todo momento qué se está haciendo, qué se ha validado y cuál es el siguiente paso.</p>
-          <p>Nuestro enfoque mezcla ejecución ágil, control por hitos y comunicación constante. Definimos objetivos claros, entregables concretos y revisiones periódicas para reducir incertidumbre y mantener el proyecto alineado con las necesidades reales del negocio.</p>
+          <h2 id="method-intro-title">
+            Un proyecto tecnológico debe estar bien desarrollado y bien gestionado
+          </h2>
+          <p>
+            Por eso combinamos planificación, flexibilidad y seguimiento continuo, de forma que el
+            cliente sepa en todo momento qué se está haciendo, qué se ha validado y cuál es el
+            siguiente paso.
+          </p>
+          <p>
+            Nuestro enfoque mezcla ejecución ágil, control por hitos y comunicación constante.
+            Definimos objetivos claros, entregables concretos y revisiones periódicas para reducir
+            incertidumbre y mantener el proyecto alineado con las necesidades reales del negocio.
+          </p>
         </div>
       </div>
     </app-container>
@@ -43,7 +60,14 @@
       <div class="principles-grid">
         @for (principle of principles; track principle.title; let index = $index) {
           <article class="principle-card">
-            <div class="principle-card__top"><span class="principle-icon" [attr.data-icon]="principle.icon" aria-hidden="true"></span><small>0{{ index + 1 }}</small></div>
+            <div class="principle-card__top">
+              <span
+                class="principle-icon"
+                [attr.data-icon]="principle.icon"
+                aria-hidden="true"
+              ></span
+              ><small>0{{ index + 1 }}</small>
+            </div>
             <h3>{{ principle.title }}</h3>
             <p>{{ principle.description }}</p>
           </article>
@@ -57,19 +81,34 @@
       <header class="section-heading section-heading--light">
         <span class="section-label">De la idea a la evolución</span>
         <h2 id="phases-title">Las seis fases del proyecto</h2>
-        <p>Cada fase termina con una base concreta para abordar la siguiente con más claridad y control.</p>
+        <p>
+          Cada fase termina con una base concreta para abordar la siguiente con más claridad y
+          control.
+        </p>
       </header>
       <ol class="timeline">
         @for (phase of phases; track phase.title; let index = $index) {
           <li class="phase" [class.phase--even]="index % 2 === 1">
-            <div class="phase__marker" aria-hidden="true"><span>{{ index + 1 }}</span></div>
+            <div class="phase__marker" aria-hidden="true">
+              <span>{{ index + 1 }}</span>
+            </div>
             <article class="phase__card">
               <span class="phase__label">Fase 0{{ index + 1 }}</span>
               <h3>{{ phase.title }}</h3>
               <p class="phase__summary">{{ phase.summary }}</p>
               <div class="phase__details">
-                <div><h4>Qué hacemos</h4><ul>@for (action of phase.actions; track action) { <li>{{ action }}</li> }</ul></div>
-                <div class="phase__result"><h4>Resultado</h4><p>{{ phase.result }}</p></div>
+                <div>
+                  <h4>Qué hacemos</h4>
+                  <ul>
+                    @for (action of phase.actions; track action) {
+                      <li>{{ action }}</li>
+                    }
+                  </ul>
+                </div>
+                <div class="phase__result">
+                  <h4>Resultado</h4>
+                  <p>{{ phase.result }}</p>
+                </div>
               </div>
             </article>
           </li>
@@ -84,12 +123,24 @@
         <div class="collaboration__copy">
           <span class="section-label">Trabajo compartido</span>
           <h2 id="collaboration-title">El cliente forma parte del proceso</h2>
-          <p>No trabajamos a puerta cerrada. Durante el proyecto mantenemos una comunicación continua mediante revisiones, validaciones y seguimiento del avance. Así podemos tomar decisiones con más criterio, detectar ajustes antes y construir una solución alineada con la realidad del negocio.</p>
-          <a routerLink="/servicios" class="inline-link">Explora las soluciones que desarrollamos <span aria-hidden="true">→</span></a>
+          <p>
+            No trabajamos a puerta cerrada. Durante el proyecto mantenemos una comunicación continua
+            mediante revisiones, validaciones y seguimiento del avance. Así podemos tomar decisiones
+            con más criterio, detectar ajustes antes y construir una solución alineada con la
+            realidad del negocio.
+          </p>
+          <a routerLink="/servicios" class="inline-link"
+            >Explora nuestros servicios de software y aplicaciones
+            <span aria-hidden="true">→</span></a
+          >
         </div>
         <ul class="participation-list">
           @for (item of clientParticipation; track item; let index = $index) {
-            <li><span>0{{ index + 1 }}</span><strong>{{ item }}</strong><i aria-hidden="true">✓</i></li>
+            <li>
+              <span>0{{ index + 1 }}</span
+              ><strong>{{ item }}</strong
+              ><i aria-hidden="true">✓</i>
+            </li>
           }
         </ul>
       </div>
@@ -99,17 +150,35 @@
   <section class="commitment section" aria-labelledby="commitment-title">
     <app-container>
       <div class="commitment__card">
-        <div class="commitment__visual" aria-hidden="true"><span></span><span></span><span></span><strong>Avance visible</strong></div>
+        <div class="commitment__visual" aria-hidden="true">
+          <span></span><span></span><span></span><strong>Avance visible</strong>
+        </div>
         <div>
           <span class="section-label">Compromiso Terreta</span>
-          <h2 id="commitment-title">No solo desarrollamos: hacemos que el proyecto sea más claro y controlable</h2>
-          <p>Nuestra metodología busca evitar problemas habituales en proyectos tecnológicos: falta de visibilidad, retrasos sin explicación, cambios de alcance desordenados y sensación de pérdida de control.</p>
-          <p>Trabajamos con hitos, seguimiento continuo, entregables definidos y validación periódica. Si un retraso es atribuible a nuestro equipo, aplicamos el ajuste acordado. Esa responsabilidad también forma parte de cómo trabajamos.</p>
-          <a routerLink="/" class="inline-link inline-link--light">Conoce Terreta <span aria-hidden="true">→</span></a>
+          <h2 id="commitment-title">
+            No solo desarrollamos: hacemos que el proyecto sea más claro y controlable
+          </h2>
+          <p>
+            Nuestra metodología busca evitar problemas habituales en proyectos tecnológicos: falta
+            de visibilidad, retrasos sin explicación, cambios de alcance desordenados y sensación de
+            pérdida de control.
+          </p>
+          <p>
+            Trabajamos con hitos, seguimiento continuo, entregables definidos y validación
+            periódica. Si un retraso es atribuible a nuestro equipo, aplicamos el ajuste acordado.
+            Esa responsabilidad también forma parte de cómo trabajamos.
+          </p>
+          <a routerLink="/" class="inline-link inline-link--light"
+            >Conoce Terreta <span aria-hidden="true">→</span></a
+          >
         </div>
       </div>
     </app-container>
   </section>
 
-  <app-cta heading="¿Tienes una idea o un proyecto en marcha?" description="Te ayudamos a definir el mejor enfoque, organizar el desarrollo y construir una solución tecnológica con control, visibilidad y objetivos claros desde el principio." buttonLabel="Solicitar propuesta →" />
+  <app-cta
+    heading="¿Tienes una idea o un proyecto en marcha?"
+    description="Te ayudamos a definir el mejor enfoque, organizar el desarrollo y construir una solución tecnológica con control, visibilidad y objetivos claros desde el principio."
+    buttonLabel="Solicitar propuesta →"
+  />
 </main>
