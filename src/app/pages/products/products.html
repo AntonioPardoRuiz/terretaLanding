@@ -261,15 +261,14 @@
         <article class="crm-product" id="crmhealth" aria-labelledby="crmhealth-heading">
           <span class="product__sector">CRMHealth · Demo disponible</span>
           <h2 id="crmhealth-heading">CRMHealth</h2>
-          <p>Conoce CRMHealth y explora la aplicación en su versión de demostración.</p>
+          <p>Solicita acceso a la demo de CRMHealth y conoce cómo puede encajar en tu negocio.</p>
           <a
             class="product__cta"
-            href="https://crmhealth-demo-20260908.web.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Probar la aplicación CRMHealth (abre en una pestaña nueva)"
+            routerLink="/contacto"
+            [queryParams]="{ demo: 'CRMHealth' }"
+            aria-label="Contactar para probar la demo de CRMHealth"
           >
-            Probar la aplicación <span aria-hidden="true">↗</span>
+            Probar la aplicación <span aria-hidden="true">→</span>
           </a>
         </article>
       </div>

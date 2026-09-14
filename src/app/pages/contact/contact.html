@@ -27,6 +27,12 @@
         <div>
           <span class="section-label">Cuéntanos qué necesitas</span>
           <h2 id="form-title">Información inicial del proyecto</h2>
+          @if (selectedDemo(); as demo) {
+            <p class="form-notice">
+              <strong>Demo seleccionada: {{ demo }}</strong
+              >Completa tus datos para solicitar acceso a esta demostración.
+            </p>
+          }
           <p>
             Rellena este formulario y explícanos qué necesitas realizar. Estudiaremos tu solicitud y
             te enviaremos un presupuesto personalizado sin ningún compromiso.
@@ -108,7 +114,7 @@
               id="needs"
               rows="6"
               formControlName="needs"
-              maxlength="3000"
+              [attr.maxlength]="messageLimit()"
               [attr.aria-invalid]="hasError('needs')"
               [attr.aria-describedby]="hasError('needs') ? 'needs-error' : null"
               placeholder="Describe brevemente la idea, proceso o problema que quieres resolver."

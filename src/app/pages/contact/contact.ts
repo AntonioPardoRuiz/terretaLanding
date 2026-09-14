@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, ElementRef, inject, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { finalize } from 'rxjs';
 import { ContainerComponent } from '../../shared/ui/container/container';
 import { ContactPayload, ContactService } from './contact.service';
@@ -17,6 +18,12 @@ type FormStatus = 'idle' | 'loading' | 'success' | 'error';
 export class ContactComponent {
   private readonly contactService = inject(ContactService);
   private readonly element = inject(ElementRef) as ElementRef<HTMLElement>;
+  private readonly route = inject(ActivatedRoute);
+  readonly selectedDemo = signal<string | null>(null);
+  readonly messageLimit = signal(3000);
+  private demoPrefix(): string {
+    return this.selectedDemo() ? `Demo solicitada: ${this.selectedDemo()}\n\n` : '';
+  }
   readonly submitted = signal(false);
   readonly status = signal<FormStatus>('idle');
   readonly contactForm = new FormGroup({
@@ -41,6 +48,30 @@ export class ContactComponent {
     website: new FormControl('', { nonNullable: true, validators: [Validators.maxLength(0)] }),
   });
 
+  constructor() {
+    this.route.queryParamMap.pipe(takeUntilDestroyed()).subscribe((params) => {
+      const previousMessage = this.selectedDemo()
+        ? `Quiero probar la demo de ${this.selectedDemo()}.`
+        : '';
+      // Only demos currently offered in the public catalogue can be selected.
+      this.selectedDemo.set(params.get('demo') === 'CRMHealth' ? 'CRMHealth' : null);
+      const limit = 3000 - this.demoPrefix().length;
+      this.messageLimit.set(limit);
+      const needs = this.contactForm.controls.needs;
+      needs.setValidators([
+        Validators.required,
+        Validators.minLength(20),
+        Validators.maxLength(limit),
+      ]);
+      if (!needs.value || needs.value === previousMessage) {
+        needs.setValue(
+          this.selectedDemo() ? `Quiero probar la demo de ${this.selectedDemo()}.` : '',
+        );
+      }
+      needs.updateValueAndValidity();
+    });
+  }
+
   submit(): void {
     if (this.status() === 'loading') return;
     for (const key of ['name', 'company', 'email', 'phone', 'needs', 'website'] as const) {
@@ -57,7 +88,7 @@ export class ContactComponent {
     this.status.set('loading');
     const value = this.contactForm.getRawValue();
     this.contactService
-      .send({ ...value, privacy: true } as ContactPayload)
+      .send({ ...value, needs: this.demoPrefix() + value.needs, privacy: true } as ContactPayload)
       .pipe(
         finalize(() => {
           if (this.status() === 'loading') this.status.set('idle');

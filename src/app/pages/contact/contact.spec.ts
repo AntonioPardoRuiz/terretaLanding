@@ -1,6 +1,7 @@
 import { provideHttpClient } from '@angular/common/http';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
+import { RouterTestingHarness } from '@angular/router/testing';
 import { provideRouter } from '@angular/router';
 import { RuntimeConfigService } from '../../core/config/runtime-config.service';
 import { ContactComponent } from './contact';
@@ -20,7 +21,7 @@ describe('ContactComponent', () => {
     TestBed.configureTestingModule({
       imports: [ContactComponent],
       providers: [
-        provideRouter([]),
+        provideRouter([{ path: 'contacto', component: ContactComponent }]),
         provideHttpClient(),
         provideHttpClientTesting(),
         {
@@ -119,4 +120,24 @@ describe('ContactComponent', () => {
     request.flush({ ok: true });
   });
 
+  it('prefills the chosen demo and includes it in email even if the message is edited', async () => {
+    const harness = await RouterTestingHarness.create();
+    const component = await harness.navigateByUrl('/contacto?demo=CRMHealth', ContactComponent);
+    expect(component.selectedDemo()).toBe('CRMHealth');
+    expect(component.contactForm.controls.needs.value).toContain('CRMHealth');
+    component.contactForm.patchValue(validValue);
+    component.submit();
+    const request = TestBed.inject(HttpTestingController).expectOne('/api/contact');
+    expect(request.request.body.needs).toBe('Demo solicitada: CRMHealth\n\n' + validValue.needs);
+    request.flush({ ok: true });
+  });
+  it('handles query changes without overwriting a visitor message and ignores unknown demos', async () => {
+    const harness = await RouterTestingHarness.create();
+    const component = await harness.navigateByUrl('/contacto?demo=CRMHealth', ContactComponent);
+    component.contactForm.controls.needs.setValue(validValue.needs);
+    await harness.navigateByUrl('/contacto?demo=unknown', ContactComponent);
+    expect(component.selectedDemo()).toBeNull();
+    expect(component.contactForm.controls.needs.value).toBe(validValue.needs);
+    expect(component.messageLimit()).toBe(3000);
+  });
 });

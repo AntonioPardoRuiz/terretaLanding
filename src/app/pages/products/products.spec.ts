@@ -33,6 +33,15 @@ describe('ProductsComponent', () => {
     expect(element.querySelector('a[href="/contacto"]')).toBeTruthy();
   });
 
+  it('routes demo requests to contact with the selected demo name', () => {
+    const fixture = TestBed.createComponent(ProductsComponent);
+    fixture.detectChanges();
+    const link = fixture.nativeElement.querySelector(
+      '#crmhealth .product__cta',
+    ) as HTMLAnchorElement;
+    expect(link.getAttribute('href')).toBe('/contacto?demo=CRMHealth');
+    expect(link.target).toBe('');
+  });
   it('limits TerretaAgro to its three confirmed areas', () => {
     const fixture = TestBed.createComponent(ProductsComponent);
     fixture.detectChanges();
