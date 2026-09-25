@@ -1,0 +1,85 @@
+<main>
+  <section class="detail-hero">
+    <app-container>
+      <nav aria-label="Ruta de navegación" class="breadcrumbs">
+        <a routerLink="/">Inicio</a><span aria-hidden="true">/</span
+        ><a routerLink="/servicios">Servicios</a><span aria-hidden="true">/</span
+        ><span aria-current="page">{{ page().name }}</span>
+      </nav>
+      <span class="eyebrow">Soluciones digitales para empresas</span>
+      <h1>{{ page().name }}</h1>
+      <p class="lead">{{ page().intro }}</p>
+      <app-button label="Cuéntanos tu proyecto →" link="/contacto" />
+    </app-container>
+  </section>
+  <section class="detail-section">
+    <app-container
+      ><div class="detail-grid">
+        <div>
+          <h2>Qué problemas podemos resolver</h2>
+          <p>{{ page().problem }}</p>
+        </div>
+        <div class="detail-card">
+          <h2>Qué aporta a tu negocio</h2>
+          <ul>
+            @for (benefit of page().benefits; track benefit) {
+              <li>{{ benefit }}</li>
+            }
+          </ul>
+        </div>
+      </div></app-container
+    >
+  </section>
+  <section class="detail-section detail-section--soft">
+    <app-container>
+      <h2>Cómo planteamos el proyecto</h2>
+      <ol class="steps">
+        @for (step of page().steps; track step) {
+          <li>{{ step }}</li>
+        }
+      </ol>
+      <a routerLink="/como-trabajamos">Conoce nuestra metodología de desarrollo</a>
+    </app-container>
+  </section>
+  <section class="detail-section">
+    <app-container
+      ><div class="detail-grid">
+        <div>
+          <h2>Tecnología e integraciones</h2>
+          <p>{{ page().technology }}</p>
+        </div>
+        <div>
+          <h2>Referencias para definir tu solución</h2>
+          <p>{{ page().example.text }}</p>
+          <a [routerLink]="page().example.path" [fragment]="page().example.fragment"
+            >{{ page().example.label }} →</a
+          >
+        </div>
+      </div></app-container
+    >
+  </section>
+  <app-faq [items]="page().seo.faqs ?? []" />
+  <section class="detail-section">
+    <app-container>
+      <h2>De Alicante a tu equipo</h2>
+      <p>
+        Terreta es una empresa de Alicante. Trabajamos con empresas y pymes de la provincia y de
+        otras ubicaciones, con comunicación directa y validación por hitos. Cuéntanos qué necesitas,
+        qué herramientas utilizas y quién participará en el proyecto.
+      </p>
+      <h2>Servicios relacionados</h2>
+      <ul>
+        @for (link of page().related; track link.path) {
+          <li>
+            <a [routerLink]="link.path">{{ link.label }}</a>
+          </li>
+        }
+      </ul>
+    </app-container>
+  </section>
+  <app-cta
+    heading="Define el siguiente paso para tu empresa"
+    description="Cuéntanos el proceso o la aplicación que necesitas. Te ayudamos a concretar el alcance y preparar un presupuesto personalizado."
+    buttonLabel="Solicitar presupuesto →"
+  />
+</main>

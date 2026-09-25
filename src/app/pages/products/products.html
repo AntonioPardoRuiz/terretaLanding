@@ -12,13 +12,13 @@
         <nav class="sector-nav" aria-label="Sectores del catálogo">
           <a routerLink="/productos" fragment="elite-coach">Fitness</a
           ><a routerLink="/productos" fragment="software-sectorial">Software sectorial</a
-          ><a routerLink="/productos" fragment="psicologia">Digitalización</a
+          ><a routerLink="/productos" fragment="proyectos-clientes">Digitalización</a
           ><a routerLink="/productos" fragment="crm">CRM</a>
         </nav>
       </div>
       <div class="catalog-map" aria-label="Sectores de producto">
         <span>FITNESS</span><span>AGRICULTURA</span><span>CONTABILIDAD</span><span>FERROVIARIO</span
-        ><span>PSICOLOGÍA</span><span>CRM</span><span>CRMHEALTH</span>
+        ><span>SERVICIOS PROFESIONALES</span><span>CRM</span><span>CRMHEALTH</span>
       </div></app-container
     >
   </section>
@@ -202,29 +202,30 @@
 
   <section
     class="catalog-section professional"
-    id="psicologia"
+    id="proyectos-clientes"
     aria-labelledby="psychology-heading"
   >
     <app-container
       ><header class="catalog-heading">
         <span>Proyectos · Digitalización</span>
-        <p>Tecnología aplicada a un negocio profesional.</p>
+        <p>Soluciones digitales desarrolladas para nuestros clientes.</p>
       </header>
       <article class="professional-product">
         <div class="product__visual product__visual--psychology">
-          <div class="calm-card"><i>Ψ</i><span>J. CASTEJÓN</span><small>PSICOLOGÍA</small></div>
+          <div class="calm-card"><i>↗</i><span>PROYECTOS</span><small>A MEDIDA</small></div>
         </div>
         <div class="product__content">
-          <span class="product__sector">Psicología · Servicios profesionales</span>
-          <h2 id="psychology-heading">Jessica Castejón Psicología</h2>
+          <span class="product__sector">Digitalización · Servicios profesionales</span>
+          <span id="psicologia" aria-hidden="true"></span>
+          <h2 id="psychology-heading">Productos realizados a nuestros clientes</h2>
           <p class="product__lead">
-            Una solución digital desarrollada por Terreta para trasladar un servicio profesional de
-            psicología a un entorno web claro y accesible.
+            Soluciones digitales desarrolladas por Terreta para trasladar los servicios de nuestros
+            clientes a entornos web claros y accesibles.
           </p>
           <h3>El problema que resuelve</h3>
           <p>
-            Ordena la presencia digital del negocio, comunica su propuesta profesional y ofrece un
-            punto público de información y contacto.
+            Organizan la presencia digital de cada negocio, comunican su propuesta profesional y ofrecen
+            un punto público de información y contacto.
           </p>
           <h3>Capacidades verificadas</h3>
           <ul>
@@ -234,10 +235,8 @@
           </ul>
           <a
             class="product__cta"
-            href="https://jcastejonpsicologia.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Visitar web pública <span aria-hidden="true">↗</span></a
+            routerLink="/contacto"
+            >Consultar un proyecto a medida <span aria-hidden="true">→</span></a
           >
         </div>
       </article></app-container
@@ -278,6 +277,7 @@
     <app-container
       ><span>Software adaptado al negocio</span>
       <h2>¿Necesitas software para tu empresa?</h2>
+      <p>Podemos definir tu <a routerLink="/desarrollo-software-a-medida">software a medida</a>, conectar herramientas mediante <a routerLink="/automatizacion-pymes">automatización de procesos</a> o desarrollar una <a routerLink="/desarrollo-aplicaciones-moviles">aplicación móvil para tus usuarios</a>.</p>
       <p>
         Explora nuestros <a routerLink="/servicios">servicios de desarrollo de software a medida</a>
         o cuéntanos qué proceso necesitas digitalizar para estudiar una solución adaptada a tu
@@ -288,4 +288,5 @@
       ></app-container
     >
   </section>
+  <app-faq [items]="faqs" />
 </main>

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-13T07:37:28.186Z",
+  "checkedAt": "2026-09-25T17:05:37.475Z",
   "environment": "Chrome headless local HTTP, no CPU/network throttling; isolated samples, not CrUX or field Core Web Vitals",
   "results": [
     {
@@ -10,29 +10,29 @@
       "h1": "Desarrollamos software para impulsar tu empresa.",
       "canonical": "https://www.realterretaia.com/",
       "graphCount": 1,
-      "lcpMs": 768,
+      "lcpMs": 980,
       "cls": 0
     },
     {
       "path": "/servicios",
       "width": 390,
       "contentWidth": 390,
-      "title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+      "title": "Servicios de desarrollo de software y aplicaciones | Terreta",
       "h1": "Software a medida, aplicaciones y soluciones para tu empresa",
       "canonical": "https://www.realterretaia.com/servicios",
       "graphCount": 1,
-      "lcpMs": 152,
+      "lcpMs": 276,
       "cls": 0
     },
     {
       "path": "/servicios",
       "width": 1440,
       "contentWidth": 1440,
-      "title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+      "title": "Servicios de desarrollo de software y aplicaciones | Terreta",
       "h1": "Software a medida, aplicaciones y soluciones para tu empresa",
       "canonical": "https://www.realterretaia.com/servicios",
       "graphCount": 1,
-      "lcpMs": 168,
+      "lcpMs": 296,
       "cls": 0
     },
     {
@@ -43,7 +43,7 @@
       "h1": "Productos de software para problemas reales.",
       "canonical": "https://www.realterretaia.com/productos",
       "graphCount": 1,
-      "lcpMs": 120,
+      "lcpMs": 236,
       "cls": 0
     },
     {
@@ -54,14 +54,124 @@
       "h1": "Cursos",
       "canonical": "https://www.realterretaia.com/cursos",
       "graphCount": 1,
+      "lcpMs": 148,
+      "cls": 0
+    },
+    {
+      "path": "/desarrollo-software-a-medida",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Software a medida para pymes y empresas | Terreta",
+      "h1": "Desarrollo de software a medida para empresas",
+      "canonical": "https://www.realterretaia.com/desarrollo-software-a-medida",
+      "graphCount": 1,
+      "lcpMs": 176,
+      "cls": 0
+    },
+    {
+      "path": "/desarrollo-software-a-medida",
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "Software a medida para pymes y empresas | Terreta",
+      "h1": "Desarrollo de software a medida para empresas",
+      "canonical": "https://www.realterretaia.com/desarrollo-software-a-medida",
+      "graphCount": 1,
+      "lcpMs": 128,
+      "cls": 0
+    },
+    {
+      "path": "/automatizacion-pymes",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Automatización para pymes e integración de procesos | Terreta",
+      "h1": "Automatización de procesos para pymes",
+      "canonical": "https://www.realterretaia.com/automatizacion-pymes",
+      "graphCount": 1,
+      "lcpMs": 168,
+      "cls": 0
+    },
+    {
+      "path": "/automatizacion-pymes",
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "Automatización para pymes e integración de procesos | Terreta",
+      "h1": "Automatización de procesos para pymes",
+      "canonical": "https://www.realterretaia.com/automatizacion-pymes",
+      "graphCount": 1,
+      "lcpMs": 116,
+      "cls": 0
+    },
+    {
+      "path": "/desarrollo-web",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Desarrollo web en Alicante y aplicaciones web | Terreta",
+      "h1": "Desarrollo web y aplicaciones web para empresas",
+      "canonical": "https://www.realterretaia.com/desarrollo-web",
+      "graphCount": 1,
+      "lcpMs": 112,
+      "cls": 0
+    },
+    {
+      "path": "/desarrollo-web",
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "Desarrollo web en Alicante y aplicaciones web | Terreta",
+      "h1": "Desarrollo web y aplicaciones web para empresas",
+      "canonical": "https://www.realterretaia.com/desarrollo-web",
+      "graphCount": 1,
       "lcpMs": 96,
+      "cls": 0
+    },
+    {
+      "path": "/desarrollo-aplicaciones-moviles",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Desarrollo de apps móviles para iOS y Android | Terreta",
+      "h1": "Desarrollo de aplicaciones móviles para iOS y Android",
+      "canonical": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles",
+      "graphCount": 1,
+      "lcpMs": 108,
+      "cls": 0
+    },
+    {
+      "path": "/desarrollo-aplicaciones-moviles",
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "Desarrollo de apps móviles para iOS y Android | Terreta",
+      "h1": "Desarrollo de aplicaciones móviles para iOS y Android",
+      "canonical": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles",
+      "graphCount": 1,
+      "lcpMs": 112,
+      "cls": 0
+    },
+    {
+      "path": "/inteligencia-artificial-empresas",
+      "width": 390,
+      "contentWidth": 390,
+      "title": "Inteligencia artificial para empresas y pymes | Terreta",
+      "h1": "Inteligencia artificial para empresas y pymes",
+      "canonical": "https://www.realterretaia.com/inteligencia-artificial-empresas",
+      "graphCount": 1,
+      "lcpMs": 180,
+      "cls": 0
+    },
+    {
+      "path": "/inteligencia-artificial-empresas",
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "Inteligencia artificial para empresas y pymes | Terreta",
+      "h1": "Inteligencia artificial para empresas y pymes",
+      "canonical": "https://www.realterretaia.com/inteligencia-artificial-empresas",
+      "graphCount": 1,
+      "lcpMs": 104,
       "cls": 0
     }
   ],
   "navigation": {
     "path": "/servicios",
     "hash": "#software-a-medida",
-    "title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+    "title": "Servicios de desarrollo de software y aplicaciones | Terreta",
     "canonical": "https://www.realterretaia.com/servicios",
     "services": 6
   },

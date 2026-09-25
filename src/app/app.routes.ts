@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { PAGE_FAQS } from './core/seo/page-faqs';
+import { SERVICE_METADATA } from './pages/service-detail/service-metadata';
 
 export const routes: Routes = [
   {
@@ -11,6 +13,7 @@ export const routes: Routes = [
         description:
           'Desarrollamos software para empresas desde Alicante: aplicaciones web y móviles, automatización e IA. Conoce nuestros productos y cuéntanos tu proyecto.',
         canonicalPath: '/',
+        faqs: PAGE_FAQS['/'],
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
@@ -20,10 +23,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/services/services').then((c) => c.ServicesComponent),
     data: {
       seo: {
-        title: 'Software a medida, aplicaciones y desarrollo web | Terreta',
+        title: 'Servicios de desarrollo de software y aplicaciones | Terreta',
         description:
           'Software a medida, aplicaciones web y móviles, páginas web, automatización e IA para empresas. Desde Alicante, te ayudamos a definir la solución que necesitas.',
         canonicalPath: '/servicios',
+        faqs: PAGE_FAQS['/servicios'],
       },
     },
   },
@@ -36,6 +40,7 @@ export const routes: Routes = [
         description:
           'Cuéntanos qué necesitas realizar a través de nuestro formulario de contacto y te enviaremos un presupuesto personalizado sin ningún compromiso.',
         canonicalPath: '/tarifas',
+        faqs: PAGE_FAQS['/tarifas'],
       },
     },
   },
@@ -60,6 +65,7 @@ export const routes: Routes = [
         description:
           'Conoce Elite Coach, TerretaAgro, ContaTerra y TerretaRail: productos de software de Terreta, junto a proyectos reales para servicios profesionales.',
         canonicalPath: '/productos',
+        faqs: PAGE_FAQS['/productos'],
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
@@ -74,6 +80,7 @@ export const routes: Routes = [
         description:
           'Descubre Elite Coach: rutinas, clientes, seguimiento y nutrición para entrenadores y gimnasios. Conoce esta aplicación desarrollada por Terreta.',
         canonicalPath: '/aplicaciones/fitness-app',
+        faqs: PAGE_FAQS['/aplicaciones/fitness-app'],
         image: 'https://www.realterretaia.com/assets/images/elite-coach.webp',
       },
     },
@@ -88,6 +95,7 @@ export const routes: Routes = [
         description:
           'Equipo en España: desarrollamos sin externalizar ni subcontratar a terceros. Bolsas desde 25 €/h en la de 160 h, sin IVA. Presupuesto sin compromiso.',
         canonicalPath: '/outsourcing',
+        faqs: PAGE_FAQS['/outsourcing'],
       },
     },
   },
@@ -101,6 +109,7 @@ export const routes: Routes = [
         description:
           'Así desarrollamos software en Terreta: definición de alcance, planificación, diseño, desarrollo y validación por hitos, con soporte y evolución del proyecto.',
         canonicalPath: '/como-trabajamos',
+        faqs: PAGE_FAQS['/como-trabajamos'],
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
@@ -114,6 +123,7 @@ export const routes: Routes = [
         description:
           'Somos Terreta, empresa de Alicante especializada en software para empresas y pymes. Conoce nuestro enfoque, servicios y forma de trabajar contigo.',
         canonicalPath: '/nosotros',
+        faqs: PAGE_FAQS['/nosotros'],
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
@@ -127,6 +137,7 @@ export const routes: Routes = [
         description:
           'Habla con Terreta, en Alicante, sobre tu software, aplicación o automatización. Cuéntanos qué necesitas y solicita un presupuesto personalizado sin compromiso.',
         canonicalPath: '/contacto',
+        faqs: PAGE_FAQS['/contacto'],
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
       },
     },
@@ -155,6 +166,20 @@ export const routes: Routes = [
       },
     },
   },
+  ...SERVICE_METADATA.map((page) => ({
+    path: page.slug,
+    resolve: {
+      service: () =>
+        import('./pages/service-detail/service-content').then((module) =>
+          module.SERVICE_PAGES.find((service) => service.slug === page.slug)!,
+        ),
+    },
+    loadComponent: () =>
+      import('./pages/service-detail/service-detail').then((c) => c.ServiceDetailComponent),
+    data: {
+      seo: { ...page.seo, canonicalPath: '/' + page.slug, serviceName: page.name },
+    },
+  })),
   {
     path: '**',
     loadComponent: () => import('./pages/not-found/not-found').then((c) => c.NotFoundComponent),

@@ -160,7 +160,7 @@
         }
       </div>
       <div class="catalog-tags" aria-label="Catálogo de productos">
-        <span>Elite Coach</span><span>Jessica Castejón Psicología</span><span>TerretaAgro</span
+        <span>Elite Coach</span><span>Productos realizados a nuestros clientes</span><span>TerretaAgro</span
         ><span>ContaTerra</span><span>TerretaRail</span>
         <a routerLink="/productos" fragment="crm">Terreta CRM</a>
         <a routerLink="/productos" fragment="crmhealth">CRMHealth · Demo disponible →</a>
@@ -171,6 +171,11 @@
     </app-container>
   </section>
 
+  <section class="section" aria-labelledby="next-step-title"><app-container>
+    <h2 id="next-step-title">Elige el siguiente paso para digitalizar tu pyme</h2>
+    <p>Si necesitas una herramienta propia, conoce nuestro <a routerLink="/desarrollo-software-a-medida">desarrollo de software a medida</a>. Si el problema está en tareas repetitivas entre herramientas, explora la <a routerLink="/automatizacion-pymes">automatización para pymes</a>.</p>
+    <p>También puedes consultar el <a routerLink="/desarrollo-web">desarrollo web para empresas</a>, las <a routerLink="/desarrollo-aplicaciones-moviles">aplicaciones móviles</a> y la <a routerLink="/inteligencia-artificial-empresas">inteligencia artificial aplicada al negocio</a>.</p>
+  </app-container></section>
   <section class="attribute-strip" aria-label="Atributos de Terreta">
     <app-container
       ><div class="attribute-grid">
@@ -189,4 +194,5 @@
     description="Cuéntanos qué necesitas y te ayudamos a transformarlo en una solución digital clara, escalable y preparada para crecer."
     buttonLabel="Agendar diagnóstico gratuito →"
   />
+  <app-faq [items]="faqs" />
 </main>

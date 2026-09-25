@@ -1,7 +1,14 @@
 export const SITE_URL = 'https://www.realterretaia.com';
 export const DEFAULT_IMAGE = `${SITE_URL}/assets/brand/terreta-logo.png`;
 
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface SeoData {
+  faqs?: readonly FaqItem[];
+  serviceName?: string;
   title: string;
   description: string;
   canonicalPath?: string;
@@ -75,8 +82,12 @@ export function structuredData(seo: SeoData, path: string): Record<string, unkno
     },
   ];
   if (path !== '/') {
-    const parents =
-      path === '/aplicaciones/fitness-app'
+    const parents = seo.serviceName
+      ? [
+          { name: 'Inicio', item: `${SITE_URL}/` },
+          { name: 'Servicios', item: `${SITE_URL}/servicios` },
+        ]
+      : path === '/aplicaciones/fitness-app'
         ? [
             { name: 'Inicio', item: `${SITE_URL}/` },
             { name: 'Productos', item: `${SITE_URL}/productos` },
@@ -85,9 +96,10 @@ export function structuredData(seo: SeoData, path: string): Record<string, unkno
     graph.push({
       '@type': 'BreadcrumbList',
       '@id': `${url}#breadcrumb`,
-      itemListElement: [...parents, { name: PAGE_NAMES[path] || seo.title, item: url }].map(
-        (item, index) => ({ '@type': 'ListItem', position: index + 1, ...item }),
-      ),
+      itemListElement: [
+        ...parents,
+        { name: PAGE_NAMES[path] || seo.serviceName || seo.title, item: url },
+      ].map((item, index) => ({ '@type': 'ListItem', position: index + 1, ...item })),
     });
   }
   if (path === '/servicios') {
@@ -101,6 +113,31 @@ export function structuredData(seo: SeoData, path: string): Record<string, unkno
         provider: { '@id': organization },
       })),
     );
+  }
+  if (seo.serviceName) {
+    graph.push({
+      '@type': 'Service',
+      '@id': `${url}#service`,
+      name: seo.serviceName,
+      serviceType: seo.serviceName,
+      url,
+      description: seo.description,
+      provider: { '@id': organization },
+      areaServed: { '@type': 'Country', name: 'España' },
+    });
+    graph[2]['mainEntity'] = { '@id': `${url}#service` };
+  }
+  if (seo.faqs?.length) {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      isPartOf: { '@id': `${url}#webpage` },
+      mainEntity: seo.faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    });
   }
   // SoftwareApplication deferred: no verified offers or reviews for rich-result requirements.
   return { '@context': 'https://schema.org', '@graph': graph };

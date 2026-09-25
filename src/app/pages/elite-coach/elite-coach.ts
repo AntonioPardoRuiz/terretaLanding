@@ -1,3 +1,5 @@
+import { PAGE_FAQS } from '../../core/seo/page-faqs';
+import { FaqComponent } from '../../shared/ui/faq/faq';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
@@ -14,12 +16,13 @@ interface VideoTutorial {
 
 @Component({
   selector: 'app-elite-coach',
-  imports: [ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
+  imports: [FaqComponent, ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
   templateUrl: './elite-coach.html',
   styleUrl: './elite-coach.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EliteCoachComponent {
+  readonly faqs = PAGE_FAQS['/aplicaciones/fitness-app'];
   private readonly sanitizer = inject(DomSanitizer);
 
   readonly activeVideo = signal<string | null>(null);

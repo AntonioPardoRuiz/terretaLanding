@@ -1,3 +1,5 @@
+> Documento histórico de la auditoría anterior. La arquitectura actual de 17 URLs y las acciones pendientes se documentan en [SEO_REPORT.md](../../SEO_REPORT.md).
+
 # Misión 011 · Mapa SEO de las páginas existentes
 
 13 de septiembre de 2026. Esta versión sustituye el mapa preliminar de landings.

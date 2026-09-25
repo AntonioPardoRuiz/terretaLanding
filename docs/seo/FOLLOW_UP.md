@@ -1,3 +1,5 @@
+> Documento histórico de la auditoría anterior. La arquitectura actual de 17 URLs y las acciones pendientes se documentan en [SEO_REPORT.md](../../SEO_REPORT.md).
+
 # Medición posterior y decisiones futuras
 
 Esta misión no incluye despliegue. Estos pasos se ejecutarán tras aprobar y publicar

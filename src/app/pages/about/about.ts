@@ -1,3 +1,5 @@
+import { PAGE_FAQS } from '../../core/seo/page-faqs';
+import { FaqComponent } from '../../shared/ui/faq/faq';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../../shared/ui/button/button';
@@ -6,12 +8,13 @@ import { CtaComponent } from '../../shared/ui/cta/cta';
 
 @Component({
   selector: 'app-about',
-  imports: [ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
+  imports: [FaqComponent, ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
   templateUrl: './about.html',
   styleUrl: './about.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutComponent {
+  readonly faqs = PAGE_FAQS['/nosotros'];
   readonly capabilities = [
     { title: 'Software a medida', description: 'Herramientas propias adaptadas a procesos, equipos y objetivos concretos.' },
     { title: 'Aplicaciones web y móviles', description: 'Productos digitales para clientes, profesionales y operativa interna.' },

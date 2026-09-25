@@ -1,3 +1,5 @@
+import { PAGE_FAQS } from '../../core/seo/page-faqs';
+import { FaqComponent } from '../../shared/ui/faq/faq';
 import { ChangeDetectionStrategy, Component, ElementRef, inject, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, RouterLink } from '@angular/router';
@@ -10,12 +12,13 @@ type FormStatus = 'idle' | 'loading' | 'success' | 'error';
 
 @Component({
   selector: 'app-contact',
-  imports: [ContainerComponent, ReactiveFormsModule, RouterLink],
+  imports: [FaqComponent, ContainerComponent, ReactiveFormsModule, RouterLink],
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss', './contact-states.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent {
+  readonly faqs = PAGE_FAQS['/contacto'];
   private readonly contactService = inject(ContactService);
   private readonly element = inject(ElementRef) as ElementRef<HTMLElement>;
   private readonly route = inject(ActivatedRoute);

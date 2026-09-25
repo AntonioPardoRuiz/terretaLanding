@@ -82,6 +82,7 @@
                   <li>{{ item }}</li>
                 }
               </ul>
+              @if (service.path) { <p><a [routerLink]="service.path">{{ service.title }}: enfoque y preguntas frecuentes →</a></p> }
               <p class="ideal"><strong>Ideal para:</strong> {{ service.idealFor }}</p>
               <p>
                 <a routerLink="/productos" [fragment]="service.example.fragment"
@@ -165,4 +166,5 @@
     description="Si tienes una idea, un proceso que quieres automatizar o una necesidad tecnológica concreta, te ayudamos a definir el enfoque más adecuado y el modelo de trabajo que mejor encaja con tu negocio."
     buttonLabel="Solicitar propuesta →"
   />
+  <app-faq [items]="faqs" />
 </main>

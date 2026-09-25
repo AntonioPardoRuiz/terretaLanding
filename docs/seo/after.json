@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-09-13T07:23:08.484Z",
+  "auditedAt": "2026-09-25T17:01:31.314Z",
   "pages": [
     {
       "path": "/",
@@ -66,7 +66,7 @@
         },
         {
           "level": "H3",
-          "text": "J. Castejón Psicología"
+          "text": "Productos realizados a nuestros clientes"
         },
         {
           "level": "H3",
@@ -74,7 +74,15 @@
         },
         {
           "level": "H2",
+          "text": "Elige el siguiente paso para digitalizar tu pyme"
+        },
+        {
+          "level": "H2",
           "text": "¿Tienes una idea o proceso que quieres convertir en software?"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Desde Alicante, creamos software a medida y aplicaciones web y móviles para empresas. Desarrollamos tu página web, conectamos procesos con automatizaciones e integramos inteligencia artificial cuando aporta una solución útil a tu negocio.",
@@ -130,6 +138,26 @@
         {
           "url": "/productos",
           "anchor": "Ver todos los productos →"
+        },
+        {
+          "url": "/desarrollo-software-a-medida",
+          "anchor": "desarrollo de software a medida"
+        },
+        {
+          "url": "/automatizacion-pymes",
+          "anchor": "automatización para pymes"
+        },
+        {
+          "url": "/desarrollo-web",
+          "anchor": "desarrollo web para empresas"
+        },
+        {
+          "url": "/desarrollo-aplicaciones-moviles",
+          "anchor": "aplicaciones móviles"
+        },
+        {
+          "url": "/inteligencia-artificial-empresas",
+          "anchor": "inteligencia artificial aplicada al negocio"
         },
         {
           "url": "/contacto",
@@ -211,6 +239,31 @@
               "about": {
                 "@id": "https://www.realterretaia.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Cómo sé qué solución digital necesita mi empresa?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Empieza por el problema: tareas repetitivas, información dispersa o un servicio que tus clientes necesitan utilizar. Revisamos contigo si conviene integrar herramientas, desarrollar software propio o mejorar una aplicación existente."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Trabajáis con empresas de Alicante y de otras ubicaciones?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Terreta es una empresa de Alicante y ofrece desarrollo de software y automatización a pymes de la provincia y de otras ubicaciones. Organizamos el proyecto mediante comunicación directa, entregables y revisiones por hitos."
+                  }
+                }
+              ]
             }
           ]
         }
@@ -218,7 +271,7 @@
     },
     {
       "path": "/servicios",
-      "title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+      "title": "Servicios de desarrollo de software y aplicaciones | Terreta",
       "description": "Software a medida, aplicaciones web y móviles, páginas web, automatización e IA para empresas. Desde Alicante, te ayudamos a definir la solución que necesitas.",
       "canonical": "https://www.realterretaia.com/servicios",
       "robots": "index, follow",
@@ -310,6 +363,10 @@
         {
           "level": "H2",
           "text": "Cuéntanos qué necesitas y te proponemos la mejor solución"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Desde Alicante, desarrollamos software a medida, aplicaciones y páginas web para empresas. Automatizamos procesos e integramos inteligencia artificial según la necesidad del negocio, con alcance definido y seguimiento del proyecto.",
@@ -323,12 +380,20 @@
           "anchor": "Ver cómo trabajamos →"
         },
         {
+          "url": "/desarrollo-software-a-medida",
+          "anchor": "Desarrollo de software a medida y aplicaciones web: enfoque y preguntas frecuentes →"
+        },
+        {
           "url": "/productos#terreta-agro",
           "anchor": "Ver TerretaAgro: gestión agrícola, almacenes y transporte →"
         },
         {
           "url": "/contacto",
           "anchor": "Ver si esta solución encaja con mi empresa"
+        },
+        {
+          "url": "/desarrollo-aplicaciones-moviles",
+          "anchor": "Desarrollo de aplicaciones móviles: enfoque y preguntas frecuentes →"
         },
         {
           "url": "/productos#elite-coach",
@@ -339,12 +404,20 @@
           "anchor": "Quiero valorar una app para mi negocio"
         },
         {
-          "url": "/productos#psicologia",
-          "anchor": "Ver el proyecto Jessica Castejón Psicología →"
+          "url": "/desarrollo-web",
+          "anchor": "Desarrollo web y páginas web para empresas: enfoque y preguntas frecuentes →"
+        },
+        {
+          "url": "/productos#proyectos-clientes",
+          "anchor": "Ver productos realizados a nuestros clientes →"
         },
         {
           "url": "/contacto",
           "anchor": "Quiero valorar la web de mi empresa"
+        },
+        {
+          "url": "/automatizacion-pymes",
+          "anchor": "Automatización de procesos: enfoque y preguntas frecuentes →"
         },
         {
           "url": "/productos#conta-terra",
@@ -353,6 +426,10 @@
         {
           "url": "/contacto",
           "anchor": "Quiero automatizar un proceso de mi empresa"
+        },
+        {
+          "url": "/inteligencia-artificial-empresas",
+          "anchor": "Inteligencia artificial para empresas: enfoque y preguntas frecuentes →"
         },
         {
           "url": "/productos#software-sectorial",
@@ -390,7 +467,7 @@
         }
       ],
       "openGraph": {
-        "og:title": "Software a medida, aplicaciones y desarrollo web | Terreta",
+        "og:title": "Servicios de desarrollo de software y aplicaciones | Terreta",
         "og:description": "Software a medida, aplicaciones web y móviles, páginas web, automatización e IA para empresas. Desde Alicante, te ayudamos a definir la solución que necesitas.",
         "og:type": "website",
         "og:site_name": "Terreta",
@@ -429,7 +506,7 @@
               "@type": "WebPage",
               "@id": "https://www.realterretaia.com/servicios#webpage",
               "url": "https://www.realterretaia.com/servicios",
-              "name": "Software a medida, aplicaciones y desarrollo web | Terreta",
+              "name": "Servicios de desarrollo de software y aplicaciones | Terreta",
               "description": "Software a medida, aplicaciones web y móviles, páginas web, automatización e IA para empresas. Desde Alicante, te ayudamos a definir la solución que necesitas.",
               "isPartOf": {
                 "@id": "https://www.realterretaia.com/#website"
@@ -539,6 +616,31 @@
               "provider": {
                 "@id": "https://www.realterretaia.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/servicios#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/servicios#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Se pueden combinar varios servicios en un proyecto?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Una aplicación puede necesitar una web pública, una app móvil e integraciones. Definimos primero el objetivo común y priorizamos las partes que deben estar disponibles en la primera entrega."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Podéis trabajar sobre software que ya tenemos?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Primero revisamos el código, la documentación y las posibilidades de integración disponibles. Esa revisión permite valorar si es viable mantener la base actual, ampliarla o sustituir una parte concreta."
+                  }
+                }
+              ]
             }
           ]
         }
@@ -558,6 +660,10 @@
         {
           "level": "H2",
           "text": "Cuéntanos tu proyecto"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Cada proyecto tiene sus propias necesidades. Por eso, nuestras tarifas se adaptan al alcance y a las características del trabajo que quieres realizar.",
@@ -651,6 +757,31 @@
                   "item": "https://www.realterretaia.com/tarifas"
                 }
               ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/tarifas#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/tarifas#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Qué información ayuda a preparar un presupuesto?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Describe el proceso que quieres mejorar, las funciones imprescindibles, quién utilizará la solución y las herramientas con las que debe conectarse. Si tienes una fecha objetivo, indícala para que podamos valorar su viabilidad."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿El presupuesto incluye mantenimiento?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El desarrollo y el soporte deben quedar definidos en la propuesta. Conviene concretar correcciones, actualizaciones, infraestructura y evolución para conocer qué conceptos incluye cada acuerdo."
+                  }
+                }
+              ]
             }
           ]
         }
@@ -694,6 +825,10 @@
         {
           "level": "H2",
           "text": "Cuéntanos qué necesitas realizar"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Externaliza el desarrollo de software, las automatizaciones o las mejoras de tus aplicaciones con Terreta. Nos adaptamos a tu proyecto y a las horas de trabajo que necesitas.",
@@ -803,6 +938,23 @@
                   "item": "https://www.realterretaia.com/outsourcing"
                 }
               ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/outsourcing#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/outsourcing#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Cómo se define el trabajo de una bolsa de horas?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Conviene acordar las tareas prioritarias, los entregables y la forma de revisar el consumo. Las tarifas y condiciones publicadas en esta página sirven de referencia para preparar una propuesta según tus necesidades."
+                  }
+                }
+              ]
             }
           ]
         }
@@ -861,7 +1013,7 @@
         },
         {
           "level": "H2",
-          "text": "Jessica Castejón Psicología"
+          "text": "Productos realizados a nuestros clientes"
         },
         {
           "level": "H3",
@@ -882,6 +1034,10 @@
         {
           "level": "H2",
           "text": "¿Necesitas software para tu empresa?"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Terreta no desarrolla software genérico. Analizamos procesos y construimos soluciones digitales adaptadas a problemas reales de negocio, desde el fitness hasta la agricultura, la contabilidad, el ferrocarril, la gestión de clientes y los servicios profesionales.",
@@ -895,7 +1051,7 @@
           "anchor": "Software sectorial"
         },
         {
-          "url": "/productos#psicologia",
+          "url": "/productos#proyectos-clientes",
           "anchor": "Digitalización"
         },
         {
@@ -920,7 +1076,27 @@
         },
         {
           "url": "/contacto",
+          "anchor": "Consultar un proyecto a medida →"
+        },
+        {
+          "url": "/contacto",
           "anchor": "Consultar Terreta CRM →"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Probar la aplicación →"
+        },
+        {
+          "url": "/desarrollo-software-a-medida",
+          "anchor": "software a medida"
+        },
+        {
+          "url": "/automatizacion-pymes",
+          "anchor": "automatización de procesos"
+        },
+        {
+          "url": "/desarrollo-aplicaciones-moviles",
+          "anchor": "aplicación móvil para tus usuarios"
         },
         {
           "url": "/servicios",
@@ -1019,6 +1195,31 @@
                   "item": "https://www.realterretaia.com/productos"
                 }
               ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/productos#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/productos#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Cómo puedo conocer las funciones de un producto de Terreta?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En este catálogo puedes consultar las capacidades descritas y acceder a la página de Elite Coach o a las demos enlazadas cuando estén disponibles. Contacta con Terreta para valorar si el producto encaja con tu operativa."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Y si mi empresa necesita funciones que no aparecen en el catálogo?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cuéntanos qué proceso necesitas resolver. Podemos estudiar un desarrollo a medida o una integración; la disponibilidad de una función se confirma al definir el alcance, no se presupone por aparecer un producto en el catálogo."
+                  }
+                }
+              ]
             }
           ]
         }
@@ -1106,6 +1307,10 @@
         {
           "level": "H2",
           "text": "¿Quieres llevar tu servicio al siguiente nivel con una app propia?"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Organiza rutinas, seguimiento, nutrición y clientes en una sola plataforma diseñada para entrenadores y gimnasios.",
@@ -1277,6 +1482,31 @@
                   "item": "https://www.realterretaia.com/aplicaciones/fitness-app"
                 }
               ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/aplicaciones/fitness-app#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/aplicaciones/fitness-app#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Para quién está pensado Elite Coach?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La aplicación está orientada a entrenadores y gimnasios que necesitan organizar clientes, rutinas, seguimiento y nutrición. Los tutoriales de esta página muestran recorridos del producto."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Cómo puedo valorar Elite Coach para mi centro?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Revisa las funciones y tutoriales publicados y contacta con Terreta con tus necesidades. Así podemos aclarar el encaje del producto y las condiciones de acceso vigentes."
+                  }
+                }
+              ]
             }
           ]
         }
@@ -1404,6 +1634,10 @@
         {
           "level": "H2",
           "text": "¿Tienes una idea o un proyecto en marcha?"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Organizamos el desarrollo de software por fases: entendemos tu necesidad, definimos el alcance y validamos cada avance contigo. Combinamos planificación, flexibilidad y seguimiento para que conozcas qué se construye y por qué.",
@@ -1509,6 +1743,31 @@
                   "item": "https://www.realterretaia.com/como-trabajamos"
                 }
               ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/como-trabajamos#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/como-trabajamos#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Qué participación necesita el proyecto por parte del cliente?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Necesitamos una persona que aclare prioridades, facilite la información necesaria y valide los entregables. Las revisiones periódicas ayudan a detectar ajustes y mantener el desarrollo alineado con el uso real."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Qué ocurre si cambian las necesidades durante el desarrollo?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Revisamos el impacto sobre alcance, plazo y presupuesto antes de incorporar el cambio. Se acuerdan las prioridades y los entregables afectados para mantener visibilidad sobre lo que se va a construir."
+                  }
+                }
+              ]
             }
           ]
         }
@@ -1588,6 +1847,10 @@
         {
           "level": "H2",
           "text": "¿Hablamos de lo que necesita tu empresa?"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Somos Terreta, una empresa de desarrollo de software en Alicante. Diseñamos aplicaciones y soluciones para empresas y pymes, desde la definición de lo que necesitan hasta su mantenimiento y evolución.",
@@ -1693,6 +1956,23 @@
                   "item": "https://www.realterretaia.com/nosotros"
                 }
               ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/nosotros#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/nosotros#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿En qué tipo de necesidades se centra Terreta?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nos centramos en software para empresas y pymes: aplicaciones web y móviles, automatización, integraciones e inteligencia artificial aplicada a procesos concretos del negocio."
+                  }
+                }
+              ]
             }
           ]
         }
@@ -1712,6 +1992,10 @@
         {
           "level": "H2",
           "text": "Información inicial del proyecto"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
         }
       ],
       "firstText": "Habla con nuestro equipo en Alicante sobre el software, la aplicación o el proceso que necesitas mejorar. Cuéntanos quién lo utilizará y qué herramientas tienes ya en marcha.",
@@ -1807,6 +2091,23 @@
                   "position": 2,
                   "name": "Contacto",
                   "item": "https://www.realterretaia.com/contacto"
+                }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/contacto#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/contacto#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Necesito tener una especificación técnica para contactar?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Puedes explicar con tus palabras qué problema quieres resolver y cómo lo gestionas ahora. Esa información permite empezar a concretar el proyecto y las preguntas que debemos resolver antes de presupuestar."
+                  }
                 }
               ]
             }
@@ -2311,6 +2612,1171 @@
                   "position": 2,
                   "name": "Cursos",
                   "item": "https://www.realterretaia.com/cursos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/desarrollo-software-a-medida",
+      "title": "Software a medida para pymes y empresas | Terreta",
+      "description": "Desarrollamos software a medida para gestionar tu empresa: portales, herramientas internas e integración con tu CRM. Define tu proyecto con Terreta, en Alicante.",
+      "canonical": "https://www.realterretaia.com/desarrollo-software-a-medida",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Desarrollo de software a medida para empresas"
+        },
+        {
+          "level": "H2",
+          "text": "Qué problemas podemos resolver"
+        },
+        {
+          "level": "H2",
+          "text": "Qué aporta a tu negocio"
+        },
+        {
+          "level": "H2",
+          "text": "Cómo planteamos el proyecto"
+        },
+        {
+          "level": "H2",
+          "text": "Tecnología e integraciones"
+        },
+        {
+          "level": "H2",
+          "text": "Referencias para definir tu solución"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
+        },
+        {
+          "level": "H2",
+          "text": "De Alicante a tu equipo"
+        },
+        {
+          "level": "H2",
+          "text": "Servicios relacionados"
+        },
+        {
+          "level": "H2",
+          "text": "Define el siguiente paso para tu empresa"
+        }
+      ],
+      "firstText": "Cuando las hojas de cálculo y las herramientas genéricas ya no reflejan cómo trabaja tu equipo, una aplicación propia puede ordenar la operativa. En Terreta desarrollamos software empresarial desde Alicante para pymes que necesitan gestionar datos, usuarios y procesos con una lógica específica.",
+      "internalLinks": [
+        {
+          "url": "/",
+          "anchor": "Inicio"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Servicios"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Cuéntanos tu proyecto →"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Conoce nuestra metodología de desarrollo"
+        },
+        {
+          "url": "/productos#terreta-agro",
+          "anchor": "Ver TerretaAgro →"
+        },
+        {
+          "url": "/desarrollo-aplicaciones-moviles",
+          "anchor": "Aplicaciones móviles para tu equipo"
+        },
+        {
+          "url": "/automatizacion-pymes",
+          "anchor": "Automatización de procesos para pymes"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar presupuesto →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Software a medida para pymes y empresas | Terreta",
+        "og:description": "Desarrollamos software a medida para gestionar tu empresa: portales, herramientas internas e integración con tu CRM. Define tu proyecto con Terreta, en Alicante.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/desarrollo-software-a-medida",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/desarrollo-software-a-medida#webpage",
+              "url": "https://www.realterretaia.com/desarrollo-software-a-medida",
+              "name": "Software a medida para pymes y empresas | Terreta",
+              "description": "Desarrollamos software a medida para gestionar tu empresa: portales, herramientas internas e integración con tu CRM. Define tu proyecto con Terreta, en Alicante.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/desarrollo-software-a-medida#breadcrumb"
+              },
+              "mainEntity": {
+                "@id": "https://www.realterretaia.com/desarrollo-software-a-medida#service"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/desarrollo-software-a-medida#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Servicios",
+                  "item": "https://www.realterretaia.com/servicios"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Desarrollo de software a medida para empresas",
+                  "item": "https://www.realterretaia.com/desarrollo-software-a-medida"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/desarrollo-software-a-medida#service",
+              "name": "Desarrollo de software a medida para empresas",
+              "serviceType": "Desarrollo de software a medida para empresas",
+              "url": "https://www.realterretaia.com/desarrollo-software-a-medida",
+              "description": "Desarrollamos software a medida para gestionar tu empresa: portales, herramientas internas e integración con tu CRM. Define tu proyecto con Terreta, en Alicante.",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "España"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/desarrollo-software-a-medida#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/desarrollo-software-a-medida#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Qué es el desarrollo de software a medida?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es la creación de una aplicación alrededor de los procesos y requisitos de una empresa. Permite definir funciones, permisos e integraciones propias. Antes de desarrollarla, conviene comparar su coste y mantenimiento con adaptar una herramienta existente."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Cuánto cuesta desarrollar software a medida?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende de las funciones, integraciones, migración de datos y requisitos de seguridad. Para presupuestar necesitamos conocer quién lo usará, qué tareas resolverá y qué sistemas deben conectarse. Proponemos un alcance concreto y un presupuesto personalizado."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Cuánto tarda un proyecto de software?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El plazo se estima después de definir el alcance y las dependencias. Una primera versión centrada en el proceso principal permite validar antes de ampliar. Los hitos y criterios de aceptación se acuerdan durante la planificación."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Se puede integrar con el CRM que ya utilizamos?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Estudiamos las APIs, permisos y posibilidades de exportación del CRM existente. Si permite la conexión, definimos qué datos se sincronizan, en qué dirección y cómo se gestionan errores o registros duplicados."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/automatizacion-pymes",
+      "title": "Automatización para pymes e integración de procesos | Terreta",
+      "description": "Conecta formularios, CRM y herramientas de gestión. Automatizamos tareas repetitivas de tu pyme con un alcance claro y seguimiento desde Alicante.",
+      "canonical": "https://www.realterretaia.com/automatizacion-pymes",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Automatización de procesos para pymes"
+        },
+        {
+          "level": "H2",
+          "text": "Qué problemas podemos resolver"
+        },
+        {
+          "level": "H2",
+          "text": "Qué aporta a tu negocio"
+        },
+        {
+          "level": "H2",
+          "text": "Cómo planteamos el proyecto"
+        },
+        {
+          "level": "H2",
+          "text": "Tecnología e integraciones"
+        },
+        {
+          "level": "H2",
+          "text": "Referencias para definir tu solución"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
+        },
+        {
+          "level": "H2",
+          "text": "De Alicante a tu equipo"
+        },
+        {
+          "level": "H2",
+          "text": "Servicios relacionados"
+        },
+        {
+          "level": "H2",
+          "text": "Define el siguiente paso para tu empresa"
+        }
+      ],
+      "firstText": "Automatizar una pyme empieza por elegir una tarea repetitiva y entender cómo se resuelven sus excepciones. Conectamos herramientas para que la información avance entre sistemas y tu equipo pueda centrarse en el trabajo que necesita criterio humano.",
+      "internalLinks": [
+        {
+          "url": "/",
+          "anchor": "Inicio"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Servicios"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Cuéntanos tu proyecto →"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Conoce nuestra metodología de desarrollo"
+        },
+        {
+          "url": "/productos#crm",
+          "anchor": "Conocer Terreta CRM →"
+        },
+        {
+          "url": "/inteligencia-artificial-empresas",
+          "anchor": "Inteligencia artificial aplicada al negocio"
+        },
+        {
+          "url": "/desarrollo-software-a-medida",
+          "anchor": "Software a medida para procesos propios"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar presupuesto →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Automatización para pymes e integración de procesos | Terreta",
+        "og:description": "Conecta formularios, CRM y herramientas de gestión. Automatizamos tareas repetitivas de tu pyme con un alcance claro y seguimiento desde Alicante.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/automatizacion-pymes",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/automatizacion-pymes#webpage",
+              "url": "https://www.realterretaia.com/automatizacion-pymes",
+              "name": "Automatización para pymes e integración de procesos | Terreta",
+              "description": "Conecta formularios, CRM y herramientas de gestión. Automatizamos tareas repetitivas de tu pyme con un alcance claro y seguimiento desde Alicante.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/automatizacion-pymes#breadcrumb"
+              },
+              "mainEntity": {
+                "@id": "https://www.realterretaia.com/automatizacion-pymes#service"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/automatizacion-pymes#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Servicios",
+                  "item": "https://www.realterretaia.com/servicios"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Automatización de procesos para pymes",
+                  "item": "https://www.realterretaia.com/automatizacion-pymes"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/automatizacion-pymes#service",
+              "name": "Automatización de procesos para pymes",
+              "serviceType": "Automatización de procesos para pymes",
+              "url": "https://www.realterretaia.com/automatizacion-pymes",
+              "description": "Conecta formularios, CRM y herramientas de gestión. Automatizamos tareas repetitivas de tu pyme con un alcance claro y seguimiento desde Alicante.",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "España"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/automatizacion-pymes#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/automatizacion-pymes#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Qué procesos puede automatizar una pyme?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La entrada de solicitudes, creación de registros en el CRM, avisos internos, sincronización de datos e informes recurrentes son candidatos habituales. Es necesario revisar las reglas, las excepciones y los permisos de las herramientas implicadas."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Qué ventajas tiene automatizar procesos empresariales?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Puede reducir la introducción manual de datos y facilitar la trazabilidad de cada tarea. El beneficio debe evaluarse sobre el proceso concreto, comparando tiempo empleado, errores y coste de mantenimiento antes y después."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Hace falta cambiar las herramientas actuales?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No necesariamente. Primero comprobamos sus integraciones disponibles. Una API o una exportación estructurada puede permitir conectarlas sin sustituirlas; las limitaciones de cada proveedor se revisan antes de comprometer el alcance."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Todas las automatizaciones necesitan inteligencia artificial?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Si las reglas son claras, un flujo determinista suele ser más sencillo de verificar. La IA puede ser útil para clasificar texto o extraer información variable, con validación y supervisión cuando corresponda."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/desarrollo-web",
+      "title": "Desarrollo web en Alicante y aplicaciones web | Terreta",
+      "description": "Páginas web profesionales y aplicaciones web con Angular: contenido claro, diseño responsive y conexión con tu negocio. Cuéntanos qué necesitas desarrollar.",
+      "canonical": "https://www.realterretaia.com/desarrollo-web",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Desarrollo web y aplicaciones web para empresas"
+        },
+        {
+          "level": "H2",
+          "text": "Qué problemas podemos resolver"
+        },
+        {
+          "level": "H2",
+          "text": "Qué aporta a tu negocio"
+        },
+        {
+          "level": "H2",
+          "text": "Cómo planteamos el proyecto"
+        },
+        {
+          "level": "H2",
+          "text": "Tecnología e integraciones"
+        },
+        {
+          "level": "H2",
+          "text": "Referencias para definir tu solución"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
+        },
+        {
+          "level": "H2",
+          "text": "De Alicante a tu equipo"
+        },
+        {
+          "level": "H2",
+          "text": "Servicios relacionados"
+        },
+        {
+          "level": "H2",
+          "text": "Define el siguiente paso para tu empresa"
+        }
+      ],
+      "firstText": "Una web profesional debe explicar qué ofrece tu empresa y facilitar el siguiente paso. Desarrollamos páginas y aplicaciones web desde Alicante, diferenciando el contenido público que debe encontrarse en buscadores de las funciones que necesitan clientes o equipos internos.",
+      "internalLinks": [
+        {
+          "url": "/",
+          "anchor": "Inicio"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Servicios"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Cuéntanos tu proyecto →"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Conoce nuestra metodología de desarrollo"
+        },
+        {
+          "url": "/productos#proyectos-clientes",
+          "anchor": "Ver proyectos de digitalización →"
+        },
+        {
+          "url": "/desarrollo-software-a-medida",
+          "anchor": "Software empresarial a medida"
+        },
+        {
+          "url": "/automatizacion-pymes",
+          "anchor": "Automatizar solicitudes y CRM"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar presupuesto →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Desarrollo web en Alicante y aplicaciones web | Terreta",
+        "og:description": "Páginas web profesionales y aplicaciones web con Angular: contenido claro, diseño responsive y conexión con tu negocio. Cuéntanos qué necesitas desarrollar.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/desarrollo-web",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/desarrollo-web#webpage",
+              "url": "https://www.realterretaia.com/desarrollo-web",
+              "name": "Desarrollo web en Alicante y aplicaciones web | Terreta",
+              "description": "Páginas web profesionales y aplicaciones web con Angular: contenido claro, diseño responsive y conexión con tu negocio. Cuéntanos qué necesitas desarrollar.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/desarrollo-web#breadcrumb"
+              },
+              "mainEntity": {
+                "@id": "https://www.realterretaia.com/desarrollo-web#service"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/desarrollo-web#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Servicios",
+                  "item": "https://www.realterretaia.com/servicios"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Desarrollo web y aplicaciones web para empresas",
+                  "item": "https://www.realterretaia.com/desarrollo-web"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/desarrollo-web#service",
+              "name": "Desarrollo web y aplicaciones web para empresas",
+              "serviceType": "Desarrollo web y aplicaciones web para empresas",
+              "url": "https://www.realterretaia.com/desarrollo-web",
+              "description": "Páginas web profesionales y aplicaciones web con Angular: contenido claro, diseño responsive y conexión con tu negocio. Cuéntanos qué necesitas desarrollar.",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "España"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/desarrollo-web#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/desarrollo-web#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Necesito una página web o una aplicación web?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Una página corporativa presenta servicios y facilita el contacto. Una aplicación permite además realizar operaciones con datos, como reservas o gestión de usuarios. Pueden convivir, pero conviene definir por separado la parte pública y las funciones privadas."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Desarrolláis aplicaciones web con Angular?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Angular es una de las tecnologías que utilizamos para interfaces web. En páginas públicas evaluamos el prerenderizado para entregar contenido HTML desde la primera respuesta; en áreas privadas priorizamos flujos, permisos y acceso a los datos."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Se puede mejorar una web existente?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Revisamos su estructura, contenido y base técnica para decidir qué reutilizar. Una mejora puede centrarse en navegación, formularios, rendimiento o integración con herramientas de negocio sin rehacer todo el sitio."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿La creación de la web incluye una garantía de posicionamiento?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No se puede garantizar una posición concreta. La semántica, el contenido accesible y la indexabilidad aportan una base técnica; la visibilidad también depende de la competencia, la autoridad y el mantenimiento del contenido."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/desarrollo-aplicaciones-moviles",
+      "title": "Desarrollo de apps móviles para iOS y Android | Terreta",
+      "description": "Aplicaciones móviles para clientes y equipos: definimos flujos, conexión con tu software y una primera versión útil. Desarrollo de apps desde Alicante.",
+      "canonical": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Desarrollo de aplicaciones móviles para iOS y Android"
+        },
+        {
+          "level": "H2",
+          "text": "Qué problemas podemos resolver"
+        },
+        {
+          "level": "H2",
+          "text": "Qué aporta a tu negocio"
+        },
+        {
+          "level": "H2",
+          "text": "Cómo planteamos el proyecto"
+        },
+        {
+          "level": "H2",
+          "text": "Tecnología e integraciones"
+        },
+        {
+          "level": "H2",
+          "text": "Referencias para definir tu solución"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
+        },
+        {
+          "level": "H2",
+          "text": "De Alicante a tu equipo"
+        },
+        {
+          "level": "H2",
+          "text": "Servicios relacionados"
+        },
+        {
+          "level": "H2",
+          "text": "Define el siguiente paso para tu empresa"
+        }
+      ],
+      "firstText": "Una aplicación móvil tiene sentido cuando el servicio necesita acompañar al usuario en su día a día. Desarrollamos apps para clientes y equipos internos, conectadas con los datos y procesos del negocio, con una experiencia pensada para pantallas pequeñas.",
+      "internalLinks": [
+        {
+          "url": "/",
+          "anchor": "Inicio"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Servicios"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Cuéntanos tu proyecto →"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Conoce nuestra metodología de desarrollo"
+        },
+        {
+          "url": "/aplicaciones/fitness-app",
+          "anchor": "Conocer Elite Coach →"
+        },
+        {
+          "url": "/desarrollo-software-a-medida",
+          "anchor": "Desarrollar el software conectado a tu app"
+        },
+        {
+          "url": "/desarrollo-web",
+          "anchor": "Aplicaciones accesibles desde el navegador"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar presupuesto →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Desarrollo de apps móviles para iOS y Android | Terreta",
+        "og:description": "Aplicaciones móviles para clientes y equipos: definimos flujos, conexión con tu software y una primera versión útil. Desarrollo de apps desde Alicante.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles#webpage",
+              "url": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles",
+              "name": "Desarrollo de apps móviles para iOS y Android | Terreta",
+              "description": "Aplicaciones móviles para clientes y equipos: definimos flujos, conexión con tu software y una primera versión útil. Desarrollo de apps desde Alicante.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles#breadcrumb"
+              },
+              "mainEntity": {
+                "@id": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles#service"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Servicios",
+                  "item": "https://www.realterretaia.com/servicios"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Desarrollo de aplicaciones móviles para iOS y Android",
+                  "item": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles#service",
+              "name": "Desarrollo de aplicaciones móviles para iOS y Android",
+              "serviceType": "Desarrollo de aplicaciones móviles para iOS y Android",
+              "url": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles",
+              "description": "Aplicaciones móviles para clientes y equipos: definimos flujos, conexión con tu software y una primera versión útil. Desarrollo de apps desde Alicante.",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "España"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/desarrollo-aplicaciones-moviles#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Podéis desarrollar una app para iOS y Android?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Definimos primero las funciones y dispositivos necesarios. El enfoque técnico depende del uso de cámara, notificaciones, trabajo sin conexión y otros requisitos de cada plataforma."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Cuándo tiene sentido utilizar Ionic?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ionic permite plantear interfaces móviles con tecnologías web y compartir parte del desarrollo. Conviene evaluar sus capacidades y las integraciones nativas necesarias antes de elegirlo para una aplicación concreta."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿La aplicación puede funcionar sin conexión?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es posible diseñar algunas tareas para uso sin conexión, pero hay que definir qué datos se guardan en el dispositivo y cómo se resuelven conflictos al sincronizar. Es un requisito que debe formar parte del alcance inicial."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Qué hace falta para publicar en las tiendas de aplicaciones?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La publicación requiere cuentas de desarrollador, materiales de la ficha y cumplir los requisitos de revisión de cada tienda. Acordamos responsabilidades y entregables; la aprobación depende de Apple y Google."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/inteligencia-artificial-empresas",
+      "title": "Inteligencia artificial para empresas y pymes | Terreta",
+      "description": "Evalúa asistentes internos, clasificación de documentos y automatización con IA. Integramos inteligencia artificial con tus procesos y supervisión del equipo.",
+      "canonical": "https://www.realterretaia.com/inteligencia-artificial-empresas",
+      "robots": "index, follow",
+      "headings": [
+        {
+          "level": "H1",
+          "text": "Inteligencia artificial para empresas y pymes"
+        },
+        {
+          "level": "H2",
+          "text": "Qué problemas podemos resolver"
+        },
+        {
+          "level": "H2",
+          "text": "Qué aporta a tu negocio"
+        },
+        {
+          "level": "H2",
+          "text": "Cómo planteamos el proyecto"
+        },
+        {
+          "level": "H2",
+          "text": "Tecnología e integraciones"
+        },
+        {
+          "level": "H2",
+          "text": "Referencias para definir tu solución"
+        },
+        {
+          "level": "H2",
+          "text": "Preguntas frecuentes"
+        },
+        {
+          "level": "H2",
+          "text": "De Alicante a tu equipo"
+        },
+        {
+          "level": "H2",
+          "text": "Servicios relacionados"
+        },
+        {
+          "level": "H2",
+          "text": "Define el siguiente paso para tu empresa"
+        }
+      ],
+      "firstText": "Aplicar IA a una empresa exige algo más que conectar un chatbot. Elegimos una tarea concreta, revisamos las fuentes de información y definimos cómo comprobar las respuestas. El objetivo es apoyar al equipo con una herramienta útil y límites claros.",
+      "internalLinks": [
+        {
+          "url": "/",
+          "anchor": "Inicio"
+        },
+        {
+          "url": "/servicios",
+          "anchor": "Servicios"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Cuéntanos tu proyecto →"
+        },
+        {
+          "url": "/como-trabajamos",
+          "anchor": "Conoce nuestra metodología de desarrollo"
+        },
+        {
+          "url": "/servicios#inteligencia-artificial",
+          "anchor": "Consultar nuestros servicios de integración →"
+        },
+        {
+          "url": "/automatizacion-pymes",
+          "anchor": "Automatización con reglas e integraciones"
+        },
+        {
+          "url": "/desarrollo-software-a-medida",
+          "anchor": "Integrar IA en software a medida"
+        },
+        {
+          "url": "/contacto",
+          "anchor": "Solicitar presupuesto →"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/brand/terreta-logo.png",
+          "alt": "Terreta",
+          "width": "960",
+          "height": "260",
+          "loading": "eager",
+          "bytes": 48487
+        }
+      ],
+      "openGraph": {
+        "og:title": "Inteligencia artificial para empresas y pymes | Terreta",
+        "og:description": "Evalúa asistentes internos, clasificación de documentos y automatización con IA. Integramos inteligencia artificial con tus procesos y supervisión del equipo.",
+        "og:type": "website",
+        "og:site_name": "Terreta",
+        "og:locale": "es_ES",
+        "og:url": "https://www.realterretaia.com/inteligencia-artificial-empresas",
+        "og:image": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+        "og:image:alt": "Terreta"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.realterretaia.com/#organization",
+              "name": "Terreta",
+              "url": "https://www.realterretaia.com/",
+              "logo": "https://www.realterretaia.com/assets/brand/terreta-logo.png",
+              "email": "terretasoftware@gmail.com",
+              "location": {
+                "@type": "Place",
+                "name": "Alicante, España"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.realterretaia.com/#website",
+              "url": "https://www.realterretaia.com/",
+              "name": "Terreta",
+              "publisher": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "inLanguage": "es-ES"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.realterretaia.com/inteligencia-artificial-empresas#webpage",
+              "url": "https://www.realterretaia.com/inteligencia-artificial-empresas",
+              "name": "Inteligencia artificial para empresas y pymes | Terreta",
+              "description": "Evalúa asistentes internos, clasificación de documentos y automatización con IA. Integramos inteligencia artificial con tus procesos y supervisión del equipo.",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/#website"
+              },
+              "inLanguage": "es-ES",
+              "about": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://www.realterretaia.com/inteligencia-artificial-empresas#breadcrumb"
+              },
+              "mainEntity": {
+                "@id": "https://www.realterretaia.com/inteligencia-artificial-empresas#service"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.realterretaia.com/inteligencia-artificial-empresas#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.realterretaia.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Servicios",
+                  "item": "https://www.realterretaia.com/servicios"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Inteligencia artificial para empresas y pymes",
+                  "item": "https://www.realterretaia.com/inteligencia-artificial-empresas"
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://www.realterretaia.com/inteligencia-artificial-empresas#service",
+              "name": "Inteligencia artificial para empresas y pymes",
+              "serviceType": "Inteligencia artificial para empresas y pymes",
+              "url": "https://www.realterretaia.com/inteligencia-artificial-empresas",
+              "description": "Evalúa asistentes internos, clasificación de documentos y automatización con IA. Integramos inteligencia artificial con tus procesos y supervisión del equipo.",
+              "provider": {
+                "@id": "https://www.realterretaia.com/#organization"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "España"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://www.realterretaia.com/inteligencia-artificial-empresas#faq",
+              "isPartOf": {
+                "@id": "https://www.realterretaia.com/inteligencia-artificial-empresas#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Dónde puede aportar valor la IA en una pyme?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Puede ayudar a clasificar solicitudes, extraer información de documentos o preparar respuestas a partir de una base de conocimiento. La utilidad depende de la calidad de los datos y de poder verificar el resultado en una tarea concreta."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Puede un asistente consultar documentos de la empresa?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Se puede diseñar un asistente conectado a fuentes autorizadas. Hay que definir qué información puede consultar cada usuario, cómo se actualiza y qué ocurre cuando no hay evidencia suficiente para responder."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Cómo se revisan las respuestas incorrectas de la IA?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Definimos ejemplos de prueba, criterios de evaluación y situaciones que requieren revisión humana. Un sistema generativo puede equivocarse; las decisiones sensibles necesitan controles y un responsable que valide el resultado."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Es necesario entrenar un modelo propio?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No siempre. Una integración con un modelo existente y fuentes de información bien preparadas puede ser suficiente. Comparamos coste, privacidad, calidad y mantenimiento antes de plantear entrenamiento específico."
+                  }
                 }
               ]
             }

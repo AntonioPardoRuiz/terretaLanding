@@ -19,6 +19,11 @@ const expected = [
   '/outsourcing',
   '/cursos',
   '/trabajar-con-nosotros',
+  '/desarrollo-software-a-medida',
+  '/automatizacion-pymes',
+  '/desarrollo-web',
+  '/desarrollo-aplicaciones-moviles',
+  '/inteligencia-artificial-empresas',
 ];
 const docs = new Map(
   expected.map((path) => [
@@ -36,7 +41,7 @@ test('sitemap and robots contain only the existing indexable canonical URLs', ()
   }).window.document;
   const urls = [...xml.querySelectorAll('loc')].map((el) => el.textContent);
   assert.deepEqual(urls.sort(), expected.map((path) => origin + path).sort());
-  assert.equal(new Set(urls).size, 12);
+  assert.equal(new Set(urls).size, 17);
   const robots = readFileSync(resolve(root, 'robots.txt'), 'utf8');
   assert.match(robots, /User-agent: \*/);
   assert.match(robots, /Allow: \//);
@@ -49,6 +54,18 @@ test('all prerendered pages have unique metadata, one H1/main, logical headings,
     descriptions = new Set();
   for (const [path, doc] of docs) {
     assert.ok(doc.title, path);
+    for (const selector of [
+      'title',
+      'meta[name=description]',
+      'link[rel=canonical]',
+      'meta[name=robots]',
+    ])
+      assert.equal(doc.querySelectorAll(selector).length, 1, path + ': ' + selector);
+    assert.equal(doc.querySelector('meta[name="twitter:title"]')?.content, doc.title);
+    assert.equal(
+      doc.querySelector('meta[name="twitter:description"]')?.content,
+      doc.querySelector('meta[name=description]')?.content,
+    );
     titles.add(doc.title);
     const description = doc.querySelector('meta[name="description"]')?.content;
     assert.ok(description, path);
@@ -67,8 +84,8 @@ test('all prerendered pages have unique metadata, one H1/main, logical headings,
         `${path}: ${headings[i].textContent}`,
       );
   }
-  assert.equal(titles.size, 12);
-  assert.equal(descriptions.size, 12);
+  assert.equal(titles.size, 17);
+  assert.equal(descriptions.size, 17);
 });
 
 test('internal links and fragments resolve to existing pages or assets', () => {
@@ -165,4 +182,38 @@ test('static 404 remains noindex and no SPA rewrite turns unknown URLs into inde
   assert.equal(doc.querySelectorAll('h1').length, 1);
   const config = JSON.parse(readFileSync('firebase.json', 'utf8'));
   assert.equal(config.hosting.rewrites, undefined);
+});
+
+test('service landings deliver full content, visible FAQs matching schema and breadcrumb links', () => {
+  for (const path of expected.slice(-5)) {
+    const doc = docs.get(path);
+    assert.ok(doc.querySelector('main').textContent.split(/\s+/).length > 400, path);
+    const nodes = graph(doc);
+    assert.equal(nodes.filter((n) => n['@type'] === 'Service').length, 1);
+    const faq = nodes.find((n) => n['@type'] === 'FAQPage');
+    const details = [...doc.querySelectorAll('details')];
+    assert.equal(faq.mainEntity.length, details.length);
+    faq.mainEntity.forEach((q, i) => {
+      assert.equal(q.name, details[i].querySelector('summary').textContent.trim());
+      assert.equal(q.acceptedAnswer.text, details[i].querySelector('p').textContent.trim());
+    });
+    assert.ok(doc.querySelector('nav[aria-label="Ruta de navegación"] a[href="/servicios"]'));
+    assert.equal(nodes.find((n) => n['@type'] === 'BreadcrumbList').itemListElement.length, 3);
+  }
+});
+
+test('every FAQ graph matches visible questions and answers without repeating questions across URLs', () => {
+  const questions = new Set();
+  for (const [path, doc] of docs) {
+    const faq = graph(doc).find((node) => node['@type'] === 'FAQPage');
+    if (!faq) continue;
+    const details = [...doc.querySelectorAll('app-faq details')];
+    assert.equal(faq.mainEntity.length, details.length, path);
+    faq.mainEntity.forEach((item, i) => {
+      assert.equal(item.name, details[i].querySelector('summary').textContent.trim());
+      assert.equal(item.acceptedAnswer.text, details[i].querySelector('p').textContent.trim());
+      assert.ok(!questions.has(item.name), item.name);
+      questions.add(item.name);
+    });
+  }
 });

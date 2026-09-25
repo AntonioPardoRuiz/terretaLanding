@@ -16,7 +16,7 @@ describe('SEO metadata during navigation', () => {
     seoService.listenToRouteChanges();
     seoService.listenToRouteChanges();
     const pages = routes.filter((route) => route.path !== '**');
-    expect(pages).toHaveLength(12);
+    expect(pages).toHaveLength(17);
     const titles = new Set<string>();
     const descriptions = new Set<string>();
     for (const route of pages) {
@@ -48,9 +48,20 @@ describe('SEO metadata during navigation', () => {
         SITE_URL + seo.canonicalPath,
       );
       expect(harness.routeNativeElement?.querySelectorAll('h1')).toHaveLength(1);
+      if (seo.serviceName) {
+        expect(harness.routeNativeElement?.querySelector('h1')?.textContent).toBe(seo.serviceName);
+        expect(
+          graph.find((node: Record<string, unknown>) => node['@type'] === 'Service').name,
+        ).toBe(seo.serviceName);
+      }
+      if (seo.faqs) {
+        expect(harness.routeNativeElement?.querySelectorAll('app-faq details')).toHaveLength(
+          seo.faqs.length,
+        );
+      }
     }
-    expect(titles.size).toBe(12);
-    expect(descriptions.size).toBe(12);
+    expect(titles.size).toBe(17);
+    expect(descriptions.size).toBe(17);
     await harness.navigateByUrl('/does-not-exist');
     expect(document.querySelector('meta[name="robots"]')?.getAttribute('content')).toContain(
       'noindex',
@@ -62,7 +73,7 @@ describe('SEO metadata during navigation', () => {
     expect(document.querySelector('link[rel="canonical"]')?.getAttribute('href')).toBe(
       SITE_URL + '/servicios',
     );
-  });
+  }, 15000);
 
   it('strips navigation parameters and never adopts another canonical origin', () => {
     expect(canonicalPath('/servicios/?ref=a#software')).toBe('/servicios');

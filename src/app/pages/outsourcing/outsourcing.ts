@@ -1,3 +1,5 @@
+import { PAGE_FAQS } from '../../core/seo/page-faqs';
+import { FaqComponent } from '../../shared/ui/faq/faq';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../../shared/ui/button/button';
@@ -6,12 +8,13 @@ import { CtaComponent } from '../../shared/ui/cta/cta';
 
 @Component({
   selector: 'app-outsourcing',
-  imports: [ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
+  imports: [FaqComponent, ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
   templateUrl: './outsourcing.html',
   styleUrl: './outsourcing.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OutsourcingComponent {
+  readonly faqs = PAGE_FAQS['/outsourcing'];
   readonly plans = [
     {
       name: 'Primer impulso',

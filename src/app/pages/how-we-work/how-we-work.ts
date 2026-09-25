@@ -1,3 +1,5 @@
+import { PAGE_FAQS } from '../../core/seo/page-faqs';
+import { FaqComponent } from '../../shared/ui/faq/faq';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../../shared/ui/button/button';
@@ -19,12 +21,13 @@ interface ProjectPhase {
 
 @Component({
   selector: 'app-how-we-work',
-  imports: [ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
+  imports: [FaqComponent, ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
   templateUrl: './how-we-work.html',
   styleUrl: './how-we-work.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HowWeWorkComponent {
+  readonly faqs = PAGE_FAQS['/como-trabajamos'];
   readonly principles: readonly Principle[] = [
     { icon: 'clarity', title: 'Claridad desde el inicio', description: 'Definimos alcance, prioridades, entregables y expectativas desde las primeras fases.' },
     { icon: 'visibility', title: 'Seguimiento continuo', description: 'El cliente tiene visibilidad real del avance y participa en validaciones periódicas.' },

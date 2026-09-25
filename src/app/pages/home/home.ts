@@ -1,3 +1,5 @@
+import { PAGE_FAQS } from '../../core/seo/page-faqs';
+import { FaqComponent } from '../../shared/ui/faq/faq';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../../shared/ui/button/button';
@@ -21,12 +23,13 @@ interface Solution {
 
 @Component({
   selector: 'app-home',
-  imports: [ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
+  imports: [FaqComponent, ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
+  readonly faqs = PAGE_FAQS['/'];
   readonly benefits: readonly Card[] = [
     {
       title: 'Software a medida',
@@ -107,8 +110,8 @@ export class HomeComponent {
       link: '/aplicaciones/fitness-app',
     },
     {
-      title: 'J. Castejón Psicología',
-      sector: 'Psicología',
+      title: 'Productos realizados a nuestros clientes',
+      sector: 'Servicios profesionales',
       description:
         'Solución digital que estructura la presencia profesional y facilita el acceso a información y contacto.',
       visual: 'psychology',

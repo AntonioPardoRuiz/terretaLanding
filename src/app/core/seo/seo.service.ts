@@ -50,6 +50,10 @@ export class SeoService {
     this.meta.updateTag({ name: 'twitter:description', content: seo.description });
     this.meta.updateTag({ name: 'twitter:image', content: image });
     this.meta.updateTag({
+      name: 'twitter:image:alt',
+      content: image === DEFAULT_IMAGE ? 'Terreta' : 'Pantalla de acceso de Elite Coach',
+    });
+    this.meta.updateTag({
       name: 'robots',
       content: seo.noIndex ? 'noindex, nofollow' : 'index, follow',
     });

@@ -99,6 +99,16 @@ try {
     ['/servicios', 1440],
     ['/productos', 390],
     ['/cursos', 390],
+    ...[
+      '/desarrollo-software-a-medida',
+      '/automatizacion-pymes',
+      '/desarrollo-web',
+      '/desarrollo-aplicaciones-moviles',
+      '/inteligencia-artificial-empresas',
+    ].flatMap((path) => [
+      [path, 390],
+      [path, 1440],
+    ]),
   ]) {
     await send('Emulation.setDeviceMetricsOverride', {
       width,
@@ -152,6 +162,18 @@ try {
   assert.equal(navigation.services, 6);
   await evaluate(`document.querySelector('.skip-link').click()`);
   assert.equal(await evaluate('document.activeElement.id'), 'main-content');
+  for (const path of ['/desarrollo-software-a-medida', '/automatizacion-pymes', '/inteligencia-artificial-empresas']) {
+    await evaluate(`document.querySelector('a[href="${path}"]').click()`);
+    for (let attempt = 0; attempt < 40; attempt++) {
+      if (await evaluate(`location.pathname === '${path}' && document.querySelector('link[rel="canonical"]')?.href === 'https://www.realterretaia.com${path}'`)) break;
+      await delay(100);
+    }
+    assert.equal(await evaluate('location.pathname'), path);
+    assert.equal(await evaluate(`document.querySelector('h1').textContent.trim()`), await evaluate(`JSON.parse(document.getElementById('terreta-structured-data').textContent)['@graph'].find(n=>n['@type']==='Service').name`));
+    assert.equal(await evaluate(`document.querySelectorAll('app-faq details').length`), 4);
+    await evaluate(`document.querySelector('app-faq summary').click()`);
+    assert.equal(await evaluate(`document.querySelector('app-faq details').open`), true);
+  }
   assert.equal(errors.length, 0, errors.join('\n'));
   const result = {
     checkedAt: new Date().toISOString(),

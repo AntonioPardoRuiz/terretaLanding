@@ -1,0 +1,70 @@
+:host {
+  display: block;
+}
+.detail-hero {
+  padding: var(--space-2xl) 0;
+  background: var(--gradient-page);
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+}
+h1 {
+  max-width: 58rem;
+  font-size: clamp(2.3rem, 5vw, 4.2rem);
+  line-height: 1.08;
+  margin: 1rem 0;
+  overflow-wrap: anywhere;
+}
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  line-height: 1.2;
+}
+p,
+li {
+  line-height: 1.8;
+  max-width: 58rem;
+}
+.lead {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+a {
+  color: var(--color-primary);
+}
+.detail-section {
+  padding: var(--space-2xl) 0;
+}
+.detail-section--soft {
+  background: var(--color-surface-soft);
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 5vw, 4rem);
+}
+.detail-card {
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+li {
+  margin: 0.8rem 0;
+  padding-left: 0.3rem;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 3rem;
+  padding-left: 1.5rem;
+}
+@media (max-width: 48rem) {
+  .detail-grid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

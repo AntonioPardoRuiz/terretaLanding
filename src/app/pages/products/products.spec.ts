@@ -19,7 +19,7 @@ describe('ProductsComponent', () => {
       'Productos de software para problemas reales',
     );
     expect(element.textContent).toContain('Elite Coach');
-    expect(element.textContent).toContain('Jessica Castejón Psicología');
+    expect(element.textContent).toContain('Productos realizados a nuestros clientes');
     expect(element.textContent).toContain('TerretaAgro');
     expect(element.textContent).toContain('ContaTerra');
     expect(element.textContent).toContain('TerretaRail');

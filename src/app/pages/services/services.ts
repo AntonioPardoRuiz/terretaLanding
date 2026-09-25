@@ -1,3 +1,5 @@
+import { PAGE_FAQS } from '../../core/seo/page-faqs';
+import { FaqComponent } from '../../shared/ui/faq/faq';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../../shared/ui/button/button';
@@ -6,6 +8,7 @@ import { CtaComponent } from '../../shared/ui/cta/cta';
 
 interface Service {
   id: string;
+  path?: string;
   example: { label: string; fragment: string };
   title: string;
   description: string;
@@ -17,15 +20,17 @@ interface Service {
 
 @Component({
   selector: 'app-services',
-  imports: [ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
+  imports: [FaqComponent, ButtonComponent, ContainerComponent, CtaComponent, RouterLink],
   templateUrl: './services.html',
   styleUrl: './services.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ServicesComponent {
+  readonly faqs = PAGE_FAQS['/servicios'];
   readonly services: readonly Service[] = [
     {
       id: 'software-a-medida',
+      path: '/desarrollo-software-a-medida',
       example: {
         label: 'Ver TerretaAgro: gestión agrícola, almacenes y transporte',
         fragment: 'terreta-agro',
@@ -47,6 +52,7 @@ export class ServicesComponent {
     },
     {
       id: 'aplicaciones-moviles',
+      path: '/desarrollo-aplicaciones-moviles',
       example: {
         label: 'Conocer Elite Coach, una aplicación para el sector fitness',
         fragment: 'elite-coach',
@@ -68,6 +74,7 @@ export class ServicesComponent {
     },
     {
       id: 'desarrollo-web',
+      path: '/desarrollo-web',
       title: 'Desarrollo web y páginas web para empresas',
       description:
         'Una página web corporativa presenta tu negocio, explica tus servicios y facilita el contacto. Una aplicación web permite además trabajar con datos y realizar operaciones, como gestionar reservas o acceder a un área privada. Diseñamos la presencia pública y, cuando el proyecto lo requiere, la conectamos con una plataforma de negocio.',
@@ -82,10 +89,11 @@ export class ServicesComponent {
         'Empresas y profesionales que necesitan explicar su oferta con claridad y disponer de un punto de contacto digital propio.',
       cta: 'Quiero valorar la web de mi empresa',
       icon: 'web',
-      example: { label: 'Ver el proyecto Jessica Castejón Psicología', fragment: 'psicologia' },
+      example: { label: 'Ver productos realizados a nuestros clientes', fragment: 'proyectos-clientes' },
     },
     {
       id: 'automatizacion',
+      path: '/automatizacion-pymes',
       example: {
         label: 'Ver ContaTerra y su enfoque de gestión empresarial',
         fragment: 'conta-terra',
@@ -107,6 +115,7 @@ export class ServicesComponent {
     },
     {
       id: 'inteligencia-artificial',
+      path: '/inteligencia-artificial-empresas',
       example: {
         label: 'Explorar los productos de software de Terreta',
         fragment: 'software-sectorial',
