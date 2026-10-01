@@ -65,11 +65,11 @@ export const SERVICE_METADATA: { slug: string; name: string; seo: SeoData }[] = 
   },
   {
     slug: 'desarrollo-web',
-    name: 'Desarrollo web y aplicaciones web para empresas',
+    name: 'Desarrollo web en Alicante para empresas',
     seo: {
       title: 'Desarrollo web en Alicante y aplicaciones web | Terreta',
       description:
-        'Páginas web profesionales y aplicaciones web con Angular: contenido claro, diseño responsive y conexión con tu negocio. Cuéntanos qué necesitas desarrollar.',
+        'Desarrollo web en Alicante: creamos páginas corporativas y aplicaciones web con Angular, diseño responsive e integración con tu negocio. Solicita presupuesto.',
       faqs: [
         {
           question: '¿Necesito una página web o una aplicación web?',

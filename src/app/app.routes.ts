@@ -9,9 +9,9 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home').then((c) => c.HomeComponent),
     data: {
       seo: {
-        title: 'Desarrollo de software para empresas en Alicante | Terreta',
+        title: 'Desarrollo web en Alicante y software a medida | Terreta',
         description:
-          'Desarrollamos software para empresas desde Alicante: aplicaciones web y móviles, automatización e IA. Conoce nuestros productos y cuéntanos tu proyecto.',
+          'Desarrollo web en Alicante para empresas y pymes: páginas web, aplicaciones y software a medida. Cuéntanos tu proyecto y solicita presupuesto sin compromiso.',
         canonicalPath: '/',
         faqs: PAGE_FAQS['/'],
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',

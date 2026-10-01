@@ -164,10 +164,8 @@
               >Consultar TerretaRail <span aria-hidden="true">→</span></a
             >
           </div>
-          <div class="emerging-product__visual" aria-hidden="true">
-            <div class="rail-line">
-              <span></span><span></span><i>OPERACIONES</i><b>MANTENIMIENTO</b>
-            </div>
+          <div class="product-brand product-brand--rail">
+            <img src="assets/images/terreta-rail-logo.png" alt="Logo de TerretaRail" width="1254" height="1254" loading="lazy" decoding="async" />
           </div>
         </article>
       </div>
@@ -255,14 +253,20 @@
       </header>
       <div class="crm-products">
         <article class="crm-product" aria-labelledby="crm-heading">
+          <a class="crm-product__preview" [href]="crmUrl" target="_blank" rel="noopener noreferrer" aria-label="Abrir Terreta CRM">
+            <img src="assets/images/terreta-crm-web.png" alt="Pantalla de acceso de Terreta CRM" width="1440" height="1000" loading="lazy" decoding="async" />
+          </a>
           <span class="product__sector">Gestión empresarial</span>
           <h2 id="crm-heading">Terreta CRM</h2>
           <p>Una solución de Terreta para la gestión de la relación con los clientes.</p>
-          <a class="product__cta" routerLink="/contacto">
-            Consultar Terreta CRM <span aria-hidden="true">→</span>
+          <a class="product__cta" [href]="crmUrl" target="_blank" rel="noopener noreferrer">
+            Acceder a Terreta CRM <span aria-hidden="true">↗</span>
           </a>
         </article>
         <article class="crm-product" id="crmhealth" aria-labelledby="crmhealth-heading">
+          <div class="product-brand product-brand--health">
+            <img src="assets/images/terreta-health-brand.jpg" alt="Logo de TerretaHealth" width="784" height="1168" loading="lazy" decoding="async" />
+          </div>
           <span class="product__sector">CRMHealth · Demo disponible</span>
           <h2 id="crmhealth-heading">CRMHealth</h2>
           <p>Solicita acceso a la demo de CRMHealth y conoce cómo puede encajar en tu negocio.</p>

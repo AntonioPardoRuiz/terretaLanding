@@ -16,7 +16,7 @@ describe('HomeComponent', () => {
     const element = fixture.nativeElement as HTMLElement;
 
     expect(element.querySelectorAll('h1')).toHaveLength(1);
-    expect(element.querySelector('h1')?.textContent).toContain('Desarrollamos software para');
+    expect(element.querySelector('h1')?.textContent).toContain('Desarrollo web en Alicante');
     expect(element.querySelector<HTMLAnchorElement>('a[href="/contacto"]')?.textContent).toContain(
       'Solicitar propuesta',
     );
