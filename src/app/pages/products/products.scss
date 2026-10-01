@@ -185,119 +185,28 @@
 .product__visual--agro {
   background: radial-gradient(circle at 20% 10%, rgb(123 213 124/20%), transparent 30%), #092c25;
 }
-.agro-board {
-  width: min(100%, 29rem);
-  padding: 1.2rem;
-  border: 1px solid rgb(166 226 166/20%);
-  border-radius: 1rem;
-  background: rgb(5 27 23/72%);
-  box-shadow: 0 25px 60px rgb(0 0 0/28%);
+// Display only the web logo above the app icon in each supplied brand sheet.
+.product-brand {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  background: #fff;
 }
-.agro-board header,
-.agro-board footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #d8f4dc;
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
+.product-brand--agro {
+  max-width: 29rem;
+  aspect-ratio: 784 / 740;
 }
-.agro-board header strong {
-  margin-left: 0.25rem;
-  color: #73d47b;
+.product-brand--conta {
+  aspect-ratio: 784 / 680;
 }
-.agro-board header small,
-.agro-board footer small {
-  color: #8bab9d;
-  font-size: 0.5rem;
-}
-.agro-board__summary {
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  gap: 0.5rem;
-  margin: 1.1rem 0;
-}
-.agro-board__summary > span {
-  display: flex;
-  min-height: 3.8rem;
-  padding: 0.65rem;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid rgb(147 218 154/17%);
-  border-radius: 0.55rem;
-  background: rgb(53 113 75/18%);
-}
-.agro-board__summary small,
-.agro-board__flow small {
-  color: #8bab9d;
-  font-size: 0.52rem;
-}
-.agro-board__summary strong {
-  color: #e7f8e9;
-  font-size: 0.76rem;
-}
-.agro-board__flow {
-  display: grid;
-  gap: 0.3rem;
-}
-.agro-board__flow > div {
-  display: grid;
-  grid-template-columns: 2rem 1fr;
-  gap: 0.65rem;
-  align-items: center;
-  padding: 0.5rem;
-  border: 1px solid rgb(147 218 154/15%);
-  border-radius: 0.5rem;
-  background: rgb(13 58 47/65%);
-}
-.agro-board__flow i {
-  display: grid;
-  width: 2rem;
-  aspect-ratio: 1;
-  place-items: center;
-  border-radius: 0.4rem;
-  background: rgb(115 212 123/13%);
-  color: #73d47b;
-  font-style: normal;
-}
-.agro-board__flow span {
-  display: flex;
-  flex-direction: column;
-}
-.agro-board__flow b {
-  color: #e7f8e9;
-  font-size: 0.65rem;
-}
-.agro-board__flow em {
-  height: 0.55rem;
-  margin-left: 1rem;
-  color: #5b9b70;
-  font-size: 0.6rem;
-  font-style: normal;
-  line-height: 0.55rem;
-}
-.agro-board footer {
-  margin-top: 0.8rem;
-}
-.agro-board footer > span {
-  display: flex;
-  height: 1.4rem;
-  align-items: end;
-  gap: 0.18rem;
-}
-.agro-board footer i {
+.product-brand img {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
-  width: 0.28rem;
-  background: #4f9e65;
-}
-.agro-board footer i:nth-child(1) {
-  height: 45%;
-}
-.agro-board footer i:nth-child(2) {
-  height: 80%;
-}
-.agro-board footer i:nth-child(3) {
-  height: 60%;
+  width: 100%;
+  height: auto;
 }
 .agro-areas {
   display: grid;
@@ -360,29 +269,6 @@
   place-items: center;
   border-radius: 0.8rem;
   background: rgb(255 255 255/4%);
-}
-.ledger {
-  position: relative;
-  width: 70%;
-  height: 8rem;
-  border: 1px solid #7fa7d1;
-  border-radius: 0.5rem;
-}
-.ledger span {
-  display: block;
-  height: 1px;
-  margin: 1.5rem;
-  background: #52779c;
-}
-.ledger i {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  width: 35%;
-  height: 2.5rem;
-  border-left: 3px solid #54a8ff;
-  border-bottom: 3px solid #54a8ff;
-  transform: skewY(-15deg);
 }
 .rail-line {
   position: relative;
@@ -464,7 +350,31 @@
   color: #806c91;
   letter-spacing: 0.25em;
 }
-.crm-products {
+.client-products {
+  margin-top: 1.25rem;
+}
+.client-product__logo {
+  display: grid;
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 0.8rem;
+  background: #fff;
+}
+.client-product__logo img {
+  display: block;
+  width: 100%;
+  max-width: 16rem;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+.crm-products,
+.client-products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: 1.25rem;

@@ -63,7 +63,7 @@ export const routes: Routes = [
       seo: {
         title: 'Productos y soluciones de software empresarial | Terreta',
         description:
-          'Conoce Elite Coach, TerretaAgro, ContaTerra y TerretaRail: productos de software de Terreta, junto a proyectos reales para servicios profesionales.',
+          'Conoce Elite Coach, TerretaAgro, ContaTerra y TerretaRail: productos de software de Terreta y proyectos web para clientes como Mars y Apex.',
         canonicalPath: '/productos',
         faqs: PAGE_FAQS['/productos'],
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',

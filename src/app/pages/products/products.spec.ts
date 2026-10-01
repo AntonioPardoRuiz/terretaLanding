@@ -49,6 +49,5 @@ describe('ProductsComponent', () => {
     expect(agro.textContent).toContain('Campo');
     expect(agro.textContent).toContain('Almacén');
     expect(agro.textContent).toContain('Transporte');
-    expect(agro.textContent).toContain('Vista demostrativa · Sin datos de clientes');
   });
 });

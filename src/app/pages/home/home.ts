@@ -113,8 +113,10 @@ export class HomeComponent {
       title: 'Productos realizados a nuestros clientes',
       sector: 'Servicios profesionales',
       description:
-        'Solución digital que estructura la presencia profesional y facilita el acceso a información y contacto.',
+        'Proyectos web para clientes como Mars y Apex, con una presencia digital clara y accesible.',
       visual: 'psychology',
+      link: '/productos',
+      fragment: 'proyectos-clientes',
     },
     {
       title: 'TerretaAgro',

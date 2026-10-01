@@ -82,34 +82,8 @@
       </header>
       <article class="agro-product" id="terreta-agro" aria-labelledby="agro-heading">
         <div class="product__visual product__visual--agro">
-          <div class="agro-board" aria-label="Representación conceptual del software TerretaAgro">
-            <header>
-              <span>TERRETA<strong>AGRO</strong></span
-              ><small>Interfaz conceptual</small>
-            </header>
-            <div class="agro-board__summary">
-              <span><small>Áreas conectadas</small><strong>03</strong></span
-              ><span><small>Entorno</small><strong>Centralizado</strong></span>
-            </div>
-            <div class="agro-board__flow" aria-label="Campo, almacén y transporte">
-              <div>
-                <i aria-hidden="true">⌁</i><span><b>Campo</b><small>Actividad agraria</small></span>
-              </div>
-              <em aria-hidden="true">↓</em>
-              <div>
-                <i aria-hidden="true">□</i
-                ><span><b>Almacén</b><small>Operaciones organizadas</small></span>
-              </div>
-              <em aria-hidden="true">↓</em>
-              <div>
-                <i aria-hidden="true">→</i
-                ><span><b>Transporte</b><small>Camiones y operaciones</small></span>
-              </div>
-            </div>
-            <footer>
-              <small>Vista demostrativa · Sin datos de clientes</small
-              ><span><i></i><i></i><i></i></span>
-            </footer>
+          <div class="product-brand product-brand--agro">
+            <img src="assets/images/terreta-agro-brand.jpg" alt="Logo de TerretaAgro" width="784" height="1168" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="product__content">
@@ -151,8 +125,8 @@
           id="conta-terra"
           aria-labelledby="conta-heading"
         >
-          <div class="emerging-product__visual" aria-hidden="true">
-            <div class="ledger"><span></span><span></span><span></span><i></i></div>
+          <div class="product-brand product-brand--conta">
+            <img src="assets/images/contaterra-brand.jpg" alt="Logo de ContaTerra" width="784" height="1168" loading="lazy" decoding="async" />
           </div>
           <div>
             <span class="product__sector">Contabilidad · Gestión empresarial</span>
@@ -239,8 +213,39 @@
             >Consultar un proyecto a medida <span aria-hidden="true">→</span></a
           >
         </div>
-      </article></app-container
-    >
+      </article>
+      <div class="client-products">
+        <article class="crm-product" id="mars" aria-labelledby="mars-heading">
+          <div class="client-product__logo">
+            <img src="assets/images/mars-logo.webp" alt="Logo de Construcciones MARS" width="356" height="224" loading="lazy" decoding="async" />
+          </div>
+          <span class="product__sector">Cliente · Proyecto web</span>
+          <h3 id="mars-heading" class="product-title">Mars</h3>
+          <p>
+            Construcciones MARS es una empresa de Maracaibo, Venezuela, especializada en ingeniería,
+            construcción metalmecánica y gerencia de proyectos para el sector industrial.
+          </p>
+          <a class="product__cta" href="https://marsterreta.web.app" target="_blank" rel="noopener noreferrer">
+            Visitar Mars <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+        <article class="crm-product" id="apex" aria-labelledby="apex-heading">
+          <div class="client-product__logo">
+            <img src="assets/images/apex-logo.png" alt="Logo de Apex Construcciones" width="826" height="820" loading="lazy" decoding="async" />
+          </div>
+          <span class="product__sector">Cliente · Proyecto web</span>
+          <h3 id="apex-heading" class="product-title">Apex</h3>
+          <p>
+            Apex Construcciones ofrece ingeniería, construcción y mantenimiento industrial desde
+            Maracaibo, Venezuela. Sus servicios incluyen obras civiles, eléctricas y mecánicas,
+            soldadura especializada y protección anticorrosiva.
+          </p>
+          <a class="product__cta" href="https://apexterreta.web.app" target="_blank" rel="noopener noreferrer">
+            Visitar Apex <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </app-container>
   </section>
   <section class="catalog-section" id="crm" aria-labelledby="crm-heading">
     <app-container>
