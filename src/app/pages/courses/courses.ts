@@ -14,6 +14,75 @@ import { ContactService } from '../contact/contact.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CoursesComponent {
+  readonly companyCourses = [
+    {
+      id: 'machine-learning',
+      title: 'Iniciación a Machine Learning',
+      description:
+        'Aprende a aplicar el aprendizaje automático a los datos de tu empresa, con un recorrido adaptado a la experiencia de tu equipo.',
+      modules: [
+        {
+          title: 'Principiante',
+          description:
+            'Fundamentos, preparación de datos y primeros modelos de clasificación y regresión.',
+        },
+        {
+          title: 'Intermedio',
+          description:
+            'Selección de variables, evaluación de modelos y ajuste de hiperparámetros con casos prácticos.',
+        },
+        {
+          title: 'Experto',
+          description:
+            'Modelos avanzados, despliegue y seguimiento de su rendimiento en producción.',
+        },
+      ],
+    },
+    {
+      id: 'java-spring-boot',
+      title: 'Java 8 y Spring Boot',
+      description:
+        'Refuerza las bases de Java 8 y aprende a desarrollar aplicaciones de negocio con Spring Boot como framework.',
+      modules: [
+        {
+          title: 'Java 8',
+          description:
+            'Programación orientada a objetos, expresiones lambda, Streams y manejo de excepciones.',
+        },
+        {
+          title: 'Spring Boot',
+          description: 'Inyección de dependencias, configuración y desarrollo de APIs REST.',
+        },
+        {
+          title: 'Aplicación práctica',
+          description:
+            'Persistencia de datos, pruebas y mantenimiento de una aplicación de empresa.',
+        },
+      ],
+    },
+    {
+      id: 'software-legacy',
+      title: 'Software Legacy',
+      description:
+        'Aprende el código de tus abuelos. Comprende los sistemas heredados de tu empresa y aprende a mantenerlos y evolucionarlos con seguridad.',
+      modules: [
+        {
+          title: 'Entender el código',
+          description:
+            'Lectura de código existente, identificación de dependencias y documentación del comportamiento.',
+        },
+        {
+          title: 'Proteger lo que funciona',
+          description:
+            'Pruebas de caracterización para comprobar el comportamiento antes de introducir cambios.',
+        },
+        {
+          title: 'Modernizar paso a paso',
+          description: 'Refactorización y migración gradual para reducir la deuda técnica.',
+        },
+      ],
+    },
+  ] as const;
   private readonly service = inject(ContactService);
   private readonly element = inject(ElementRef) as ElementRef<HTMLElement>;
   readonly priceTiers = [

@@ -1,7 +1,61 @@
-.intro,
-.upcoming {
+.intro {
   color: var(--color-text-muted);
   line-height: 1.7;
+}
+.company-training {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  scroll-margin-top: 6rem;
+}
+.company-training h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.company-courses {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.company-course {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 1.4rem;
+  box-shadow: var(--shadow-card);
+}
+.company-course h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.company-course p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+.company-modules {
+  padding: 0;
+  list-style: none;
+}
+.company-modules li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-border);
+}
+.company-modules h4,
+.company-modules p {
+  margin: 0;
+}
+.company-modules h4 {
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+.company-course > .course-link {
+  margin-top: auto;
+}
+@media (max-width: 64rem) {
+  .company-courses {
+    grid-template-columns: 1fr;
+  }
 }
 .course-card {
   display: grid;

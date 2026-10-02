@@ -4,7 +4,8 @@
       <span class="eyebrow">Formación · Terreta</span>
       <h1 id="courses-title">Cursos</h1>
       <p class="intro">
-        Da el primer paso para aprender nuevas herramientas. Descubre nuestro primer curso.
+        Aprende nuevas herramientas y desarrolla las capacidades de tu equipo con nuestros cursos y
+        nuestra formación para empresas.
       </p>
       <article class="course-card" aria-labelledby="power-bi-title">
         <div>
@@ -109,7 +110,39 @@
           </div>
         </div>
       </article>
-      <p class="upcoming">Próximamente ampliaremos el catálogo con nuevos cursos.</p>
+    </app-container>
+  </section>
+  <section
+    id="formacion-empresas"
+    class="company-training"
+    aria-labelledby="company-training-title"
+  >
+    <app-container>
+      <span class="section-label">Formación para empresas</span>
+      <h2 id="company-training-title">Cursos para tu equipo</h2>
+      <p class="intro">
+        Formación práctica adaptada al nivel y a los objetivos de tu empresa. Consúltanos para
+        concretar el contenido, la duración y las fechas.
+      </p>
+      <div class="company-courses">
+        @for (course of companyCourses; track course.id) {
+          <article class="company-course" [attr.aria-labelledby]="course.id + '-title'">
+            <h3 [id]="course.id + '-title'">{{ course.title }}</h3>
+            <p>{{ course.description }}</p>
+            <ul class="company-modules">
+              @for (module of course.modules; track module.title) {
+                <li>
+                  <h4>{{ module.title }}</h4>
+                  <p>{{ module.description }}</p>
+                </li>
+              }
+            </ul>
+            <a class="course-link" routerLink="/contacto"
+              >Solicitar información sobre {{ course.title }} →</a
+            >
+          </article>
+        }
+      </div>
     </app-container>
   </section>
   <section id="contenido" class="syllabus" aria-labelledby="syllabus-title">

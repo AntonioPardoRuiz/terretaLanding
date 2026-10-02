@@ -49,9 +49,9 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/courses/courses').then((c) => c.CoursesComponent),
     data: {
       seo: {
-        title: 'Cursos | Power BI para principiantes | Terreta',
+        title: 'Cursos y formación para empresas | Terreta',
         description:
-          'Curso principiante en Power BI desde el 1 de noviembre de 2026: 10 horas, 30 plazas y formación desde la instalación hasta las métricas y la publicación.',
+          'Cursos de Power BI y formación para empresas en Machine Learning, Java 8 con Spring Boot y Software Legacy. Aprende y desarrolla las capacidades de tu equipo.',
         canonicalPath: '/cursos',
       },
     },
