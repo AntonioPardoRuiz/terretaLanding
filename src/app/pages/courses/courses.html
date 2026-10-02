@@ -151,6 +151,20 @@
       <div class="company-courses">
         @for (course of companyCourses; track course.id) {
           <article class="company-course" [attr.aria-labelledby]="course.id + '-title'">
+            <div class="company-course-logos" [attr.data-technology]="course.id">
+              @for (logo of course.logos; track logo.src) {
+                <figure>
+                  <img
+                    [src]="logo.src"
+                    [alt]="'Logo de ' + logo.name"
+                    width="112"
+                    height="112"
+                    loading="lazy"
+                  />
+                  <figcaption>{{ logo.name }}</figcaption>
+                </figure>
+              }
+            </div>
             <h3 [id]="course.id + '-title'">{{ course.title }}</h3>
             <p>{{ course.description }}</p>
             <ul class="company-modules">

@@ -41,6 +41,7 @@ export class CoursesComponent {
     {
       id: 'machine-learning',
       title: 'Iniciación a Machine Learning',
+      logos: [{ src: '/assets/images/scikit-learn.svg', name: 'scikit-learn' }],
       description:
         'Aprende a aplicar el aprendizaje automático a los datos de tu empresa, con un recorrido adaptado a la experiencia de tu equipo.',
       modules: [
@@ -64,6 +65,10 @@ export class CoursesComponent {
     {
       id: 'java-spring-boot',
       title: 'Java 8 y Spring Boot',
+      logos: [
+        { src: '/assets/images/java.svg', name: 'Java' },
+        { src: '/assets/images/spring-boot.svg', name: 'Spring Boot' },
+      ],
       description:
         'Refuerza las bases de Java 8 y aprende a desarrollar aplicaciones de negocio con Spring Boot como framework.',
       modules: [
@@ -86,6 +91,7 @@ export class CoursesComponent {
     {
       id: 'software-legacy',
       title: 'Software Legacy',
+      logos: [{ src: '/assets/images/cobol.svg', name: 'COBOL' }],
       description:
         'Aprende el código de tus abuelos. Comprende los sistemas heredados de tu empresa y aprende a mantenerlos y evolucionarlos con seguridad.',
       modules: [

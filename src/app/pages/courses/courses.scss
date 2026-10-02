@@ -74,6 +74,38 @@
   margin: 0;
   font-size: 1.5rem;
 }
+.company-course-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: #fff7ed;
+}
+.company-course-logos[data-technology='java-spring-boot'] {
+  background: #f0fdf4;
+}
+.company-course-logos[data-technology='software-legacy'] {
+  background: #eff6ff;
+}
+.company-course-logos figure {
+  margin: 0;
+  text-align: center;
+}
+.company-course-logos img {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+}
+.company-course-logos figcaption {
+  margin-top: 0.75rem;
+  color: var(--color-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
 .company-course p {
   color: var(--color-text-muted);
   line-height: 1.7;

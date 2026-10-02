@@ -1,0 +1,13 @@
+Course technology logos (downloaded 2026-10-02, unmodified):
+
+Java, COBOL and scikit-learn: Devicon, MIT license (devicon-LICENSE.txt).
+https://github.com/devicons/devicon
+https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg
+https://raw.githubusercontent.com/devicons/devicon/master/icons/cobol/cobol-original.svg
+https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg
+
+Spring Boot: Simple Icons, CC0 (simple-icons-LICENSE.txt).
+https://github.com/simple-icons/simple-icons
+https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/springboot.svg
+
+Brand names and logos belong to their respective owners. Used to identify the technologies taught.
