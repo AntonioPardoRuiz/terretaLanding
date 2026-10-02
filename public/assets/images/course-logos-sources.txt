@@ -11,3 +11,9 @@ https://github.com/simple-icons/simple-icons
 https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/springboot.svg
 
 Brand names and logos belong to their respective owners. Used to identify the technologies taught.
+
+Python, Flask, Django and C#: Devicon, MIT license (devicon-LICENSE.txt).
+https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg
+https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg
+https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg
+https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg

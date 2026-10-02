@@ -51,6 +51,21 @@
   padding: clamp(3rem, 6vw, 5rem) 0;
   scroll-margin-top: 6rem;
 }
+.course-pricing {
+  padding: 2rem 0;
+  scroll-margin-top: 6rem;
+}
+.course-pricing h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+.course-pricing p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+.company-course .company-course-price {
+  color: var(--color-heading);
+  font-weight: 700;
+}
 .company-training h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3rem);

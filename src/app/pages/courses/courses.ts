@@ -111,14 +111,91 @@ export class CoursesComponent {
         },
       ],
     },
+    {
+      id: 'python',
+      title: 'Python',
+      logos: [{ src: '/assets/images/python.svg', name: 'Python' }],
+      description:
+        'Aprende a programar con Python y a automatizar tareas habituales de tu empresa.',
+      modules: [
+        {
+          title: 'Fundamentos',
+          description: 'Variables, estructuras de control, funciones y colecciones.',
+        },
+        {
+          title: 'Datos y archivos',
+          description: 'Lectura de archivos, transformación de datos y manejo de errores.',
+        },
+        {
+          title: 'Automatización práctica',
+          description: 'Scripts reutilizables, pruebas y organización de proyectos.',
+        },
+      ],
+    },
+    {
+      id: 'flask',
+      title: 'Desarrollo web con Flask',
+      logos: [{ src: '/assets/images/flask.svg', name: 'Flask' }],
+      description: 'Construye aplicaciones web y APIs con Flask, el framework ligero de Python.',
+      modules: [
+        {
+          title: 'Primeros pasos',
+          description: 'Rutas, plantillas y configuración de una aplicación.',
+        },
+        {
+          title: 'APIs y datos',
+          description: 'Endpoints, validación y conexión con bases de datos.',
+        },
+        {
+          title: 'Proyecto práctico',
+          description: 'Autenticación, pruebas y preparación para el despliegue.',
+        },
+      ],
+    },
+    {
+      id: 'django',
+      title: 'Desarrollo web con Django',
+      logos: [{ src: '/assets/images/django.svg', name: 'Django' }],
+      description:
+        'Desarrolla aplicaciones de negocio con Django y las herramientas de su ecosistema.',
+      modules: [
+        { title: 'Estructura del proyecto', description: 'Modelos, vistas, plantillas y rutas.' },
+        { title: 'Gestión de datos', description: 'ORM, migraciones y panel de administración.' },
+        {
+          title: 'Aplicación de empresa',
+          description: 'Usuarios, permisos, pruebas y despliegue.',
+        },
+      ],
+    },
+    {
+      id: 'csharp-microsoft',
+      title: 'Aprende C# y tecnologías Microsoft',
+      logos: [{ src: '/assets/images/csharp.svg', name: 'C#' }],
+      description:
+        'Aprende C# y desarrolla aplicaciones con .NET y las herramientas del ecosistema Microsoft.',
+      modules: [
+        {
+          title: 'Fundamentos de C#',
+          description: 'Tipos, clases, interfaces y programación orientada a objetos.',
+        },
+        {
+          title: '.NET y ASP.NET Core',
+          description: 'Desarrollo de APIs y aplicaciones de negocio.',
+        },
+        {
+          title: 'Herramientas Microsoft',
+          description: 'Trabajo con Visual Studio, acceso a datos y pruebas.',
+        },
+      ],
+    },
   ] as const;
   private readonly service = inject(ContactService);
   private readonly element = inject(ElementRef) as ElementRef<HTMLElement>;
   readonly priceTiers = [
-    { dates: 'Del 4 al 10 de octubre', price: 50 },
-    { dates: 'Del 11 al 17 de octubre', price: 65 },
-    { dates: 'Del 18 al 24 de octubre', price: 75 },
-    { dates: 'Del 25 al 31 de octubre', price: 90 },
+    { dates: '4.ª semana antes del inicio', price: 50 },
+    { dates: '3.ª semana antes del inicio', price: 65 },
+    { dates: '2.ª semana antes del inicio', price: 75 },
+    { dates: 'Última semana antes del inicio', price: 90 },
   ] as const;
   readonly status = signal<'idle' | 'loading' | 'success' | 'error'>('idle');
   readonly submitted = signal(false);
@@ -197,12 +274,13 @@ export class CoursesComponent {
           needs: [
             'SOLICITUD DE INSCRIPCIÓN · Curso principiante en Power BI',
             'Duración: 10 horas. Máximo: 30 plazas.',
-            'Precios por fecha de inscripción (octubre de 2026, hora de España peninsular):',
+            'Tarifa común para todos los cursos por semana de inscripción:',
             ...this.priceTiers.map((tier) => `${tier.dates}: ${tier.price} €`),
-            'Fecha de inicio: 1 de noviembre de 2026. Solicitud sujeta a confirmación de disponibilidad y precio.',
+            'Inicio: 2027. Fechas concretas pendientes de confirmar. Solicitud sujeta a confirmación de disponibilidad y precio.',
+            'Los cursos son de pago, salvo los financiados por empresas tecnológicas. La financiación y sus condiciones se indicarán en cada convocatoria.',
             `Turno elegido: ${value.shift}`,
             'Lunes, miércoles y viernes. Mañana: 10:00–11:30. Tarde: 18:00–19:30. Horario de España peninsular.',
-            'Clases: 2, 4, 6, 9, 11, 13 y 16 de noviembre de 2026. Seis sesiones de 90 minutos y una de 60 minutos. Última sesión: 10:00–11:00 o 18:00–19:00.',
+            'Calendario pendiente de confirmar. Seis sesiones de 90 minutos y una de 60 minutos. Última sesión: 10:00–11:00 o 18:00–19:00.',
             `Tipo de ordenador: ${value.computer}`,
             `Conexión a internet: ${value.internet}`,
             `Sistema operativo: ${value.os}`,

@@ -28,6 +28,31 @@ describe('CoursesComponent', () => {
     }).compileComponents();
   });
   afterEach(() => TestBed.inject(HttpTestingController).verify());
+  it('publishes the 2027 catalog with common prices and the funding exception', () => {
+    const fixture = TestBed.createComponent(CoursesComponent);
+    fixture.detectChanges();
+    const element = fixture.nativeElement as HTMLElement;
+    expect(element.querySelectorAll('.company-course')).toHaveLength(7);
+    for (const title of ['Python', 'Flask', 'Django', 'C#', 'Microsoft']) {
+      expect(element.querySelector('#formacion-empresas')?.textContent).toContain(title);
+    }
+    expect(element.querySelector('.course-card time')?.getAttribute('datetime')).toBe('2027');
+    expect(element.textContent).not.toContain('2026');
+    expect(element.querySelector('#precios')?.textContent).toContain(
+      'Todos los cursos son de pago',
+    );
+    expect(element.querySelector('#precios')?.textContent).toContain(
+      'financiados por empresas tecnológicas',
+    );
+    expect(
+      Array.from(element.querySelectorAll('#precios tbody td'), (cell) => cell.textContent?.trim()),
+    ).toEqual(['50 €', '65 €', '75 €', '90 €']);
+    for (const link of element.querySelectorAll<HTMLAnchorElement>(
+      '.company-course a[href$="#precios"]',
+    )) {
+      expect(element.querySelector(new URL(link.href).hash)).toBeTruthy();
+    }
+  });
   it('keeps course information, index and registration links on the courses route', () => {
     const fixture = TestBed.createComponent(CoursesComponent);
     fixture.detectChanges();
@@ -59,12 +84,13 @@ describe('CoursesComponent', () => {
     for (const value of [
       'Power BI',
       '10 horas',
-      '1 de noviembre de 2026',
+      'Inicio: 2027',
       '30 plazas',
-      'Del 4 al 10 de octubre: 50 €',
-      'Del 11 al 17 de octubre: 65 €',
-      'Del 18 al 24 de octubre: 75 €',
-      'Del 25 al 31 de octubre: 90 €',
+      'Los cursos son de pago, salvo los financiados por empresas tecnológicas',
+      '4.ª semana antes del inicio: 50 €',
+      '3.ª semana antes del inicio: 65 €',
+      '2.ª semana antes del inicio: 75 €',
+      'Última semana antes del inicio: 90 €',
       valid.computer,
       valid.os,
       'Conexión a internet: No',

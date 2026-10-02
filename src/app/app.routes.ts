@@ -51,7 +51,7 @@ export const routes: Routes = [
       seo: {
         title: 'Cursos y formación para empresas | Terreta',
         description:
-          'Cursos de Power BI y formación para empresas en Machine Learning, Java 8 con Spring Boot y Software Legacy. Aprende y desarrolla las capacidades de tu equipo.',
+          'Cursos desde 2027: Power BI, Machine Learning, Java 8 y Spring Boot, Software Legacy, Python, Flask, Django y C# con tecnologías Microsoft. Consulta precios y financiación.',
         canonicalPath: '/cursos',
       },
     },
