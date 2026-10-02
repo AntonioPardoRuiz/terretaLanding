@@ -24,15 +24,15 @@
           class="showcase"
           aria-label="Software a medida, Elite Coach, automatización e inteligencia artificial"
         >
-          <div class="showcase__dashboard" aria-hidden="true">
-            <div class="dashboard__top"><i></i><i></i><i></i><span>Panel de gestión</span></div>
-            <div class="dashboard__body">
-              <div class="dashboard__nav"><b></b><b></b><b></b><b></b></div>
-              <div class="dashboard__content">
-                <div class="dashboard__metrics"><i></i><i></i><i></i></div>
-                <div class="dashboard__chart"><span></span></div>
-              </div>
-            </div>
+          <div class="showcase__dashboard showcase__dashboard--image">
+            <img
+              src="assets/images/software-a-medida.jpg"
+              width="1248"
+              height="832"
+              alt="Desarrollo de software a medida de Terreta con interfaces en ordenador y tabletas"
+              fetchpriority="high"
+              decoding="async"
+            />
             <small>Software a medida</small>
           </div>
           <div class="showcase__bottom">
@@ -135,12 +135,13 @@
                 />
               }
               @if (solution.visual === 'psychology') {
-                <div class="product-symbol" aria-hidden="true">Ψ</div>
+                <div class="client-logos">
+                  <img src="assets/images/mars-logo.webp" alt="Logo de Construcciones MARS" width="356" height="224" loading="lazy" decoding="async" />
+                  <img src="assets/images/apex-logo.png" alt="Logo de Apex Construcciones" width="826" height="820" loading="lazy" decoding="async" />
+                </div>
               }
               @if (solution.visual === 'agro') {
-                <div class="agro-lines" aria-hidden="true">
-                  <i></i><i></i><i></i><span>AGRO</span>
-                </div>
+                <img class="solution-card__logo" src="assets/images/terreta-agro-brand.jpg" alt="Logo de TerretaAgro" width="784" height="1168" loading="lazy" decoding="async" />
               }
             </div>
             <div class="solution-card__body">
@@ -160,12 +161,13 @@
         }
       </div>
       <div class="catalog-tags" aria-label="Catálogo de productos">
-        <span>Elite Coach</span><span>Productos realizados a nuestros clientes</span><span>TerretaAgro</span
-        ><span>ContaTerra</span><span>TerretaRail</span>
-        <a routerLink="/productos" fragment="mars">Mars</a>
-        <a routerLink="/productos" fragment="apex">Apex</a>
-        <a routerLink="/productos" fragment="crm">Terreta CRM</a>
-        <a routerLink="/productos" fragment="crmhealth">CRMHealth · Demo disponible →</a>
+        @for (product of catalogProducts; track product.fragment) {
+          <a routerLink="/productos" [fragment]="product.fragment">
+            <img [src]="'assets/images/' + product.image" alt="" width="120" height="120" loading="lazy" decoding="async" />
+            <span>{{ product.name }}</span>
+            @if (product.fragment === 'crmhealth') { <small>Demo disponible →</small> }
+          </a>
+        }
       </div>
       <div class="products-action">
         <app-button label="Ver todos los productos →" link="/productos" />

@@ -30,6 +30,16 @@ interface Solution {
 })
 export class HomeComponent {
   readonly faqs = PAGE_FAQS['/'];
+  readonly catalogProducts = [
+    { name: 'Elite Coach', image: 'elite-coach.webp', fragment: 'elite-coach' },
+    { name: 'TerretaAgro', image: 'terreta-agro-brand.jpg', fragment: 'terreta-agro' },
+    { name: 'ContaTerra', image: 'contaterra-brand.jpg', fragment: 'conta-terra' },
+    { name: 'TerretaRail', image: 'terreta-rail-logo.png', fragment: 'terreta-rail' },
+    { name: 'Mars', image: 'mars-logo.webp', fragment: 'mars' },
+    { name: 'Apex', image: 'apex-logo.png', fragment: 'apex' },
+    { name: 'Terreta CRM', image: 'terreta-crm-web.png', fragment: 'crm' },
+    { name: 'CRMHealth', image: 'terreta-health-brand.jpg', fragment: 'crmhealth' },
+  ] as const;
   readonly benefits: readonly Card[] = [
     {
       title: 'Software a medida',

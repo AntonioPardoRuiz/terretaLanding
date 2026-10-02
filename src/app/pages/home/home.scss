@@ -81,6 +81,15 @@
   color: #a8c9fa;
   font-size: 0.65rem;
 }
+.showcase__dashboard--image {
+  height: auto;
+  padding: 0;
+}
+.showcase__dashboard--image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .dashboard__top i {
   width: 0.42rem;
   height: 0.42rem;
@@ -430,17 +439,20 @@
   text-align: center;
 }
 .catalog-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.75rem;
   justify-content: center;
   margin-top: 1.5rem;
 }
-.catalog-tags span,
 .catalog-tags a {
-  padding: 0.42rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem;
   border: 1px solid var(--color-border);
-  border-radius: 99rem;
+  border-radius: 0.85rem;
   background: white;
   color: var(--color-text-muted);
   font-size: 0.65rem;
@@ -449,6 +461,27 @@
 .catalog-tags a {
   color: var(--color-primary);
   text-underline-offset: 0.18em;
+}
+.catalog-tags img {
+  width: 100%;
+  height: 7.5rem;
+  object-fit: contain;
+}
+.solution-card__visual img.solution-card__logo {
+  object-fit: contain;
+}
+.client-logos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+.client-logos img {
+  object-fit: contain;
+  min-height: 0;
 }
 .solution-card__visual--psychology {
   background:
