@@ -1,4 +1,12 @@
-import { ChangeDetectionStrategy, Component, ElementRef, inject, signal } from '@angular/core';
+import {
+  afterNextRender,
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  inject,
+  signal,
+  viewChild,
+} from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
@@ -14,6 +22,21 @@ import { ContactService } from '../contact/contact.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CoursesComponent {
+  private readonly announcement = viewChild<ElementRef<HTMLDialogElement>>('courseAnnouncement');
+
+  constructor() {
+    afterNextRender(() => {
+      const dialog = this.announcement()?.nativeElement;
+      if (dialog && typeof dialog.showModal === 'function' && !dialog.open) {
+        dialog.showModal();
+      }
+    });
+  }
+
+  closeAnnouncement() {
+    this.announcement()?.nativeElement.close();
+  }
+
   readonly companyCourses = [
     {
       id: 'machine-learning',

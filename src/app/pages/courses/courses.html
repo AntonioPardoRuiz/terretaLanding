@@ -1,4 +1,28 @@
 <main>
+  <dialog
+    #courseAnnouncement
+    class="course-announcement"
+    aria-labelledby="announcement-title"
+    aria-describedby="announcement-description"
+  >
+    <span class="section-label">Formación para empresas · 2027</span>
+    <h2 id="announcement-title">Nuevos cursos a partir de 2027</h2>
+    <p id="announcement-description">
+      Ampliamos nuestra formación para empresas con Machine Learning en los niveles principiante,
+      intermedio y experto, Java 8 con Spring Boot y Software Legacy: «Aprende el código de tus
+      abuelos».
+    </p>
+    <div class="announcement-actions">
+      <a
+        class="course-link"
+        routerLink="/cursos"
+        fragment="formacion-empresas"
+        (click)="closeAnnouncement()"
+        >Ver los nuevos cursos →</a
+      >
+      <button type="button" autofocus (click)="closeAnnouncement()">Cerrar</button>
+    </div>
+  </dialog>
   <section class="contact-hero" aria-labelledby="courses-title">
     <app-container>
       <span class="eyebrow">Formación · Terreta</span>
@@ -121,8 +145,8 @@
       <span class="section-label">Formación para empresas</span>
       <h2 id="company-training-title">Cursos para tu equipo</h2>
       <p class="intro">
-        Formación práctica adaptada al nivel y a los objetivos de tu empresa. Consúltanos para
-        concretar el contenido, la duración y las fechas.
+        Nuevos cursos disponibles a partir de 2027. Formación práctica adaptada al nivel y a los
+        objetivos de tu empresa. Consúltanos para concretar el contenido, la duración y las fechas.
       </p>
       <div class="company-courses">
         @for (course of companyCourses; track course.id) {

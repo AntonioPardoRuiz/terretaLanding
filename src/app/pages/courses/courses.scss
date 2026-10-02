@@ -1,3 +1,48 @@
+.course-announcement {
+  width: min(36rem, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  box-sizing: border-box;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--color-border);
+  border-radius: 1.4rem;
+  background: white;
+  color: var(--color-text);
+  box-shadow: var(--shadow-card);
+}
+.course-announcement::backdrop {
+  background: rgb(15 23 42 / 60%);
+}
+.course-announcement h2 {
+  margin: 1rem 0;
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  line-height: 1.2;
+}
+.course-announcement p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+.announcement-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.announcement-actions button {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.65rem;
+  background: var(--color-primary-soft);
+  color: var(--color-heading);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.announcement-actions :focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
 .intro {
   color: var(--color-text-muted);
   line-height: 1.7;
