@@ -17,14 +17,18 @@
 }
 .brand {
   display: inline-flex;
-  width: 11rem;
+  width: 4.85rem;
+  height: 3rem;
   flex-shrink: 0;
   align-items: center;
+  overflow: hidden;
   text-decoration: none;
 }
 .brand img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
 }
 .navigation {
   display: flex;
