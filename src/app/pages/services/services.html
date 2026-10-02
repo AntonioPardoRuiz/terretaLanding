@@ -50,7 +50,17 @@
       ><div class="services-list__grid">
         @for (service of services; track service.title; let index = $index) {
           <article class="service" [id]="service.id" [class.service--reverse]="index % 2 === 1">
-            <div class="service__visual" [attr.data-icon]="service.icon" aria-hidden="true">
+            <div class="service__visual" [class.service__visual--image]="service.id === 'software-a-medida'" [attr.data-icon]="service.icon" [attr.aria-hidden]="service.id === 'software-a-medida' ? null : 'true'">
+              @if (service.id === 'software-a-medida') {
+                <img
+                  src="/assets/images/software-a-medida.jpg"
+                  alt="Desarrollo de software a medida de Terreta con interfaces en ordenador y tabletas"
+                  width="1248"
+                  height="832"
+                  loading="lazy"
+                  decoding="async"
+                />
+              } @else {
               <div class="visual-orbit"><i></i><i></i><i></i></div>
               <strong>
                 @switch (service.icon) {
@@ -71,6 +81,7 @@
                   }
                 }
               </strong>
+              }
             </div>
             <div class="service__content">
               <span class="section-label">Servicio {{ index + 1 }}</span>
