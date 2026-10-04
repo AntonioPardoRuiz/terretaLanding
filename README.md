@@ -36,6 +36,12 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+`npm run build` also generates `sitemap.xml` from the prerendered pages and their
+canonical URLs, excluding pages marked `noindex`. It updates both
+`dist/terreta-web/browser/sitemap.xml` and `public/sitemap.xml`. To regenerate it
+from an existing build, run `npm run sitemap`. `robots.txt` advertises
+`https://www.realterretaia.com/sitemap.xml`.
+
 ## Running unit tests
 
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:

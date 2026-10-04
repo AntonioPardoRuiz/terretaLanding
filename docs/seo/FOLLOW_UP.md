@@ -8,7 +8,7 @@ la versión de `main`. No se han enviado formularios, solicitado indexación ni 
 ## Search Console
 
 1. Acceder con la cuenta de Antonio y comprobar si existe una propiedad del dominio `realterretaia.com`. Si no existe, crearla y verificar el TXT DNS indicado por Google. La propiedad de dominio permite revisar www y raíz conjuntamente. No sustituir registros existentes.
-2. En Sitemaps, enviar `https://www.realterretaia.com/sitemap.xml`. Debe contener las 12 URLs públicas actuales.
+2. En Sitemaps, enviar `https://www.realterretaia.com/sitemap.xml`. Actualmente contiene 17 URLs canónicas indexables y se regenera automáticamente con `npm run build`.
 3. Inspeccionar la Home, Servicios, Productos y Nosotros usando sus URLs www. Tras el despliegue, comprobar la prueba en directo y solicitar indexación si corresponde.
 4. Revisar Indexación → Páginas: distinguir URLs excluidas deliberadamente, duplicados con canonical correcto y errores de rastreo. La 404 debe seguir siendo 404, no una Home de respuesta 200.
 5. En Rendimiento → Resultados de búsqueda, usar filtro España y comparar periodos equivalentes. Separar consultas de marca de búsquedas de desarrollo y software.
