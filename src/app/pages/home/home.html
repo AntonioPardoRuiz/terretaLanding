@@ -22,7 +22,7 @@
 
         <div
           class="showcase"
-          aria-label="Software a medida, Elite Coach, automatización e inteligencia artificial"
+          aria-label="Software a medida, Curae, Elite Coach, automatización e inteligencia artificial"
         >
           <div class="showcase__dashboard showcase__dashboard--image">
             <img
@@ -48,6 +48,10 @@
                 ><small>Producto desarrollado</small><strong>Elite Coach</strong
                 ><em>Plataforma para entrenadores, clientes y centros deportivos.</em></span
               >
+            </a>
+            <a class="product-card" routerLink="/productos/curae">
+              <img src="/assets/images/curae-brand.jpg" width="784" height="1168" alt="Logo de Curae" decoding="async" />
+              <span><small>Producto estrella</small><strong>Curae</strong><em>Gestión clínica, administrativa y digital en una plataforma.</em></span>
             </a>
             <div class="capabilities" aria-hidden="true">
               <div>
@@ -118,55 +122,26 @@
           Soluciones digitales que parten de problemas reales y se adaptan a cada modelo de negocio.
         </p>
       </header>
-      <div class="solutions-grid">
+      <div class="products-controls">
+        <p id="products-scroll-hint">Desliza para explorar todos los productos y proyectos.</p>
+        <div>
+          <button type="button" aria-label="Ver productos anteriores" aria-controls="home-products" (click)="scrollProducts(productsTrack, -1)">←</button>
+          <button type="button" aria-label="Ver productos siguientes" aria-controls="home-products" (click)="scrollProducts(productsTrack, 1)">→</button>
+        </div>
+      </div>
+      <div #productsTrack id="home-products" class="products-carousel" role="region" aria-labelledby="solutions-title" aria-describedby="products-scroll-hint" tabindex="0">
         @for (solution of solutions; track solution.title) {
           <article class="solution-card">
-            <div
-              class="solution-card__visual"
-              [class]="'solution-card__visual solution-card__visual--' + solution.visual"
-            >
-              @if (solution.visual === 'elite') {
-                <img
-                  src="assets/images/elite-coach.webp"
-                  width="900"
-                  height="900"
-                  loading="lazy"
-                  alt="Pantalla de acceso de Elite Coach"
-                />
-              }
-              @if (solution.visual === 'psychology') {
-                <div class="client-logos">
-                  <img src="assets/images/mars-logo.webp" alt="Logo de Construcciones MARS" width="356" height="224" loading="lazy" decoding="async" />
-                  <img src="assets/images/apex-logo.png" alt="Logo de Apex Construcciones" width="826" height="820" loading="lazy" decoding="async" />
-                </div>
-              }
-              @if (solution.visual === 'agro') {
-                <img class="solution-card__logo" src="assets/images/terreta-agro-brand.jpg" alt="Logo de TerretaAgro" width="784" height="1168" loading="lazy" decoding="async" />
-              }
+            <div class="solution-card__visual">
+              <img class="solution-card__logo" [src]="'/assets/images/' + solution.image" [alt]="solution.title" loading="lazy" decoding="async" />
             </div>
             <div class="solution-card__body">
               <small>{{ solution.sector }}</small>
               <h3>{{ solution.title }}</h3>
               <p>{{ solution.description }}</p>
-              @if (solution.link) {
-                <a [routerLink]="solution.link" [fragment]="solution.fragment"
-                  >{{
-                    solution.visual === 'agro' ? 'Conocer TerretaAgro' : 'Conocer producto'
-                  }}
-                  →</a
-                >
-              }
+              <a [routerLink]="solution.link" [fragment]="solution.fragment">Conocer {{ solution.title }} <span aria-hidden="true">→</span></a>
             </div>
           </article>
-        }
-      </div>
-      <div class="catalog-tags" aria-label="Catálogo de productos">
-        @for (product of catalogProducts; track product.fragment) {
-          <a routerLink="/productos" [fragment]="product.fragment">
-            <img [src]="'assets/images/' + product.image" alt="" width="120" height="120" loading="lazy" decoding="async" />
-            <span>{{ product.name }}</span>
-            @if (product.fragment === 'crmhealth') { <small>Demo disponible →</small> }
-          </a>
         }
       </div>
       <div class="products-action">

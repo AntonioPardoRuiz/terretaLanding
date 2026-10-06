@@ -12,14 +12,6 @@ interface Card {
   description: string;
   icon: IconName;
 }
-interface Solution {
-  title: string;
-  sector: string;
-  description: string;
-  visual: 'elite' | 'psychology' | 'agro';
-  link?: string;
-  fragment?: string;
-}
 
 @Component({
   selector: 'app-home',
@@ -30,16 +22,6 @@ interface Solution {
 })
 export class HomeComponent {
   readonly faqs = PAGE_FAQS['/'];
-  readonly catalogProducts = [
-    { name: 'Elite Coach', image: 'elite-coach.webp', fragment: 'elite-coach' },
-    { name: 'TerretaAgro', image: 'terreta-agro-brand.jpg', fragment: 'terreta-agro' },
-    { name: 'ContaTerra', image: 'contaterra-brand.jpg', fragment: 'conta-terra' },
-    { name: 'TerretaRail', image: 'terreta-rail-logo.png', fragment: 'terreta-rail' },
-    { name: 'Mars', image: 'mars-logo.webp', fragment: 'mars' },
-    { name: 'Apex', image: 'apex-logo.png', fragment: 'apex' },
-    { name: 'Terreta CRM', image: 'terreta-crm-web.png', fragment: 'crm' },
-    { name: 'CRMHealth', image: 'terreta-health-brand.jpg', fragment: 'crmhealth' },
-  ] as const;
   readonly benefits: readonly Card[] = [
     {
       title: 'Software a medida',
@@ -110,34 +92,23 @@ export class HomeComponent {
     },
   ];
 
-  readonly solutions: readonly Solution[] = [
-    {
-      title: 'Elite Coach',
-      sector: 'Fitness',
-      description:
-        'Plataforma para organizar la relación entre entrenadores, clientes y centros deportivos.',
-      visual: 'elite',
-      link: '/aplicaciones/fitness-app',
-    },
-    {
-      title: 'Productos realizados a nuestros clientes',
-      sector: 'Servicios profesionales',
-      description:
-        'Proyectos web para clientes como Mars y Apex, con una presencia digital clara y accesible.',
-      visual: 'psychology',
-      link: '/productos',
-      fragment: 'proyectos-clientes',
-    },
-    {
-      title: 'TerretaAgro',
-      sector: 'Sector agrario · Logística',
-      description:
-        'Software para centralizar la gestión de operaciones agrícolas, almacenes, camiones y transporte.',
-      visual: 'agro',
-      link: '/productos',
-      fragment: 'terreta-agro',
-    },
-  ];
+  readonly solutions = [
+    { title: 'Curae Clínica Total', sector: 'Salud · Producto estrella', description: 'Agenda, historia clínica, portal del paciente y gestión administrativa en una misma plataforma.', image: 'curae-brand.jpg', link: '/productos/curae', fragment: undefined },
+    { title: 'Elite Coach', sector: 'Fitness', description: 'Plataforma para organizar la relación entre entrenadores, clientes y centros deportivos.', image: 'elite-coach.webp', link: '/aplicaciones/fitness-app', fragment: undefined },
+    { title: 'TerretaAgro', sector: 'Agricultura · Logística', description: 'Gestión de operaciones agrícolas, almacenes, camiones y transporte.', image: 'terreta-agro-brand.jpg', link: '/productos', fragment: 'terreta-agro' },
+    { title: 'ContaTerra', sector: 'Contabilidad', description: 'Solución para centralizar procesos de contabilidad y gestión empresarial.', image: 'contaterra-brand.jpg', link: '/productos', fragment: 'conta-terra' },
+    { title: 'TerretaRail', sector: 'Ferroviario', description: 'Digitalización de procesos de operaciones y mantenimiento ferroviario.', image: 'terreta-rail-logo.png', link: '/productos', fragment: 'terreta-rail' },
+    { title: 'Terreta CRM', sector: 'Gestión empresarial', description: 'Gestión de la relación con los clientes en un entorno digital propio.', image: 'terreta-crm-web.png', link: '/productos', fragment: 'crm' },
+    { title: 'CRMHealth', sector: 'Salud · Demo disponible', description: 'Conoce CRMHealth y solicita acceso a su demo para valorar cómo encaja en tu negocio.', image: 'terreta-health-brand.jpg', link: '/productos', fragment: 'crmhealth' },
+    { title: 'Mars', sector: 'Proyecto para clientes', description: 'Presencia web de Construcciones MARS para comunicar sus servicios y facilitar el contacto.', image: 'mars-logo.webp', link: '/productos', fragment: 'mars' },
+    { title: 'Apex', sector: 'Proyecto para clientes', description: 'Proyecto web de Apex Construcciones para presentar su actividad y servicios.', image: 'apex-logo.png', link: '/productos', fragment: 'apex' },
+  ] as const;
+
+  scrollProducts(track: HTMLElement, direction: number): void {
+    const card = track.querySelector<HTMLElement>('.solution-card');
+    const step = card ? card.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || '0') : track.clientWidth;
+    track.scrollBy({ left: direction * step, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }
 
   readonly attributes = [
     { title: 'Software a medida', description: 'Soluciones adaptadas a cada negocio' },

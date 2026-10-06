@@ -375,11 +375,6 @@
 .icon[data-icon='support']::before {
   content: '◎';
 }
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.1rem;
-}
 .solution-card {
   overflow: hidden;
   border: 1px solid var(--color-border);
@@ -438,96 +433,6 @@
   margin-top: 2rem;
   text-align: center;
 }
-.catalog-tags {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-  gap: 0.75rem;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-.catalog-tags a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.65rem;
-  padding: 0.85rem;
-  border: 1px solid var(--color-border);
-  border-radius: 0.85rem;
-  background: white;
-  color: var(--color-text-muted);
-  font-size: 0.65rem;
-  font-weight: 700;
-}
-.catalog-tags a {
-  color: var(--color-primary);
-  text-underline-offset: 0.18em;
-}
-.catalog-tags img {
-  width: 100%;
-  height: 7.5rem;
-  object-fit: contain;
-}
-.solution-card__visual img.solution-card__logo {
-  object-fit: contain;
-}
-.client-logos {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  height: 100%;
-  min-height: 0;
-}
-.client-logos img {
-  object-fit: contain;
-  min-height: 0;
-}
-.solution-card__visual--psychology {
-  background:
-    radial-gradient(circle at 50% 40%, #fff 0 20%, transparent 21%),
-    linear-gradient(145deg, #f6edff, #e7f1ff);
-}
-.product-symbol {
-  display: grid;
-  width: 5rem;
-  aspect-ratio: 1;
-  place-items: center;
-  border: 1px solid #d9c7ef;
-  border-radius: 50%;
-  background: rgb(255 255 255 / 78%);
-  color: #7250a6;
-  font-family: Georgia, serif;
-  font-size: 2.5rem;
-  box-shadow: 0 15px 30px rgb(84 57 121 / 12%);
-}
-.solution-card__visual--agro {
-  background: linear-gradient(160deg, #113d32, #0b251f);
-}
-.agro-lines {
-  position: relative;
-  display: flex;
-  width: 85%;
-  height: 80%;
-  align-items: end;
-  justify-content: space-around;
-  overflow: hidden;
-  border-radius: 0.75rem;
-}
-.agro-lines i {
-  width: 18%;
-  height: 120%;
-  border-left: 2px solid rgb(135 214 120 / 45%);
-  transform: rotate(24deg);
-}
-.agro-lines span {
-  position: absolute;
-  top: 50%;
-  color: white;
-  font-size: 0.72rem;
-  font-weight: 850;
-  letter-spacing: 0.2em;
-}
 .attribute-strip {
   background: linear-gradient(105deg, #1455e9, #1674ff 60%, #08a9ee);
   color: white;
@@ -585,8 +490,7 @@
     grid-template-columns: 1fr;
   }
   .card-grid--four,
-  .card-grid--five,
-  .solutions-grid {
+  .card-grid--five {
     grid-template-columns: 1fr;
   }
   .info-card {
@@ -617,3 +521,19 @@
     width: 5.2rem;
   }
 }
+
+.showcase__bottom > .capabilities { grid-column: 1 / -1; }
+.products-controls { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.products-controls p { margin: 0; color: var(--color-text-muted); font-size: .85rem; }
+.products-controls > div { display: flex; gap: .5rem; }
+.products-controls button { width: 2.75rem; height: 2.75rem; border: 1px solid var(--color-border); border-radius: 50%; background: white; color: var(--color-primary); font-size: 1.3rem; cursor: pointer; }
+.products-controls button:hover { background: var(--color-primary-soft); }
+.products-carousel { display: flex; gap: 1.25rem; overflow-x: auto; padding: .25rem .25rem 1.25rem; scroll-snap-type: x mandatory; scroll-padding-inline: .25rem; }
+.products-carousel > .solution-card { flex: 0 0 clamp(17rem, 30vw, 23rem); min-width: 0; display: flex; flex-direction: column; scroll-snap-align: start; }
+.products-carousel .solution-card__visual { height: 17rem; background: white; }
+.products-carousel .solution-card__logo { width: 100%; height: 100%; object-fit: contain; }
+.products-carousel .solution-card__body { display: flex; flex: 1; flex-direction: column; }
+.products-carousel .solution-card__body a { margin-top: auto; padding-top: 1rem; }
+@media (max-width: 48rem) { .products-carousel > .solution-card { flex-basis: 85%; } }
+
+@media (min-width: 48.01rem) { .showcase__bottom .product-card { grid-template-columns: 4rem minmax(0, 1fr); gap: .65rem; } .showcase__bottom .product-card img { width: 4rem; height: 6rem; object-fit: contain; } }
