@@ -10,10 +10,18 @@
   padding-bottom: var(--space-xl);
 }
 .footer__brand {
-  color: var(--color-white);
-  font-weight: 850;
-  letter-spacing: 0.09em;
+  display: inline-flex;
+  width: min(100%, 13rem);
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: 0.65rem;
+  background: var(--color-white);
   text-decoration: none;
+}
+.footer__brand img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 p {
   max-width: 31rem;
