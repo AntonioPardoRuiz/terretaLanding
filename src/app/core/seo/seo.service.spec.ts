@@ -16,7 +16,7 @@ describe('SEO metadata during navigation', () => {
     seoService.listenToRouteChanges();
     seoService.listenToRouteChanges();
     const pages = routes.filter((route) => route.path !== '**');
-    expect(pages).toHaveLength(17);
+    expect(pages).toHaveLength(18);
     const titles = new Set<string>();
     const descriptions = new Set<string>();
     for (const route of pages) {
@@ -60,8 +60,8 @@ describe('SEO metadata during navigation', () => {
         );
       }
     }
-    expect(titles.size).toBe(17);
-    expect(descriptions.size).toBe(17);
+    expect(titles.size).toBe(pages.length);
+    expect(descriptions.size).toBe(pages.length);
     await harness.navigateByUrl('/does-not-exist');
     expect(document.querySelector('meta[name="robots"]')?.getAttribute('content')).toContain(
       'noindex',
