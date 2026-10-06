@@ -7,9 +7,10 @@
         <p>
           Terreta no desarrolla software genérico. Analizamos procesos y construimos soluciones
           digitales adaptadas a problemas reales de negocio, desde el fitness hasta la agricultura,
-          la contabilidad, el ferrocarril, la gestión de clientes y los servicios profesionales.
+          la salud, la contabilidad, el ferrocarril, la gestión de clientes y los servicios profesionales.
         </p>
         <nav class="sector-nav" aria-label="Sectores del catálogo">
+          <a routerLink="/productos" fragment="curae">Curae · Clínicas</a>
           <a routerLink="/productos" fragment="elite-coach">Fitness</a
           ><a routerLink="/productos" fragment="software-sectorial">Software sectorial</a
           ><a routerLink="/productos" fragment="proyectos-clientes">Digitalización</a
@@ -17,10 +18,43 @@
         </nav>
       </div>
       <div class="catalog-map" aria-label="Sectores de producto">
-        <span>FITNESS</span><span>AGRICULTURA</span><span>CONTABILIDAD</span><span>FERROVIARIO</span
+        <span>CLÍNICAS · CURAE</span><span>FITNESS</span><span>AGRICULTURA</span><span>CONTABILIDAD</span><span>FERROVIARIO</span
         ><span>SERVICIOS PROFESIONALES</span><span>CRM</span><span>CRMHEALTH</span>
       </div></app-container
     >
+  </section>
+
+  <section class="catalog-section featured" id="curae" aria-labelledby="curae-heading">
+    <app-container>
+      <header class="catalog-heading">
+        <span>Producto estrella</span>
+        <p>El motor tecnológico integral de tu clínica.</p>
+      </header>
+      <article class="featured-product">
+        <div class="curae-brand" aria-label="Curae Clínica Total">
+          <span>CURAE</span>
+          <p>Clínica Total</p>
+          <small>Gestión clínica · Administración · Servicios digitales</small>
+        </div>
+        <div class="product__content">
+          <span class="product__sector">Salud · Gestión clínica</span>
+          <h2 id="curae-heading">Curae Clínica Total</h2>
+          <p class="product__lead">
+            Una plataforma de Terreta para reunir la gestión clínica, administrativa y digital
+            del centro en un mismo entorno.
+          </p>
+          <ul>
+            <li>Agenda, historia clínica electrónica y portal del paciente.</li>
+            <li>Facturación, CRM, analítica y operaciones.</li>
+            <li>Usuarios, pacientes y almacenamiento ilimitados para el uso ordinario de la clínica.</li>
+            <li>Módulos médicos opcionales y personalización con la identidad de tu centro.</li>
+          </ul>
+          <a class="product__cta" routerLink="/productos/curae">
+            Descubrir Curae <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+    </app-container>
   </section>
 
   <section class="catalog-section featured" id="elite-coach" aria-labelledby="elite-heading">

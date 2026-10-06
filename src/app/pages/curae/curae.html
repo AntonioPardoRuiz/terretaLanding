@@ -1,0 +1,80 @@
+<main>
+  <section class="curae-hero" aria-labelledby="curae-title">
+    <app-container>
+      <a class="text-link" routerLink="/productos">← Todos los productos</a>
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Producto estrella de Terreta · Salud</span>
+          <h1 id="curae-title">Curae Clínica Total</h1>
+          <p class="lead">Toda la gestión de tu clínica, en una misma plataforma.</p>
+          <p>Conecta la actividad asistencial, la administración y los servicios digitales de tu centro con el motor tecnológico de Curae.</p>
+          <app-button label="Solicitar información sobre Curae →" link="/contacto" />
+        </div>
+        <div class="brand-panel" aria-label="Curae Clínica Total">
+          <span class="brand-name">Curae</span>
+          <span class="brand-subtitle">CLÍNICA TOTAL</span>
+          <div class="brand-areas"><span>Clínica</span><span>Gestión</span><span>Pacientes</span></div>
+          <p>Una plataforma para acompañar el crecimiento de tu centro.</p>
+        </div>
+      </div>
+    </app-container>
+  </section>
+
+  <section class="section capacity" aria-labelledby="capacity-title">
+    <app-container>
+      <header class="section-heading">
+        <span class="eyebrow">Crece con tu clínica</span>
+        <h2 id="capacity-title">Más profesionales y pacientes, con la misma base</h2>
+        <p>Clínica Total evita cambios de plan por incorporar usuarios, pacientes o capacidad ordinaria de almacenamiento.</p>
+      </header>
+      <div class="capacity-grid">
+        <article><h3>Usuarios ilimitados</h3><p>Incorpora profesionales y equipos a la operativa del centro.</p></article>
+        <article><h3>Pacientes ilimitados</h3><p>Organiza la atención y el seguimiento conforme crece tu clínica.</p></article>
+        <article><h3>Almacenamiento ilimitado</h3><p>Capacidad para el uso ordinario de la actividad clínica.</p></article>
+      </div>
+      <p class="scope-note">El alcance de «ilimitado» está sujeto a uso razonable, seguridad y legalidad. Infraestructuras dedicadas extraordinarias, almacenamiento masivo ajeno a la actividad clínica y copias históricas especiales se valoran aparte.</p>
+    </app-container>
+  </section>
+
+  <section class="section" aria-labelledby="areas-title">
+    <app-container>
+      <header class="section-heading"><span class="eyebrow">Qué incluye</span><h2 id="areas-title">De la primera cita al seguimiento del paciente</h2><p>Un entorno común para coordinar información clínica, procesos administrativos y operaciones.</p></header>
+      <div class="areas-grid">
+        @for (area of areas; track area.title) {
+          <article><h3>{{ area.title }}</h3><p>{{ area.description }}</p></article>
+        }
+      </div>
+    </app-container>
+  </section>
+
+  <section class="section modules" aria-labelledby="modules-title">
+    <app-container>
+      <header class="section-heading"><span class="eyebrow">Módulos médicos opcionales</span><h2 id="modules-title">Flujos y datos para cada especialidad</h2><p>Amplía Curae con los módulos que necesite tu centro. Su contratación y activación se definen en la propuesta de implantación.</p></header>
+      <ul class="modules-list">
+        @for (module of modules; track module) { <li>{{ module }}</li> }
+      </ul>
+    </app-container>
+  </section>
+
+  <section class="section" aria-labelledby="configuration-title">
+    <app-container>
+      <header class="section-heading"><span class="eyebrow">Tu centro, tu identidad</span><h2 id="configuration-title">Una plataforma configurada para tu clínica</h2></header>
+      <div class="areas-grid configuration-grid">
+        <article><h3>Identidad propia</h3><p>Nombre, logotipo, colores e identidad de la clínica sobre el motor Curae, con personalización white-label.</p></article>
+        <article><h3>Integraciones</h3><p>API y conectores para servicios externos cuando se contraten o desarrollen. El alcance de cada integración se acuerda con tu centro.</p></article>
+        <article><h3>Web y movilidad</h3><p>Ecosistema web con evolución prevista para iOS y Android.</p></article>
+        <article><h3>Seguridad y privacidad</h3><p>Roles, permisos, control de acceso, trazabilidad y copias de seguridad para proteger la información sanitaria. Las obligaciones de protección de datos y prestación del servicio se formalizan contractualmente.</p></article>
+      </div>
+    </app-container>
+  </section>
+
+  <section class="section rollout" aria-labelledby="rollout-title">
+    <app-container>
+      <div class="rollout-grid">
+        <div><span class="eyebrow">Implantación y evolución</span><h2 id="rollout-title">Acompañamos la puesta en marcha</h2><p>Configuramos Curae a partir de la identidad de tu clínica, sus profesionales, servicios, horarios y módulos seleccionados. La suscripción incluye evolución y mantenimiento general del motor.</p></div>
+        <div class="rollout-card"><h3>Una propuesta para tu centro</h3><p>La modalidad combina implantación inicial, suscripción y módulos médicos opcionales.</p><p>Servicios de terceros, consumos variables, determinadas integraciones y desarrollos específicos pueden tener costes adicionales, que se comunicarán antes de su contratación.</p><a class="text-link" routerLink="/contacto">Consultar implantación y condiciones →</a></div>
+      </div>
+    </app-container>
+  </section>
+  <app-cta heading="¿Quieres conocer Curae para tu clínica?" description="Cuéntanos tus especialidades, tu operativa y lo que necesitas centralizar. Te ayudaremos a definir la configuración de Curae para tu centro." buttonLabel="Hablar sobre Curae →" />
+</main>

@@ -10,7 +10,7 @@ describe('ProductsComponent', () => {
     }).compileComponents(),
   );
 
-  it('presents the five products with a single H1', () => {
+  it('presents the catalog with a single H1', () => {
     const fixture = TestBed.createComponent(ProductsComponent);
     fixture.detectChanges();
     const element = fixture.nativeElement as HTMLElement;
@@ -19,6 +19,8 @@ describe('ProductsComponent', () => {
       'Productos de software para problemas reales',
     );
     expect(element.textContent).toContain('Elite Coach');
+    expect(element.querySelector('#curae')?.textContent).toContain('Producto estrella');
+    expect(element.querySelector('#curae a[href="/productos/curae"]')).toBeTruthy();
     expect(element.textContent).toContain('Productos realizados a nuestros clientes');
     expect(element.textContent).toContain('TerretaAgro');
     expect(element.textContent).toContain('ContaTerra');

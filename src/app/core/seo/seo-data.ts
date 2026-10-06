@@ -19,6 +19,7 @@ export interface SeoData {
 const PAGE_NAMES: Record<string, string> = {
   '/servicios': 'Servicios',
   '/productos': 'Productos',
+  '/productos/curae': 'Curae Clínica Total',
   '/aplicaciones/fitness-app': 'Elite Coach',
   '/como-trabajamos': 'Cómo trabajamos',
   '/nosotros': 'Nosotros',
@@ -87,7 +88,7 @@ export function structuredData(seo: SeoData, path: string): Record<string, unkno
           { name: 'Inicio', item: `${SITE_URL}/` },
           { name: 'Servicios', item: `${SITE_URL}/servicios` },
         ]
-      : path === '/aplicaciones/fitness-app'
+      : path === '/aplicaciones/fitness-app' || path === '/productos/curae'
         ? [
             { name: 'Inicio', item: `${SITE_URL}/` },
             { name: 'Productos', item: `${SITE_URL}/productos` },

@@ -63,10 +63,22 @@ export const routes: Routes = [
       seo: {
         title: 'Productos y soluciones de software empresarial | Terreta',
         description:
-          'Conoce Elite Coach, TerretaAgro, ContaTerra y TerretaRail: productos de software de Terreta y proyectos web para clientes como Mars y Apex.',
+          'Descubre Curae Clínica Total, nuestro producto estrella para clínicas, junto a Elite Coach, TerretaAgro, ContaTerra y TerretaRail.',
         canonicalPath: '/productos',
         faqs: PAGE_FAQS['/productos'],
         image: 'https://www.realterretaia.com/assets/brand/terreta-logo.png',
+      },
+    },
+  },
+  {
+    path: 'productos/curae',
+    loadComponent: () => import('./pages/curae/curae').then((c) => c.CuraeComponent),
+    data: {
+      seo: {
+        title: 'Curae Clínica Total | Software de gestión clínica | Terreta',
+        description:
+          'Curae centraliza agenda, historia clínica, portal del paciente, facturación y operaciones. Conoce Clínica Total y sus módulos médicos opcionales.',
+        canonicalPath: '/productos/curae',
       },
     },
   },
