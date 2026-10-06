@@ -442,14 +442,14 @@
 .catalog-close p a { display: inline; padding: 0; border-radius: 0; background: transparent; color: white; font-weight: inherit; text-decoration: underline; text-underline-offset: .2rem; }
 
 .curae-brand {
-  display: flex;
-  min-height: 25rem;
-  flex-direction: column;
-  justify-content: center;
-  padding: clamp(2rem, 5vw, 4rem);
-  background: var(--gradient-dark);
-  color: white;
+  display: grid;
+  padding: 2rem;
+  place-items: center;
+  background: #06498e;
 }
-.curae-brand > span { font-size: clamp(3rem, 7vw, 5rem); font-weight: 850; letter-spacing: .06em; }
-.curae-brand p { margin: .5rem 0 2rem; font-size: 1.7rem; }
-.curae-brand small { max-width: 20rem; color: var(--color-text-on-dark); line-height: 1.8; }
+.curae-brand img {
+  display: block;
+  width: min(100%, 25rem);
+  height: auto;
+  border-radius: 1rem;
+}

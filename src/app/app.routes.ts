@@ -79,6 +79,7 @@ export const routes: Routes = [
         description:
           'Curae centraliza agenda, historia clínica, portal del paciente, facturación y operaciones. Conoce Clínica Total y sus módulos médicos opcionales.',
         canonicalPath: '/productos/curae',
+        image: 'https://www.realterretaia.com/assets/images/curae-brand.jpg',
       },
     },
   },

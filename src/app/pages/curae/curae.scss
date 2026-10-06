@@ -6,12 +6,8 @@ h1 { margin: 1rem 0; font-size: clamp(3rem, 6vw, 5rem); line-height: 1.02; }
 .hero-grid .lead { color: var(--color-heading); font-size: 1.5rem; }
 p { color: var(--color-text-muted); line-height: 1.75; }
 .hero-grid app-button { display: inline-block; margin-top: 1rem; }
-.brand-panel { padding: clamp(2rem, 5vw, 4rem); border-radius: 1.5rem; background: var(--gradient-dark); color: white; box-shadow: var(--shadow-large); }
-.brand-name { display: block; font-size: clamp(3.5rem, 7vw, 5rem); font-weight: 800; }
-.brand-subtitle { letter-spacing: .2em; font-size: .8rem; }
-.brand-areas { display: flex; flex-wrap: wrap; gap: .65rem; margin: 2.5rem 0 1.5rem; }
-.brand-areas span { border: 1px solid rgb(255 255 255 / 25%); border-radius: 2rem; padding: .5rem .8rem; font-size: .8rem; }
-.brand-panel p { color: var(--color-text-on-dark); }
+.brand-panel { overflow: hidden; border-radius: 1.5rem; box-shadow: var(--shadow-large); }
+.brand-panel img { display: block; width: 100%; height: auto; }
 .section { padding: clamp(3rem, 6vw, 5rem) 0; }
 .capacity, .modules, .rollout { background: var(--color-surface-soft); }
 .section-heading { max-width: 48rem; margin: 0 auto 2.5rem; text-align: center; }
